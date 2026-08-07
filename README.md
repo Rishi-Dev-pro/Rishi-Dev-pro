@@ -1,11 +1,3 @@
-```text
-[AETHER-OS v4.2.0] :: INITIALIZING KERNEL...
-[SYSTEM] :: LOADING NEURAL RUNTIME... [OK]
-[VISION] :: COMPUTER VISION & MEDIAPIPE PIPELINES... [ONLINE]
-[VOICE]  :: REAL-TIME AUDIO SIGNAL PROCESSOR... [ONLINE]
-[STATUS] :: DEVELOPER PROFILE READY.
-```
-
 <div align="center">
 
 <img src="assets/README-decorative/header-telemetry.svg" alt="AETHER OS Telemetry Header" width="100%" />
@@ -38,11 +30,10 @@
 ### `// AETHER OS MODULE DIRECTORY`
 
 <a href="#core-systems"><code><b>[ 01. CORE SYSTEMS ]</b></code></a> &nbsp;
-<a href="#current-mission"><code><b>[ 02. CURRENT MISSION ]</b></code></a> &nbsp;
-<a href="#evolution"><code><b>[ 03. EVOLUTION ]</b></code></a> &nbsp;
-<a href="#tech-stack"><code><b>[ 04. TECH MATRIX ]</b></code></a> &nbsp;
-<a href="#activity-metrics"><code><b>[ 05. ACTIVITY ]</b></code></a> &nbsp;
-<a href="#contact-dispatch"><code><b>[ 06. CONTACT ]</b></code></a>
+<a href="#evolution"><code><b>[ 02. EVOLUTION ]</b></code></a> &nbsp;
+<a href="#tech-stack"><code><b>[ 03. TECH MATRIX ]</b></code></a> &nbsp;
+<a href="#activity-metrics"><code><b>[ 04. ACTIVITY ]</b></code></a> &nbsp;
+<a href="#contact-dispatch"><code><b>[ 05. CONTACT ]</b></code></a>
 
 </div>
 
@@ -257,35 +248,8 @@ An immersive showcase platform built to demonstrate high-performance web animati
 
 <br />
 
-<a id="current-mission"></a>
-### `// 03. CURRENT MISSION & STATUS`
-
-<br />
-
-> **SYSTEM STATUS:** ACTIVE BUILD PHASE  
-> **CURRENTLY BUILDING:** **AETHER OS** (Computer Vision & Gesture HUD Pipelines)  
-> **CURRENTLY SCALING:** **CallBuddy AI** (Low-Latency Voice Rooms & WebRTC Channels)  
-> **CURRENT RESEARCH:** Real-Time In-Browser Gesture Physics & Voice Latency Reduction  
-> **NEXT MILESTONE:** Launching **Mochi AI Companion v1.0**  
-
-<br />
-
-<div align="center">
-  <img src="assets/badges/status/status-live.svg" alt="Status Live" />
-  &nbsp;&nbsp;
-  <img src="assets/badges/core/badge-ai-engine.svg" alt="AI Engine" />
-  &nbsp;&nbsp;
-  <img src="assets/badges/core/badge-computer-vision.svg" alt="Computer Vision" />
-</div>
-
-<br />
-
-<img src="assets/ui-elements/dividers/hud-line-accent.svg" alt="HUD Line Divider" width="100%" />
-
-<br />
-
 <a id="evolution"></a>
-### `// 04. ENGINEERING EVOLUTION`
+### `// 03. ENGINEERING EVOLUTION`
 
 ```text
 SYSTEM LOG :: ENGINEERING PROGRESSION
@@ -318,7 +282,7 @@ SYSTEM LOG :: ENGINEERING PROGRESSION
 <br />
 
 <a id="tech-stack"></a>
-### `// 05. TECHNICAL MATRIX & STACK`
+### `// 04. TECHNICAL MATRIX & STACK`
 
 <br />
 
@@ -356,7 +320,7 @@ SYSTEM LOG :: ENGINEERING PROGRESSION
 <br />
 
 <a id="activity-metrics"></a>
-### `// 06. SYSTEM ACTIVITY & METRICS`
+### `// 05. SYSTEM ACTIVITY & METRICS`
 
 <br />
 
@@ -370,7 +334,7 @@ SYSTEM LOG :: ENGINEERING PROGRESSION
 
 <br />
 
-### `// 07. CONTRIBUTION VISUALIZATION`
+### `// CONTRIBUTION VISUALIZATION`
 
 <br />
 
@@ -382,25 +346,12 @@ SYSTEM LOG :: ENGINEERING PROGRESSION
 
 <br />
 
-<img src="assets/ui-elements/dividers/section-divider-subtle.svg" alt="Subtle Divider" width="100%" />
-
-<br />
-
-### `// 08. ENGINEERING MILESTONES`
-
-- **AETHER OS Development:** Architected an AI-powered browser operating system with real-time hand gesture tracking and voice automation.
-- **CallBuddy AI Launch:** Built a real-time voice AI communication platform supporting multi-user voice channels.
-- **Computer Vision Innovation:** Implemented low-latency OpenCV and MediaPipe vision pipelines directly inside web browsers.
-- **Human-AI Companionship (Mochi):** Designing an AI developer companion focused on contextual conversational support.
-
-<br />
-
 <img src="assets/ui-elements/dividers/hud-line-accent.svg" alt="HUD Line Divider" width="100%" />
 
 <br />
 
 <a id="contact-dispatch"></a>
-### `// 09. TERMINAL DISPATCH & CONTACT`
+### `// 06. TERMINAL DISPATCH & CONTACT`
 
 <div align="center">
 
@@ -412,23 +363,10 @@ SYSTEM LOG :: ENGINEERING PROGRESSION
 
 <br />
 
-<a href="https://github.com/Rishi-Dev-pro"><code><b>[ GITHUB PROFILE ]</b></code></a>
+<a href="https://github.com/Rishi-Dev-pro"><code><b>[ GITHUB ]</b></code></a>
 &nbsp;&nbsp;&nbsp;&nbsp;
-<a href="https://www.linkedin.com/in/rishi-shaw-389800389/"><code><b>[ LINKEDIN NETWORK ]</b></code></a>
+<a href="https://www.linkedin.com/in/rishi-shaw-389800389/"><code><b>[ LINKEDIN ]</b></code></a>
 &nbsp;&nbsp;&nbsp;&nbsp;
 <a href="mailto:rishishaw23022006@gmail.com"><code><b>[ EMAIL DISPATCH ]</b></code></a>
 
 </div>
-
-<br /><br />
-
-> **SYSTEM NOTE:** Always open to exploring hard problems in spatial computing, computer vision, and real-time voice intelligence. Feel free to connect or reach out.
-
-<br />
-
-```text
-─────────────────────────────────────────────────────────────────────────────
-SYSTEM STATUS: ONLINE // RUNTIME: STABLE // TELEMETRY: ACTIVE
-Powered by curiosity, spatial engineering, and continuous learning.
-─────────────────────────────────────────────────────────────────────────────
-```
