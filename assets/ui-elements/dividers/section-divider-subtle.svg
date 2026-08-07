@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 12" width="100%" height="100%" role="img" aria-label="Subtle Section Divider">
+  <title>Subtle Section Divider</title>
+  <defs>
+    <linearGradient id="sds-subtle-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#94A3B8" stop-opacity="0" />
+      <stop offset="50%" stop-color="#94A3B8" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="#94A3B8" stop-opacity="0" />
+    </linearGradient>
+  </defs>
+
+  <line x1="0" y1="6" x2="1200" y2="6" stroke="url(#sds-subtle-grad)" stroke-width="1" stroke-dasharray="8, 4" />
+</svg>

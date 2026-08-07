@@ -1,0 +1,160 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" width="100%" height="100%" role="img" aria-label="Rishi Shaw - Hero Banner">
+  <title>Rishi Shaw - Hero Banner</title>
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="hb-bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080A0F" stop-opacity="1" />
+      <stop offset="50%" stop-color="#0D111A" stop-opacity="1" />
+      <stop offset="100%" stop-color="#05070A" stop-opacity="1" />
+    </linearGradient>
+
+    <!-- Glass Surface Gradient -->
+    <linearGradient id="hb-glass-surface" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#121826" stop-opacity="0.75" />
+      <stop offset="100%" stop-color="#0A0E17" stop-opacity="0.60" />
+    </linearGradient>
+
+    <!-- Cyan Glow Line Gradient -->
+    <linearGradient id="hb-cyan-glow-line" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00F0FF" stop-opacity="0" />
+      <stop offset="30%" stop-color="#00F0FF" stop-opacity="0.8" />
+      <stop offset="70%" stop-color="#3B82F6" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#00F0FF" stop-opacity="0" />
+    </linearGradient>
+
+    <!-- Border Gradient -->
+    <linearGradient id="hb-border-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00F0FF" stop-opacity="0.4" />
+      <stop offset="50%" stop-color="#FFFFFF" stop-opacity="0.08" />
+      <stop offset="100%" stop-color="#00F0FF" stop-opacity="0.15" />
+    </linearGradient>
+
+    <!-- Radial Cyan Glow -->
+    <radialGradient id="hb-cyan-sphere-glow" cx="75%" cy="50%" r="40%">
+      <stop offset="0%" stop-color="#00F0FF" stop-opacity="0.25" />
+      <stop offset="50%" stop-color="#3B82F6" stop-opacity="0.10" />
+      <stop offset="100%" stop-color="#080A0F" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Core Radial Sphere -->
+    <radialGradient id="hb-core-node" cx="40%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#00F0FF" stop-opacity="1" />
+      <stop offset="40%" stop-color="#3B82F6" stop-opacity="1" />
+      <stop offset="80%" stop-color="#1E1B4B" stop-opacity="1" />
+      <stop offset="100%" stop-color="#080A0F" stop-opacity="1" />
+    </radialGradient>
+
+    <!-- Glow Filters -->
+    <filter id="hb-glow-heavy" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+    <filter id="hb-glow-subtle" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <!-- Pattern Background Grid -->
+    <pattern id="hb-grid-pattern" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#00F0FF" stroke-opacity="0.03" stroke-width="1" />
+      <circle cx="40" cy="0" r="1" fill="#00F0FF" fill-opacity="0.12" />
+    </pattern>
+  </defs>
+
+  <!-- Base Canvas -->
+  <rect width="1200" height="400" fill="url(#hb-bg-gradient)" />
+  
+  <!-- Grid Layer -->
+  <rect width="1200" height="400" fill="url(#hb-grid-pattern)" />
+
+  <!-- Ambient Light Emission -->
+  <rect width="1200" height="400" fill="url(#hb-cyan-sphere-glow)" />
+
+  <!-- Background Volumetric Orbs -->
+  <circle cx="900" cy="200" r="180" fill="#00F0FF" fill-opacity="0.03" filter="url(#hb-glow-heavy)" />
+  <circle cx="900" cy="200" r="90" fill="#3B82F6" fill-opacity="0.05" filter="url(#hb-glow-heavy)" />
+
+  <!-- Neural Sphere Mesh Graphics (Right Perspective) -->
+  <g transform="translate(900, 200)">
+    <!-- Outer Tracking Rings -->
+    <circle cx="0" cy="0" r="140" fill="none" stroke="#00F0FF" stroke-opacity="0.15" stroke-width="1" stroke-dasharray="6, 6" />
+    <circle cx="0" cy="0" r="120" fill="none" stroke="#3B82F6" stroke-opacity="0.25" stroke-width="1.5" />
+    <circle cx="0" cy="0" r="95" fill="none" stroke="#00F0FF" stroke-opacity="0.4" stroke-width="1" stroke-dasharray="40, 10, 5, 10" filter="url(#hb-glow-subtle)" />
+    
+    <!-- Rotated HUD Scales -->
+    <ellipse cx="0" cy="0" rx="130" ry="40" fill="none" stroke="#00F0FF" stroke-opacity="0.2" stroke-width="1" transform="rotate(-25)" />
+    <ellipse cx="0" cy="0" rx="130" ry="40" fill="none" stroke="#00F0FF" stroke-opacity="0.3" stroke-width="1" transform="rotate(35)" />
+    
+    <!-- Computer Vision Nodes & Bounding Wireframe -->
+    <polygon points="-50,-50 50,-50 50,50 -50,50" fill="none" stroke="#00F0FF" stroke-opacity="0.2" stroke-width="1" stroke-dasharray="10, 5" />
+    <circle cx="-50" cy="-50" r="3" fill="#00F0FF" />
+    <circle cx="50" cy="-50" r="3" fill="#00F0FF" />
+    <circle cx="50" cy="50" r="3" fill="#00F0FF" />
+    <circle cx="-50" cy="50" r="3" fill="#00F0FF" />
+
+    <!-- Center Core Node -->
+    <circle cx="0" cy="0" r="45" fill="url(#hb-core-node)" filter="url(#hb-glow-heavy)" fill-opacity="0.9" />
+    <circle cx="0" cy="0" r="15" fill="#FFFFFF" filter="url(#hb-glow-heavy)" />
+
+    <!-- Particle Connections -->
+    <line x1="-50" y1="-50" x2="0" y2="0" stroke="#00F0FF" stroke-opacity="0.4" stroke-width="1" />
+    <line x1="50" y1="-50" x2="0" y2="0" stroke="#00F0FF" stroke-opacity="0.4" stroke-width="1" />
+    <line x1="50" y1="50" x2="0" y2="0" stroke="#00F0FF" stroke-opacity="0.4" stroke-width="1" />
+    <line x1="-50" y1="50" x2="0" y2="0" stroke="#00F0FF" stroke-opacity="0.4" stroke-width="1" />
+  </g>
+
+  <!-- Left Glass Card Container -->
+  <g transform="translate(60, 55)">
+    <!-- Glass Background -->
+    <rect width="660" height="290" rx="16" fill="url(#hb-glass-surface)" stroke="url(#hb-border-gradient)" stroke-width="1.5" />
+
+    <!-- Top Telemetry Status Bar -->
+    <path d="M 30 30 L 630 30" stroke="#FFFFFF" stroke-opacity="0.06" stroke-width="1" />
+    
+    <!-- Status Pill -->
+    <rect x="30" y="42" width="140" height="24" rx="12" fill="#00F0FF" fill-opacity="0.08" stroke="#00F0FF" stroke-opacity="0.3" stroke-width="1" />
+    <circle cx="44" cy="54" r="4" fill="#00F0FF" filter="url(#hb-glow-subtle)" />
+    <text x="56" y="58" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="11" fill="#00F0FF" font-weight="600" letter-spacing="1">SYSTEM : ONLINE</text>
+
+    <text x="185" y="58" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="11" fill="#94A3B8" letter-spacing="1">LOC // SPATIAL OS ARCHITECTURE</text>
+
+    <!-- Main Title: Rishi Shaw -->
+    <text x="30" y="118" font-family="'Outfit', 'SF Pro Display', 'Inter', sans-serif" font-size="44" font-weight="800" fill="#F8FAFC" letter-spacing="-0.5">Rishi Shaw</text>
+    
+    <!-- Accent Underline -->
+    <rect x="30" y="132" width="120" height="3" rx="1.5" fill="url(#hb-cyan-glow-line)" filter="url(#hb-glow-subtle)" />
+
+    <!-- Subtitle Roles -->
+    <text x="30" y="165" font-family="'SF Pro Text', 'Inter', sans-serif" font-size="18" font-weight="600" fill="#00F0FF" letter-spacing="0.5">AI Engineer <tspan fill="#94A3B8">•</tspan> Full Stack Developer <tspan fill="#94A3B8">•</tspan> Computer Vision</text>
+
+    <!-- Vision Statement -->
+    <text x="30" y="202" font-family="'SF Pro Text', 'Inter', sans-serif" font-size="14" fill="#94A3B8" font-weight="400">
+      Building spatial AI operating systems, real-time gesture recognition HUDs, and
+    </text>
+    <text x="30" y="222" font-family="'SF Pro Text', 'Inter', sans-serif" font-size="14" fill="#94A3B8" font-weight="400">
+      human-centered conversational intelligence platforms.
+    </text>
+
+    <!-- Bottom Telemetry Micro Badges -->
+    <g transform="translate(30, 245)">
+      <rect x="0" y="0" width="110" height="22" rx="4" fill="#0F172A" fill-opacity="0.6" stroke="#00F0FF" stroke-opacity="0.2" stroke-width="1" />
+      <text x="10" y="15" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="10" fill="#F8FAFC">AETHER OS</text>
+
+      <rect x="118" y="0" width="120" height="22" rx="4" fill="#0F172A" fill-opacity="0.6" stroke="#3B82F6" stroke-opacity="0.2" stroke-width="1" />
+      <text x="128" y="15" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="10" fill="#F8FAFC">CALLBUDDY AI</text>
+
+      <rect x="246" y="0" width="140" height="22" rx="4" fill="#0F172A" fill-opacity="0.6" stroke="#7C3AED" stroke-opacity="0.2" stroke-width="1" />
+      <text x="256" y="15" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="10" fill="#F8FAFC">THE FOUR PILLARS</text>
+    </g>
+  </g>
+
+  <!-- Frame Corner HUD Accents -->
+  <path d="M 12 30 L 12 12 L 30 12" fill="none" stroke="#00F0FF" stroke-width="2" />
+  <path d="M 1170 12 L 1188 12 L 1188 30" fill="none" stroke="#00F0FF" stroke-width="2" />
+  <path d="M 12 370 L 12 388 L 30 388" fill="none" stroke="#00F0FF" stroke-width="2" />
+  <path d="M 1170 388 L 1188 388 L 1188 370" fill="none" stroke="#00F0FF" stroke-width="2" />
+
+  <!-- Top / Bottom Divider Line Borders -->
+  <rect x="0" y="0" width="1200" height="2" fill="url(#hb-cyan-glow-line)" />
+  <rect x="0" y="398" width="1200" height="2" fill="url(#hb-cyan-glow-line)" />
+</svg>

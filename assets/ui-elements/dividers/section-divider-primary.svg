@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 24" width="100%" height="100%" role="img" aria-label="Primary Section Divider">
+  <title>Primary Section Divider</title>
+  <defs>
+    <linearGradient id="sdp-divider-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00F0FF" stop-opacity="0" />
+      <stop offset="25%" stop-color="#00F0FF" stop-opacity="0.4" />
+      <stop offset="50%" stop-color="#00F0FF" stop-opacity="1" />
+      <stop offset="75%" stop-color="#00F0FF" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="#00F0FF" stop-opacity="0" />
+    </linearGradient>
+    <filter id="sdp-glow-diamond" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Center Line -->
+  <line x1="0" y1="12" x2="1200" y2="12" stroke="url(#sdp-divider-grad)" stroke-width="1.5" />
+
+  <!-- Center Glowing Diamond -->
+  <polygon points="600,6 606,12 600,18 594,12" fill="#00F0FF" filter="url(#sdp-glow-diamond)" />
+
+  <!-- Outer Crosshairs -->
+  <path d="M 100 8 L 100 16 M 96 12 L 104 12" stroke="#00F0FF" stroke-opacity="0.4" stroke-width="1" />
+  <path d="M 1100 8 L 1100 16 M 1096 12 L 1104 12" stroke="#00F0FF" stroke-opacity="0.4" stroke-width="1" />
+</svg>

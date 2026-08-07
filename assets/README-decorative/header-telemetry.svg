@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 48" width="100%" height="100%" role="img" aria-label="Header Telemetry Bar">
+  <title>Header Telemetry Bar</title>
+  <rect width="1200" height="48" fill="#0D111A" fill-opacity="0.9" stroke="#00F0FF" stroke-opacity="0.2" stroke-width="1" rx="8" />
+  
+  <circle cx="24" cy="24" r="4" fill="#00F0FF" />
+  <text x="36" y="28" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="12" fill="#00F0FF" font-weight="600" letter-spacing="1">STATUS: ONLINE</text>
+
+  <text x="300" y="28" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="12" fill="#94A3B8" letter-spacing="1">SYS.CORE // AETHER OS HUD ENGINE</text>
+
+  <text x="900" y="28" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="12" fill="#3B82F6" letter-spacing="1">LATENCY: 12ms [OPTIMAL]</text>
+</svg>

@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="100%" height="100%" role="img" aria-label="CallBuddy AI Card Preview">
+  <title>CallBuddy AI Card Preview</title>
+  <defs>
+    <linearGradient id="cb-card-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080A0F" stop-opacity="1" />
+      <stop offset="100%" stop-color="#0B132B" stop-opacity="1" />
+    </linearGradient>
+    <linearGradient id="cb-wave-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00F0FF" stop-opacity="1" />
+      <stop offset="50%" stop-color="#3B82F6" stop-opacity="1" />
+      <stop offset="100%" stop-color="#7C3AED" stop-opacity="1" />
+    </linearGradient>
+    <linearGradient id="cb-card-overlay" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#080A0F" stop-opacity="0.95" />
+      <stop offset="60%" stop-color="#0B132B" stop-opacity="0.6" />
+      <stop offset="100%" stop-color="#0B132B" stop-opacity="0.1" />
+    </linearGradient>
+    <filter id="cb-glow-wave" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Frame -->
+  <rect width="1200" height="675" rx="16" fill="url(#cb-card-bg)" stroke="#3B82F6" stroke-opacity="0.4" stroke-width="2" />
+
+  <!-- Voice Waveforms Visual Graphic -->
+  <g transform="translate(600, 260)">
+    <!-- Audio Orbs -->
+    <circle cx="0" cy="0" r="140" fill="none" stroke="#3B82F6" stroke-opacity="0.2" stroke-width="1.5" />
+    <circle cx="0" cy="0" r="90" fill="none" stroke="#00F0FF" stroke-opacity="0.4" stroke-width="2" filter="url(#cb-glow-wave)" />
+    
+    <!-- Sound Waves -->
+    <path d="M -180 0 Q -130 -60 -90 0 T 0 0 T 90 0 T 180 0" fill="none" stroke="url(#cb-wave-gradient)" stroke-width="3" filter="url(#cb-glow-wave)" />
+    <path d="M -180 0 Q -130 50 -90 0 T 0 0 T 90 0 T 180 0" fill="none" stroke="url(#cb-wave-gradient)" stroke-width="2" stroke-opacity="0.6" />
+    <path d="M -150 0 Q -100 -90 -50 0 T 50 0 T 150 0" fill="none" stroke="#00F0FF" stroke-width="1.5" stroke-opacity="0.8" />
+  </g>
+
+  <!-- Scrim Layer -->
+  <rect width="1200" height="675" fill="url(#cb-card-overlay)" rx="16" />
+
+  <!-- Top Status -->
+  <g transform="translate(40, 40)">
+    <rect x="0" y="0" width="140" height="28" rx="14" fill="#3B82F6" fill-opacity="0.1" stroke="#3B82F6" stroke-width="1" />
+    <text x="70" y="18" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="11" fill="#3B82F6" font-weight="700" text-anchor="middle">REAL-TIME VOICE AI</text>
+  </g>
+
+  <!-- Project Details -->
+  <g transform="translate(40, 480)">
+    <text x="0" y="0" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="13" fill="#3B82F6" letter-spacing="2">PROJECT // 02</text>
+    <text x="0" y="42" font-family="'Outfit', 'SF Pro Display', 'Inter', sans-serif" font-size="38" font-weight="800" fill="#F8FAFC">CallBuddy AI</text>
+    <text x="0" y="72" font-family="'SF Pro Text', 'Inter', sans-serif" font-size="16" fill="#94A3B8">AI Communication Platform with Real-time Voice Rooms &amp; Natural Conversation</text>
+
+    <!-- Tech Badges Bar -->
+    <g transform="translate(0, 95)">
+      <rect x="0" y="0" width="90" height="26" rx="4" fill="#0F172A" fill-opacity="0.8" stroke="#3B82F6" stroke-opacity="0.3" stroke-width="1" />
+      <text x="45" y="17" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="11" fill="#F8FAFC" text-anchor="middle">Voice AI</text>
+
+      <rect x="100" y="0" width="100" height="26" rx="4" fill="#0F172A" fill-opacity="0.8" stroke="#3B82F6" stroke-opacity="0.3" stroke-width="1" />
+      <text x="150" y="17" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="11" fill="#F8FAFC" text-anchor="middle">Socket.IO</text>
+
+      <rect x="210" y="0" width="95" height="26" rx="4" fill="#0F172A" fill-opacity="0.8" stroke="#3B82F6" stroke-opacity="0.3" stroke-width="1" />
+      <text x="257" y="17" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="11" fill="#F8FAFC" text-anchor="middle">WebRTC</text>
+
+      <rect x="315" y="0" width="80" height="26" rx="4" fill="#0F172A" fill-opacity="0.8" stroke="#3B82F6" stroke-opacity="0.3" stroke-width="1" />
+      <text x="355" y="17" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="11" fill="#F8FAFC" text-anchor="middle">Node.js</text>
+    </g>
+  </g>
+</svg>

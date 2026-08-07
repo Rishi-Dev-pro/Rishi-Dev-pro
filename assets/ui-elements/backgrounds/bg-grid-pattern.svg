@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100" role="img" aria-label="Grid Pattern Background">
+  <title>Grid Pattern Background</title>
+  <rect width="100" height="100" fill="#080A0F" />
+  <path d="M 100 0 L 0 0 0 100" fill="none" stroke="#00F0FF" stroke-opacity="0.04" stroke-width="1" />
+  <circle cx="100" cy="0" r="1.5" fill="#00F0FF" fill-opacity="0.2" />
+</svg>
