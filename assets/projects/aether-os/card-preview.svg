@@ -1,30 +1,44 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="100%" height="100%" role="img" aria-label="AETHER OS Card Preview">
-  <title>AETHER OS Card Preview</title>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675">
   <defs>
-    <linearGradient id="ae-card-bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#080A0F" stop-opacity="1" />
-      <stop offset="100%" stop-color="#0F172A" stop-opacity="1" />
+    <!-- Background Gradients -->
+    <linearGradient id="ae-bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080A0F" />
+      <stop offset="50%" stop-color="#0F172A" />
+      <stop offset="100%" stop-color="#05070A" />
     </linearGradient>
-    <linearGradient id="ae-glass-overlay" x1="0%" y1="100%" x2="0%" y2="0%">
-      <stop offset="0%" stop-color="#080A0F" stop-opacity="0.95" />
-      <stop offset="60%" stop-color="#0F172A" stop-opacity="0.6" />
-      <stop offset="100%" stop-color="#0F172A" stop-opacity="0.1" />
+
+    <linearGradient id="ae-glass-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B" stop-opacity="0.6" />
+      <stop offset="100%" stop-color="#0F172A" stop-opacity="0.85" />
     </linearGradient>
-    <linearGradient id="ae-cyan-border" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#00F0FF" stop-opacity="0.5" />
-      <stop offset="100%" stop-color="#3B82F6" stop-opacity="0.1" />
+
+    <!-- Accent Gradients -->
+    <linearGradient id="ae-cyan-blue" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00F0FF" />
+      <stop offset="100%" stop-color="#3B82F6" />
     </linearGradient>
-    <filter id="ae-glow" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="6" result="blur" />
-      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+
+    <linearGradient id="ae-border-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00F0FF" stop-opacity="0.6" />
+      <stop offset="50%" stop-color="#3B82F6" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="#00F0FF" stop-opacity="0.4" />
+    </linearGradient>
+
+    <!-- Glow Filter -->
+    <filter id="ae-cyan-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="5" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
     </filter>
   </defs>
 
-  <!-- Main Frame -->
-  <rect width="1200" height="675" rx="16" fill="url(#ae-card-bg)" stroke="url(#ae-cyan-border)" stroke-width="2" />
+  <!-- Base Card Frame -->
+  <rect x="0" y="0" width="1200" height="675" rx="16" fill="url(#ae-bg-grad)" stroke="url(#ae-border-grad)" stroke-width="2" />
 
-  <!-- Grid Pattern -->
-  <g stroke="#00F0FF" stroke-opacity="0.04" stroke-width="1">
+  <!-- Background Tech Grid -->
+  <g stroke="#00F0FF" stroke-opacity="0.05" stroke-width="1">
     <line x1="0" y1="135" x2="1200" y2="135" />
     <line x1="0" y1="270" x2="1200" y2="270" />
     <line x1="0" y1="405" x2="1200" y2="405" />
@@ -35,61 +49,118 @@
     <line x1="960" y1="0" x2="960" y2="675" />
   </g>
 
-  <!-- Computer Vision & Gesture Recognition Visual Art -->
-  <g transform="translate(600, 260)">
-    <!-- Spatial Tracking Rings -->
-    <circle cx="0" cy="0" r="160" fill="none" stroke="#00F0FF" stroke-opacity="0.15" stroke-width="1.5" stroke-dasharray="8, 8" />
-    <circle cx="0" cy="0" r="120" fill="none" stroke="#3B82F6" stroke-opacity="0.3" stroke-width="2" />
-    <circle cx="0" cy="0" r="80" fill="none" stroke="#00F0FF" stroke-width="1.5" filter="url(#ae-glow)" />
-    
-    <!-- Gesture Hand Point Cloud Simulation -->
-    <circle cx="-30" cy="-40" r="4" fill="#00F0FF" />
-    <circle cx="0" cy="-60" r="4" fill="#00F0FF" />
-    <circle cx="30" cy="-40" r="4" fill="#00F0FF" />
-    <circle cx="50" cy="-10" r="4" fill="#00F0FF" />
-    <circle cx="-40" cy="10" r="4" fill="#00F0FF" />
+  <!-- Corner Accents -->
+  <path d="M 30 60 L 30 30 L 60 30" fill="none" stroke="#00F0FF" stroke-width="2" />
+  <path d="M 1170 60 L 1170 30 L 1140 30" fill="none" stroke="#00F0FF" stroke-width="2" />
+  <path d="M 30 615 L 30 645 L 60 645" fill="none" stroke="#00F0FF" stroke-width="2" />
+  <path d="M 1170 615 L 1170 645 L 1140 645" fill="none" stroke="#00F0FF" stroke-width="2" />
 
-    <line x1="-30" y1="-40" x2="0" y2="-60" stroke="#00F0FF" stroke-width="1" />
-    <line x1="0" y1="-60" x2="30" y2="-40" stroke="#00F0FF" stroke-width="1" />
-    <line x1="30" y1="-40" x2="50" y2="-10" stroke="#00F0FF" stroke-width="1" />
-    <line x1="-30" y1="-40" x2="-40" y2="10" stroke="#00F0FF" stroke-width="1" />
-
-    <!-- Center Neural Core -->
-    <circle cx="0" cy="0" r="18" fill="#00F0FF" filter="url(#ae-glow)" />
-    <text x="0" y="5" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="12" fill="#080A0F" font-weight="800" text-anchor="middle">AI</text>
+  <!-- Top System Badge -->
+  <g transform="translate(50, 45)">
+    <rect x="0" y="0" width="140" height="28" rx="14" fill="#00F0FF" fill-opacity="0.1" stroke="#00F0FF" stroke-opacity="0.4" stroke-width="1" />
+    <circle cx="16" cy="14" r="4" fill="#00F0FF" />
+    <text x="30" y="18" font-family="monospace" font-size="11" font-weight="bold" fill="#00F0FF" letter-spacing="1">FLAGSHIP OS</text>
   </g>
 
-  <!-- Scrim Layer -->
-  <rect width="1200" height="675" fill="url(#ae-glass-overlay)" rx="16" />
+  <!-- Central Spatial Computer Vision HUD Graphic -->
+  <g transform="translate(600, 250)">
+    <!-- Outer Radar Concentric Rings -->
+    <circle cx="0" cy="0" r="160" fill="none" stroke="#00F0FF" stroke-opacity="0.1" stroke-width="1" stroke-dasharray="6,6" />
+    <circle cx="0" cy="0" r="120" fill="none" stroke="#3B82F6" stroke-opacity="0.25" stroke-width="1.5" />
+    <circle cx="0" cy="0" r="80" fill="none" stroke="#00F0FF" stroke-opacity="0.6" stroke-width="1.5" filter="url(#ae-cyan-glow)" />
 
-  <!-- Top Bar Telemetry -->
-  <g transform="translate(40, 40)">
-    <rect x="0" y="0" width="130" height="28" rx="14" fill="#00F0FF" fill-opacity="0.1" stroke="#00F0FF" stroke-width="1" />
-    <text x="65" y="18" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="11" fill="#00F0FF" font-weight="700" text-anchor="middle">FLAGSHIP OS</text>
+    <!-- Crosshair Lines -->
+    <line x1="-180" y1="0" x2="-130" y2="0" stroke="#00F0FF" stroke-opacity="0.4" stroke-width="1" />
+    <line x1="130" y1="0" x2="180" y2="0" stroke="#00F0FF" stroke-opacity="0.4" stroke-width="1" />
+    <line x1="0" y1="-180" x2="0" y2="-130" stroke="#00F0FF" stroke-opacity="0.4" stroke-width="1" />
+    <line x1="0" y1="130" x2="0" y2="180" stroke="#00F0FF" stroke-opacity="0.4" stroke-width="1" />
+
+    <!-- Hand Tracking Landmark Points -->
+    <g filter="url(#ae-cyan-glow)">
+      <!-- Wrist & Palm Core -->
+      <circle cx="0" cy="40" r="5" fill="#00F0FF" />
+      <circle cx="-25" cy="15" r="4" fill="#00F0FF" />
+      <circle cx="0" cy="0" r="6" fill="#00F0FF" />
+      <circle cx="25" cy="15" r="4" fill="#00F0FF" />
+
+      <!-- Fingertips -->
+      <circle cx="-50" cy="-35" r="4" fill="#00F0FF" />
+      <circle cx="-20" cy="-60" r="4" fill="#00F0FF" />
+      <circle cx="10" cy="-65" r="4" fill="#00F0FF" />
+      <circle cx="40" cy="-45" r="4" fill="#00F0FF" />
+      <circle cx="55" cy="-10" r="4" fill="#00F0FF" />
+
+      <!-- Skeleton Lines -->
+      <line x1="0" y1="40" x2="-25" y2="15" stroke="#00F0FF" stroke-width="1.5" />
+      <line x1="0" y1="40" x2="0" y2="0" stroke="#00F0FF" stroke-width="1.5" />
+      <line x1="0" y1="40" x2="25" y2="15" stroke="#00F0FF" stroke-width="1.5" />
+
+      <line x1="-25" y1="15" x2="-50" y2="-35" stroke="#00F0FF" stroke-width="1.5" />
+      <line x1="-25" y1="15" x2="-20" y2="-60" stroke="#00F0FF" stroke-width="1.5" />
+      <line x1="0" y1="0" x2="10" y2="-65" stroke="#00F0FF" stroke-width="1.5" />
+      <line x1="25" y1="15" x2="40" y2="-45" stroke="#00F0FF" stroke-width="1.5" />
+      <line x1="25" y1="15" x2="55" y2="-10" stroke="#00F0FF" stroke-width="1.5" />
+    </g>
+
+    <!-- Voice Waveform Overlay -->
+    <g transform="translate(0, 110)">
+      <rect x="-70" y="-12" width="140" height="24" rx="12" fill="#0F172A" fill-opacity="0.8" stroke="#00F0FF" stroke-opacity="0.3" stroke-width="1" />
+      <line x1="-50" y1="0" x2="-40" y2="0" stroke="#00F0FF" stroke-width="2" />
+      <line x1="-35" y1="-6" x2="-35" y2="6" stroke="#00F0FF" stroke-width="2" />
+      <line x1="-25" y1="-3" x2="-25" y2="3" stroke="#00F0FF" stroke-width="2" />
+      <line x1="-15" y1="-9" x2="-15" y2="9" stroke="#00F0FF" stroke-width="2" />
+      <line x1="-5" y1="-4" x2="-5" y2="4" stroke="#00F0FF" stroke-width="2" />
+      <line x1="5" y1="-8" x2="5" y2="8" stroke="#00F0FF" stroke-width="2" />
+      <line x1="15" y1="-2" x2="15" y2="2" stroke="#00F0FF" stroke-width="2" />
+      <line x1="25" y1="-7" x2="25" y2="7" stroke="#00F0FF" stroke-width="2" />
+      <line x1="35" y1="-3" x2="35" y2="3" stroke="#00F0FF" stroke-width="2" />
+      <line x1="45" y1="0" x2="50" y2="0" stroke="#00F0FF" stroke-width="2" />
+    </g>
   </g>
 
-  <!-- Project Details Footer Panel -->
-  <g transform="translate(40, 480)">
-    <text x="0" y="0" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="13" fill="#00F0FF" letter-spacing="2">PROJECT // 01</text>
-    <text x="0" y="42" font-family="'Outfit', 'SF Pro Display', 'Inter', sans-serif" font-size="38" font-weight="800" fill="#F8FAFC">AETHER OS</text>
-    <text x="0" y="72" font-family="'SF Pro Text', 'Inter', sans-serif" font-size="16" fill="#94A3B8">AI-Powered Browser Operating System with Gesture Tracking & Voice Assistant</text>
+  <!-- Lower Glassmorphism Panel -->
+  <g transform="translate(50, 450)">
+    <rect x="0" y="0" width="1100" height="175" rx="12" fill="url(#ae-glass-grad)" stroke="url(#ae-border-grad)" stroke-width="1.5" />
 
-    <!-- Tech Badges Bar -->
-    <g transform="translate(0, 95)">
-      <rect x="0" y="0" width="80" height="26" rx="4" fill="#0F172A" fill-opacity="0.8" stroke="#00F0FF" stroke-opacity="0.3" stroke-width="1" />
-      <text x="40" y="17" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="11" fill="#F8FAFC" text-anchor="middle">React</text>
+    <!-- Project Identifier -->
+    <text x="35" y="35" font-family="monospace" font-size="12" font-weight="bold" fill="#00F0FF" letter-spacing="2">PROJECT MODULE // 01</text>
 
-      <rect x="90" y="0" width="95" height="26" rx="4" fill="#0F172A" fill-opacity="0.8" stroke="#00F0FF" stroke-opacity="0.3" stroke-width="1" />
-      <text x="137" y="17" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="11" fill="#F8FAFC" text-anchor="middle">TypeScript</text>
+    <!-- Main Title -->
+    <text x="35" y="75" font-family="sans-serif" font-size="38" font-weight="800" fill="#FFFFFF" letter-spacing="1">AETHER OS</text>
 
-      <rect x="195" y="0" width="80" height="26" rx="4" fill="#0F172A" fill-opacity="0.8" stroke="#00F0FF" stroke-opacity="0.3" stroke-width="1" />
-      <text x="235" y="17" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="11" fill="#F8FAFC" text-anchor="middle">Python</text>
+    <!-- Tagline -->
+    <text x="35" y="105" font-family="sans-serif" font-size="16" fill="#94A3B8">Browser-Based Spatial AI Operating System • Computer Vision • Voice AI • Gesture HUD</text>
 
-      <rect x="285" y="0" width="85" height="26" rx="4" fill="#0F172A" fill-opacity="0.8" stroke="#00F0FF" stroke-opacity="0.3" stroke-width="1" />
-      <text x="327" y="17" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="11" fill="#F8FAFC" text-anchor="middle">OpenCV</text>
+    <!-- Tech Stack Pills -->
+    <g transform="translate(35, 125)">
+      <!-- React -->
+      <rect x="0" y="0" width="75" height="24" rx="4" fill="#0F172A" stroke="#00F0FF" stroke-opacity="0.3" stroke-width="1" />
+      <text x="37" y="16" font-family="sans-serif" font-size="11" font-weight="bold" fill="#00F0FF" text-anchor="middle">React</text>
 
-      <rect x="380" y="0" width="100" height="26" rx="4" fill="#0F172A" fill-opacity="0.8" stroke="#00F0FF" stroke-opacity="0.3" stroke-width="1" />
-      <text x="430" y="17" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="11" fill="#F8FAFC" text-anchor="middle">MediaPipe</text>
+      <!-- Python -->
+      <rect x="85" y="0" width="80" height="24" rx="4" fill="#0F172A" stroke="#00F0FF" stroke-opacity="0.3" stroke-width="1" />
+      <text x="125" y="16" font-family="sans-serif" font-size="11" font-weight="bold" fill="#00F0FF" text-anchor="middle">Python</text>
+
+      <!-- OpenCV -->
+      <rect x="175" y="0" width="85" height="24" rx="4" fill="#0F172A" stroke="#00F0FF" stroke-opacity="0.3" stroke-width="1" />
+      <text x="217" y="16" font-family="sans-serif" font-size="11" font-weight="bold" fill="#00F0FF" text-anchor="middle">OpenCV</text>
+
+      <!-- MediaPipe -->
+      <rect x="270" y="0" width="95" height="24" rx="4" fill="#0F172A" stroke="#00F0FF" stroke-opacity="0.3" stroke-width="1" />
+      <text x="317" y="16" font-family="sans-serif" font-size="11" font-weight="bold" fill="#00F0FF" text-anchor="middle">MediaPipe</text>
+
+      <!-- Socket.IO -->
+      <rect x="375" y="0" width="90" height="24" rx="4" fill="#0F172A" stroke="#00F0FF" stroke-opacity="0.3" stroke-width="1" />
+      <text x="420" y="16" font-family="sans-serif" font-size="11" font-weight="bold" fill="#00F0FF" text-anchor="middle">Socket.IO</text>
+    </g>
+
+    <!-- Right Side Status Metric -->
+    <g transform="translate(930, 40)">
+      <text x="120" y="20" font-family="monospace" font-size="11" fill="#64748B" text-anchor="end">STATUS</text>
+      <text x="120" y="45" font-family="sans-serif" font-size="16" font-weight="bold" fill="#00F0FF" text-anchor="end">ONLINE // 60 FPS</text>
+      
+      <text x="120" y="80" font-family="monospace" font-size="11" fill="#64748B" text-anchor="end">ARCHITECTURE</text>
+      <text x="120" y="105" font-family="sans-serif" font-size="15" font-weight="bold" fill="#E2E8F0" text-anchor="end">SPATIAL HUD</text>
     </g>
   </g>
 </svg>
