@@ -362,9 +362,9 @@ SYSTEM LOG :: ENGINEERING PROGRESSION
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=Rishi-Dev-pro&show_icons=true&theme=dark&bg_color=080A0F&title_color=00F0FF&text_color=94A3B8&icon_color=00F0FF&border_color=00F0FF33&hide_border=false" alt="Rishi Shaw GitHub Statistics" width="48%" />
+<img src="https://github-readme-stats-fast.vercel.app/api?username=Rishi-Dev-pro&show_icons=true&theme=cyberpunk&bg_color=080A0F&title_color=00F0FF&text_color=94A3B8&icon_color=00F0FF&border_color=00F0FF33&hide_border=false" alt="Rishi Shaw GitHub Statistics" width="49%" />
 &nbsp;
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=Rishi-Dev-pro&theme=dark&background=080A0F&ring=00F0FF&fire=00F0FF&currStreakLabel=00F0FF&border=00F0FF33" alt="Rishi Shaw Commit Streak" width="48%" />
+<img src="https://github-readme-stats-fast.vercel.app/api/top-langs/?username=Rishi-Dev-pro&layout=compact&theme=cyberpunk&bg_color=080A0F&title_color=00F0FF&text_color=94A3B8&border_color=00F0FF33&hide_border=false" alt="Rishi Shaw Top Languages" width="47%" />
 
 </div>
 
@@ -376,7 +376,7 @@ SYSTEM LOG :: ENGINEERING PROGRESSION
 
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/Rishi-Dev-pro/Rishi-Dev-pro/output/github-contribution-grid-snake.svg" alt="Contribution Snake Visualizer" width="100%" />
+<img src="https://raw.githubusercontent.com/Rishi-Dev-pro/Rishi-Dev-pro/output/github-contribution-grid-snake-dark.svg" alt="Contribution Snake Visualizer" width="100%" />
 
 </div>
 
