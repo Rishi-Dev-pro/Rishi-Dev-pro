@@ -224,7 +224,7 @@ Most AI tools limit human interaction to rigid, asynchronous text chatboxes. Cal
 
 <br /><br />
 
-<img src="assets/screenshots/four-pillars.png" alt="The Four Pillars Interface Screenshot" width="100%" />
+<img src="assets/screenshots/the-four-pillars.png" alt="The Four Pillars Interface Screenshot" width="100%" />
 
 <br /><br />
 
