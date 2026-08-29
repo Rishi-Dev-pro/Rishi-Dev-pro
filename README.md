@@ -34,7 +34,7 @@
 <br />
 
 <!-- ════════════════════════════════════════════════════════════════
-     PROJECT SYSTEMS — VERTICAL TIMELINE
+     PROJECT SYSTEMS — CONTINUOUS VERTICAL TIMELINE
      ════════════════════════════════════════════════════════════════ -->
 
 <div align="center">
@@ -45,392 +45,205 @@
 
 <br /><br />
 
-<img src="assets/README-decorative/timeline/timeline-spine.svg" alt="" width="4" />
+<img src="assets/README-decorative/timeline/timeline-spine.svg" alt="" width="4" height="40" />
 
 </div>
-
-<br />
 
 <!-- ────────────────────────────────────────────────────────────────
-     PROJECT 01 — AETHER OS (Screenshot LEFT, Description RIGHT)
+     PROJECT 01 — AETHER OS (Image LEFT, Node CENTER, Desc RIGHT)
      ──────────────────────────────────────────────────────────────── -->
 
-<div align="center">
-<img src="assets/README-decorative/timeline/timeline-node-01.svg" alt="01" width="60" />
+<div>
+  <a href="https://github.com/Rishi-Dev-pro/AETHER-OS">
+    <img align="left" src="assets/screenshots/aether-os.png" alt="AETHER OS Interface" width="46%" />
+  </a>
+  <img align="left" src="assets/README-decorative/timeline/timeline-node-01.svg" alt="01" width="8%" />
+  
+  <sub><code>// 01. SPATIAL AI OS</code></sub>
+  <h3><a href="https://github.com/Rishi-Dev-pro/AETHER-OS">AETHER OS</a></h3>
+  <em>Spatial Browser AI Operating System</em>
+  <p>
+    Hands-free spatial glass HUD inside the web browser, unifying computer vision, hand gesture recognition, and voice automation into one cohesive AI operating system.
+  </p>
+  <code>React</code> <code>TypeScript</code> <code>Python</code> <code>OpenCV</code> <code>MediaPipe</code>
+  <br /><br />
+  <a href="https://github.com/Rishi-Dev-pro/AETHER-OS"><code><b>[ REPOSITORY ]</b></code></a>
 </div>
 
-<table>
-<tr>
-<td width="55%" valign="top">
+<br clear="both" />
 
 <div align="center">
-<img src="assets/screenshots/aether-os.png" alt="AETHER OS Interface" width="100%" />
+  <img src="assets/README-decorative/timeline/timeline-spine.svg" alt="" width="4" height="40" />
 </div>
-
-</td>
-<td width="45%" valign="top">
-
-<br />
-
-`[ PROJECT 01 ]`
-
-## **AETHER OS**
-
-*Spatial Browser AI Operating System*
-
-A hands-free spatial glass HUD inside the web browser, unifying computer vision, hand gesture recognition, and voice automation into one cohesive AI operating system.
-
-<br />
-
-• Computer Vision & Hand Tracking
-• Gesture-Driven Spatial HUD
-• Voice Intelligence & Automation
-• Real-Time Socket.IO Event Bus
-
-<br />
-
-`React` `TypeScript` `Python` `OpenCV` `MediaPipe`
-
-<br />
-
-<a href="https://github.com/Rishi-Dev-pro/AETHER-OS"><code><b>[ VIEW REPOSITORY ]</b></code></a>
-
-</td>
-</tr>
-</table>
-
-<div align="center">
-<img src="assets/README-decorative/timeline/timeline-spine.svg" alt="" width="4" />
-</div>
-
-<br />
 
 <!-- ────────────────────────────────────────────────────────────────
-     PROJECT 02 — CALLBUDDY AI (Description LEFT, Screenshot RIGHT)
+     PROJECT 02 — CALLBUDDY AI (Desc LEFT, Node CENTER, Image RIGHT)
      ──────────────────────────────────────────────────────────────── -->
 
-<div align="center">
-<img src="assets/README-decorative/timeline/timeline-node-02.svg" alt="02" width="60" />
+<div>
+  <a href="https://github.com/Rishi-Dev-pro/CallBuddy-AI">
+    <img align="right" src="assets/screenshots/callbuddy-ai-1.png" alt="CallBuddy AI Interface" width="46%" />
+  </a>
+  <img align="right" src="assets/README-decorative/timeline/timeline-node-02.svg" alt="02" width="8%" />
+  
+  <div align="right">
+    <sub><code>// 02. REAL-TIME VOICE AI</code></sub>
+    <h3><a href="https://github.com/Rishi-Dev-pro/CallBuddy-AI">CallBuddy AI</a></h3>
+    <em>Real-Time AI Voice Communication Platform</em>
+    <p>
+      Active AI participation in live multi-user voice rooms with real-time speech processing, WebRTC low-latency audio pipelines, and natural turn-taking.
+    </p>
+    <code>React</code> <code>TypeScript</code> <code>Python</code> <code>Socket.IO</code> <code>WebRTC</code>
+    <br /><br />
+    <a href="https://github.com/Rishi-Dev-pro/CallBuddy-AI"><code><b>[ REPOSITORY ]</b></code></a>
+  </div>
 </div>
 
-<table>
-<tr>
-<td width="45%" valign="top">
-
-<br />
-
-`[ PROJECT 02 ]`
-
-## **CallBuddy AI**
-
-*Real-Time AI Voice Communication Platform*
-
-Active AI participation in live multi-user voice rooms with real-time speech processing and natural turn-taking across concurrent audio channels.
-
-<br />
-
-• Low-Latency WebRTC Audio Pipeline
-• Multi-User Voice Rooms
-• AI-Powered Speech Processing
-• Context-Aware Conversation Memory
-
-<br />
-
-`React` `TypeScript` `Python` `Socket.IO` `WebRTC`
-
-<br />
-
-<a href="https://github.com/Rishi-Dev-pro/CallBuddy-AI"><code><b>[ VIEW REPOSITORY ]</b></code></a>
-
-</td>
-<td width="55%" valign="top">
+<br clear="both" />
 
 <div align="center">
-<img src="assets/screenshots/callbuddy-ai-1.png" alt="CallBuddy AI Interface" width="100%" />
-<br /><br />
-<img src="assets/screenshots/callbuddy-ai-2.png" alt="CallBuddy AI Voice Rooms" width="100%" />
+  <img src="assets/README-decorative/timeline/timeline-spine.svg" alt="" width="4" height="40" />
 </div>
-
-</td>
-</tr>
-</table>
-
-<div align="center">
-<img src="assets/README-decorative/timeline/timeline-spine.svg" alt="" width="4" />
-</div>
-
-<br />
 
 <!-- ────────────────────────────────────────────────────────────────
-     PROJECT 03 — THE FOUR PILLARS (Screenshot LEFT, Description RIGHT)
+     PROJECT 03 — THE FOUR PILLARS (Image LEFT, Node CENTER, Desc RIGHT)
      ──────────────────────────────────────────────────────────────── -->
 
-<div align="center">
-<img src="assets/README-decorative/timeline/timeline-node-03.svg" alt="03" width="60" />
+<div>
+  <a href="https://github.com/Rishi-Dev-pro/The-Four-Pillars">
+    <img align="left" src="assets/screenshots/the-four-pillars.png" alt="The Four Pillars Interface" width="46%" />
+  </a>
+  <img align="left" src="assets/README-decorative/timeline/timeline-node-03.svg" alt="03" width="8%" />
+  
+  <sub><code>// 03. CREATIVE ENGINEERING</code></sub>
+  <h3><a href="https://github.com/Rishi-Dev-pro/The-Four-Pillars">The Four Pillars</a></h3>
+  <em>High-Performance Creative Web Showcase</em>
+  <p>
+    Immersive showcase platform demonstrating 60fps web animations, custom design token architectures, fluid glassmorphism, and responsive frontend systems.
+  </p>
+  <code>React</code> <code>TypeScript</code> <code>Vite</code> <code>TailwindCSS</code>
+  <br /><br />
+  <a href="https://github.com/Rishi-Dev-pro/The-Four-Pillars"><code><b>[ REPOSITORY ]</b></code></a>
+  &nbsp;
+  <a href="https://the-four-pillars.vercel.app/"><code><b>[ LIVE DEMO ]</b></code></a>
 </div>
 
-<table>
-<tr>
-<td width="55%" valign="top">
+<br clear="both" />
 
 <div align="center">
-<img src="assets/screenshots/the-four-pillars.png" alt="The Four Pillars Interface" width="100%" />
+  <img src="assets/README-decorative/timeline/timeline-spine.svg" alt="" width="4" height="40" />
 </div>
-
-</td>
-<td width="45%" valign="top">
-
-<br />
-
-`[ PROJECT 03 ]`
-
-## **The Four Pillars**
-
-*High-Performance Creative Web Showcase*
-
-An immersive team portfolio platform demonstrating high-performance web animations, custom design token systems, and responsive frontend engineering.
-
-<br />
-
-• Custom Design Token Engine
-• 60fps Web Animations
-• Fluid Typography & Glassmorphism
-• Responsive Component Architecture
-
-<br />
-
-`React` `TypeScript`
-
-<br />
-
-<a href="https://github.com/Rishi-Dev-pro/The-Four-Pillars"><code><b>[ VIEW REPOSITORY ]</b></code></a>
-&nbsp;&nbsp;
-<a href="https://the-four-pillars.vercel.app/"><code><b>[ LIVE DEMO ]</b></code></a>
-
-</td>
-</tr>
-</table>
-
-<div align="center">
-<img src="assets/README-decorative/timeline/timeline-spine.svg" alt="" width="4" />
-</div>
-
-<br />
 
 <!-- ────────────────────────────────────────────────────────────────
-     PROJECT 04 — VN MEDIA (Description LEFT, Screenshot RIGHT)
+     PROJECT 04 — VN MEDIA (Desc LEFT, Node CENTER, Image RIGHT)
      ──────────────────────────────────────────────────────────────── -->
 
-<div align="center">
-<img src="assets/README-decorative/timeline/timeline-node-04.svg" alt="04" width="60" />
+<div>
+  <a href="https://github.com/Rishi-Dev-pro/VN-media">
+    <img align="right" src="assets/screenshots/vn-media-placeholder.svg" alt="VN Media Interface" width="46%" />
+  </a>
+  <img align="right" src="assets/README-decorative/timeline/timeline-node-04.svg" alt="04" width="8%" />
+  
+  <div align="right">
+    <sub><code>// 04. SOCIAL ARCHITECTURE</code></sub>
+    <h3><a href="https://github.com/Rishi-Dev-pro/VN-media">VN Media</a></h3>
+    <em>Social Media &amp; Content Platform</em>
+    <p>
+      Full-stack social media application enabling real-time content feeds, user interactions, authenticated profiles, and interactive media distribution.
+    </p>
+    <code>JavaScript</code> <code>Node.js</code> <code>Express</code> <code>MongoDB</code>
+    <br /><br />
+    <a href="https://github.com/Rishi-Dev-pro/VN-media"><code><b>[ REPOSITORY ]</b></code></a>
+  </div>
 </div>
 
-<table>
-<tr>
-<td width="45%" valign="top">
-
-<br />
-
-`[ PROJECT 04 ]`
-
-## **VN Media**
-
-*Social Media & Content Platform*
-
-A full-featured social media application built with modern JavaScript, enabling content sharing, user interaction, and media management.
-
-<br />
-
-• Content Sharing & Feeds
-• User Authentication & Profiles
-• Media Upload & Management
-• Interactive Social Features
-
-<br />
-
-`JavaScript` `Node.js` `MongoDB`
-
-<br />
-
-<a href="https://github.com/Rishi-Dev-pro/VN-media"><code><b>[ VIEW REPOSITORY ]</b></code></a>
-
-</td>
-<td width="55%" valign="top">
+<br clear="both" />
 
 <div align="center">
-<img src="assets/screenshots/vn-media-placeholder.svg" alt="VN Media Interface" width="100%" />
+  <img src="assets/README-decorative/timeline/timeline-spine.svg" alt="" width="4" height="40" />
 </div>
-
-</td>
-</tr>
-</table>
-
-<div align="center">
-<img src="assets/README-decorative/timeline/timeline-spine.svg" alt="" width="4" />
-</div>
-
-<br />
 
 <!-- ────────────────────────────────────────────────────────────────
-     PROJECT 05 — S-PPT MAKER (Screenshot LEFT, Description RIGHT)
+     PROJECT 05 — S-PPT MAKER (Image LEFT, Node CENTER, Desc RIGHT)
      ──────────────────────────────────────────────────────────────── -->
 
-<div align="center">
-<img src="assets/README-decorative/timeline/timeline-node-05.svg" alt="05" width="60" />
+<div>
+  <a href="https://github.com/Rishi-Dev-pro/S-PPT-maker">
+    <img align="left" src="assets/screenshots/s-ppt-maker-placeholder.svg" alt="S-PPT Maker Interface" width="46%" />
+  </a>
+  <img align="left" src="assets/README-decorative/timeline/timeline-node-05.svg" alt="05" width="8%" />
+  
+  <sub><code>// 05. INTELLIGENT TOOLS</code></sub>
+  <h3><a href="https://github.com/Rishi-Dev-pro/S-PPT-maker">S-PPT Maker</a></h3>
+  <em>AI-Powered Presentation Generator</em>
+  <p>
+    Automated presentation creation system streamlining slide composition, structured content templates, and seamless web export workflows.
+  </p>
+  <code>JavaScript</code> <code>React</code> <code>Node.js</code> <code>HTML5</code>
+  <br /><br />
+  <a href="https://github.com/Rishi-Dev-pro/S-PPT-maker"><code><b>[ REPOSITORY ]</b></code></a>
 </div>
 
-<table>
-<tr>
-<td width="55%" valign="top">
+<br clear="both" />
 
 <div align="center">
-<img src="assets/screenshots/s-ppt-maker-placeholder.svg" alt="S-PPT Maker Interface" width="100%" />
+  <img src="assets/README-decorative/timeline/timeline-spine.svg" alt="" width="4" height="40" />
 </div>
-
-</td>
-<td width="45%" valign="top">
-
-<br />
-
-`[ PROJECT 05 ]`
-
-## **S-PPT Maker**
-
-*AI-Powered Presentation Generator*
-
-A presentation creation tool that streamlines slide design and content generation with an intuitive editor interface.
-
-<br />
-
-• Slide Editor & Designer
-• Template-Based Generation
-• Rich Text & Media Support
-• Export & Sharing
-
-<br />
-
-`JavaScript` `React` `Node.js`
-
-<br />
-
-<a href="https://github.com/Rishi-Dev-pro/S-PPT-maker"><code><b>[ VIEW REPOSITORY ]</b></code></a>
-
-</td>
-</tr>
-</table>
-
-<div align="center">
-<img src="assets/README-decorative/timeline/timeline-spine.svg" alt="" width="4" />
-</div>
-
-<br />
 
 <!-- ────────────────────────────────────────────────────────────────
-     PROJECT 06 — RISHI COSMIC PORTFOLIO (Description LEFT, Screenshot RIGHT)
+     PROJECT 06 — RISHI COSMIC PORTFOLIO (Desc LEFT, Node CENTER, Image RIGHT)
      ──────────────────────────────────────────────────────────────── -->
 
-<div align="center">
-<img src="assets/README-decorative/timeline/timeline-node-06.svg" alt="06" width="60" />
+<div>
+  <a href="https://github.com/Rishi-Dev-pro/rishi-cosmic-portfolio">
+    <img align="right" src="assets/screenshots/rishi-cosmic-placeholder.svg" alt="Rishi Cosmic Portfolio" width="46%" />
+  </a>
+  <img align="right" src="assets/README-decorative/timeline/timeline-node-06.svg" alt="06" width="8%" />
+  
+  <div align="right">
+    <sub><code>// 06. IMMERSIVE EXPERIENCES</code></sub>
+    <h3><a href="https://github.com/Rishi-Dev-pro/rishi-cosmic-portfolio">Rishi Cosmic Portfolio</a></h3>
+    <em>Immersive Space-Themed Developer Portfolio</em>
+    <p>
+      Space-themed personal showcase built with TypeScript, featuring smooth interactive transitions, responsive layouts, and modern frontend aesthetics.
+    </p>
+    <code>TypeScript</code> <code>React</code> <code>CSS3</code>
+    <br /><br />
+    <a href="https://github.com/Rishi-Dev-pro/rishi-cosmic-portfolio"><code><b>[ REPOSITORY ]</b></code></a>
+  </div>
 </div>
 
-<table>
-<tr>
-<td width="45%" valign="top">
-
-<br />
-
-`[ PROJECT 06 ]`
-
-## **Rishi Cosmic Portfolio**
-
-*Immersive Space-Themed Developer Portfolio*
-
-A visually striking personal portfolio with cosmic aesthetics, smooth animations, and modern frontend architecture.
-
-<br />
-
-• Space-Themed Visual Design
-• Smooth Scroll Animations
-• Responsive Layout System
-• Modern Component Architecture
-
-<br />
-
-`TypeScript` `React`
-
-<br />
-
-<a href="https://github.com/Rishi-Dev-pro/rishi-cosmic-portfolio"><code><b>[ VIEW REPOSITORY ]</b></code></a>
-
-</td>
-<td width="55%" valign="top">
+<br clear="both" />
 
 <div align="center">
-<img src="assets/screenshots/rishi-cosmic-placeholder.svg" alt="Rishi Cosmic Portfolio" width="100%" />
+  <img src="assets/README-decorative/timeline/timeline-spine.svg" alt="" width="4" height="40" />
 </div>
-
-</td>
-</tr>
-</table>
-
-<div align="center">
-<img src="assets/README-decorative/timeline/timeline-spine.svg" alt="" width="4" />
-</div>
-
-<br />
 
 <!-- ────────────────────────────────────────────────────────────────
-     PROJECT 07 — MYCASTLE PORTFOLIO (Screenshot LEFT, Description RIGHT)
+     PROJECT 07 — MYCASTLE PORTFOLIO (Image LEFT, Node CENTER, Desc RIGHT)
      ──────────────────────────────────────────────────────────────── -->
 
-<div align="center">
-<img src="assets/README-decorative/timeline/timeline-node-07.svg" alt="07" width="60" />
+<div>
+  <a href="https://github.com/Rishi-Dev-pro/myCastle">
+    <img align="left" src="assets/screenshots/mycastle-placeholder.svg" alt="MyCastle Portfolio" width="46%" />
+  </a>
+  <img align="left" src="assets/README-decorative/timeline/timeline-node-07.svg" alt="07" width="8%" />
+  
+  <sub><code>// 07. INTERACTIVE WEB</code></sub>
+  <h3><a href="https://github.com/Rishi-Dev-pro/myCastle">MyCastle Portfolio</a></h3>
+  <em>Personal Portfolio &amp; Web Experience</em>
+  <p>
+    Custom web experience highlighting responsive frontend engineering, interactive components, and clean architectural design.
+  </p>
+  <code>JavaScript</code> <code>HTML5</code> <code>CSS3</code>
+  <br /><br />
+  <a href="https://github.com/Rishi-Dev-pro/myCastle"><code><b>[ REPOSITORY ]</b></code></a>
 </div>
 
-<table>
-<tr>
-<td width="55%" valign="top">
+<br clear="both" />
 
 <div align="center">
-<img src="assets/screenshots/mycastle-placeholder.svg" alt="MyCastle Portfolio" width="100%" />
-</div>
-
-</td>
-<td width="45%" valign="top">
-
-<br />
-
-`[ PROJECT 07 ]`
-
-## **MyCastle Portfolio**
-
-*Personal Portfolio & Web Experience*
-
-A custom-built portfolio showcasing frontend development skills with clean design and interactive elements.
-
-<br />
-
-• Custom UI Components
-• Interactive Animations
-• Clean Responsive Design
-• Project Showcase System
-
-<br />
-
-`JavaScript` `HTML` `CSS`
-
-<br />
-
-<a href="https://github.com/Rishi-Dev-pro/myCastle"><code><b>[ VIEW REPOSITORY ]</b></code></a>
-
-</td>
-</tr>
-</table>
-
-<br />
-
-<div align="center">
-<img src="assets/README-decorative/timeline/timeline-terminator.svg" alt="" width="30" />
+  <img src="assets/README-decorative/timeline/timeline-terminator.svg" alt="" width="30" />
 </div>
 
 <br />
