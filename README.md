@@ -25,44 +25,6 @@
 &nbsp;&nbsp;
 <a href="mailto:rishishaw23022006@gmail.com"><code><b>[ EMAIL DISPATCH ]</b></code></a>
 
-<br /><br />
-
-### `// AETHER OS MODULE DIRECTORY`
-
-<a href="#core-systems"><code><b>[ 01. CORE SYSTEMS ]</b></code></a> &nbsp;
-<a href="#evolution"><code><b>[ 02. EVOLUTION ]</b></code></a> &nbsp;
-<a href="#tech-stack"><code><b>[ 03. TECH MATRIX ]</b></code></a> &nbsp;
-<a href="#activity-metrics"><code><b>[ 04. ACTIVITY ]</b></code></a> &nbsp;
-<a href="#contact-dispatch"><code><b>[ 05. CONTACT ]</b></code></a>
-
-</div>
-
-<br />
-
-### `// PROFILE SNAPSHOT`
-
-> **OPERATOR:** Rishi Shaw  
-> **PRIMARY DISCIPLINE:** AI Engineering &amp; Computer Vision  
-> **ACTIVE CORE:** Building **AETHER OS** (Browser AI OS) &amp; **CallBuddy AI**  
-> **DOMAINS:** Spatial Computing • Gesture Recognition HUDs • Real-Time Voice AI  
-> **STATUS:** Open to AI Engineering Roles &amp; High-Impact Product Collaborations  
-
-<br />
-
-### `// 01. ENGINEERING PHILOSOPHY & MISSION`
-
-<div align="center">
-
-> *"I enjoy building software that feels alive. My goal isn't simply creating applications. I want to create AI experiences where voice, vision, intelligence, and interaction come together naturally."*
-
-<br />
-
-  <img src="assets/badges/core/badge-ai-engine.svg" alt="AI / Neural Engine Badge" />
-  &nbsp;&nbsp;
-  <img src="assets/badges/core/badge-computer-vision.svg" alt="Computer Vision Badge" />
-  &nbsp;&nbsp;
-  <img src="assets/badges/status/status-live.svg" alt="Status: System Live Badge" />
-
 </div>
 
 <br />
@@ -71,302 +33,440 @@
 
 <br />
 
-<a id="core-systems"></a>
-### `// 02. CORE SYSTEMS & COMMUNICATION MODULES`
+<!-- ════════════════════════════════════════════════════════════════
+     PROJECT SYSTEMS — VERTICAL TIMELINE
+     ════════════════════════════════════════════════════════════════ -->
+
+<div align="center">
+
+<img src="assets/README-decorative/timeline/section-title-projects.svg" alt="Project Systems" width="100%" />
+
+<sub><code>SELECTED SYSTEMS • INTERFACES • EXPERIMENTS</code></sub>
+
+<br /><br />
+
+<img src="assets/README-decorative/timeline/timeline-spine.svg" alt="" width="4" />
+
+</div>
 
 <br />
 
-<!-- ====================================================
-     FLAGSHIP OS MODULE 01: AETHER OS
-     ==================================================== -->
+<!-- ────────────────────────────────────────────────────────────────
+     PROJECT 01 — AETHER OS (Screenshot LEFT, Description RIGHT)
+     ──────────────────────────────────────────────────────────────── -->
+
 <div align="center">
+<img src="assets/README-decorative/timeline/timeline-node-01.svg" alt="01" width="60" />
+</div>
 
-<img src="assets/projects/aether-os/card-preview.svg" alt="AETHER OS Branding Preview" width="100%" />
+<table>
+<tr>
+<td width="55%" valign="top">
 
-<br /><br />
+<div align="center">
+<img src="assets/screenshots/aether-os.png" alt="AETHER OS Interface" width="100%" />
+</div>
 
-<img src="assets/screenshots/aether-os.png" alt="AETHER OS Real Interface Screenshot" width="100%" />
+</td>
+<td width="45%" valign="top">
 
-<br /><br />
+<br />
+
+`[ PROJECT 01 ]`
 
 ## **AETHER OS**
-### *Spatial Browser Operating System with Real-Time Vision & Voice Intelligence*
+
+*Spatial Browser AI Operating System*
+
+A hands-free spatial glass HUD inside the web browser, unifying computer vision, hand gesture recognition, and voice automation into one cohesive AI operating system.
 
 <br />
 
-<img src="assets/badges/core/badge-ai-engine.svg" alt="AI Engine" />
-&nbsp;
-<img src="assets/badges/core/badge-computer-vision.svg" alt="Computer Vision" />
-&nbsp;
-<img src="assets/badges/status/status-live.svg" alt="Status Live" />
-
-<br /><br />
-
-AETHER OS unifies computer vision, hand gesture recognition, and voice automation into a hands-free spatial glass HUD inside the web browser.
+• Computer Vision & Hand Tracking
+• Gesture-Driven Spatial HUD
+• Voice Intelligence & Automation
+• Real-Time Socket.IO Event Bus
 
 <br />
 
-</div>
-
-- **In-Browser Vision Engine:** Sub-50ms hand & face tracking via MediaPipe & OpenCV pipelines.
-- **Spatial Glass HUD:** 60fps glassmorphic interaction interface built with React & custom design tokens.
-- **Bi-Directional Event Bus:** Real-time Socket.IO bridge mapping gesture vectors to backend OS execution.
+`React` `TypeScript` `Python` `OpenCV` `MediaPipe`
 
 <br />
 
-<div align="left">
-  <img src="assets/badges/stack/badge-react.svg" alt="React" />
-  <img src="assets/badges/stack/badge-typescript.svg" alt="TypeScript" />
-  <img src="assets/badges/stack/badge-python.svg" alt="Python" />
-  <img src="assets/badges/stack/badge-opencv.svg" alt="OpenCV" />
-</div>
+<a href="https://github.com/Rishi-Dev-pro/AETHER-OS"><code><b>[ VIEW REPOSITORY ]</b></code></a>
 
-<br />
+</td>
+</tr>
+</table>
 
 <div align="center">
-
-<a href="https://github.com/Rishi-Dev-pro/AETHER-OS"><code><b>[ View Repository ]</b></code></a>
-
-<br /><br />
-
-<img src="assets/ui-elements/dividers/hud-line-accent.svg" alt="HUD Line Divider" width="100%" />
-
+<img src="assets/README-decorative/timeline/timeline-spine.svg" alt="" width="4" />
 </div>
 
 <br />
 
-<!-- ====================================================
-     COMMUNICATION MODULE 02: CALLBUDDY AI
-     ==================================================== -->
+<!-- ────────────────────────────────────────────────────────────────
+     PROJECT 02 — CALLBUDDY AI (Description LEFT, Screenshot RIGHT)
+     ──────────────────────────────────────────────────────────────── -->
+
 <div align="center">
+<img src="assets/README-decorative/timeline/timeline-node-02.svg" alt="02" width="60" />
+</div>
 
-<img src="assets/projects/callbuddy-ai/card-preview.svg" alt="CallBuddy AI Branding Preview" width="100%" />
+<table>
+<tr>
+<td width="45%" valign="top">
 
-<br /><br />
+<br />
 
-<img src="assets/screenshots/callbuddy-ai-1.png" alt="CallBuddy AI Voice Interface Screenshot" width="48%" />
-&nbsp;
-<img src="assets/screenshots/callbuddy-ai-2.png" alt="CallBuddy AI Voice Rooms Screenshot" width="48%" />
-
-<br /><br />
+`[ PROJECT 02 ]`
 
 ## **CallBuddy AI**
-### *Real-Time AI Voice Communication & Audio Channel Platform*
+
+*Real-Time AI Voice Communication Platform*
+
+Active AI participation in live multi-user voice rooms with real-time speech processing and natural turn-taking across concurrent audio channels.
 
 <br />
 
-<img src="assets/badges/core/badge-ai-engine.svg" alt="AI Engine" />
-&nbsp;
-<img src="assets/badges/status/status-live.svg" alt="Status Live" />
-
-<br /><br />
-
-CallBuddy AI introduces active AI participation into live multi-user voice rooms with real-time speech processing and natural turn-taking.
+• Low-Latency WebRTC Audio Pipeline
+• Multi-User Voice Rooms
+• AI-Powered Speech Processing
+• Context-Aware Conversation Memory
 
 <br />
 
-</div>
-
-- **Low-Latency Audio Pipeline:** Sub-second speech processing powered by WebRTC & Socket.IO.
-- **Multi-User Audio Channels:** Dynamic audio stream routing for simultaneous human and AI voice participants.
-- **Context-Aware Memory Hub:** Persistent conversation retention across real-time room sessions.
+`React` `TypeScript` `Python` `Socket.IO` `WebRTC`
 
 <br />
 
-<div align="left">
-  <img src="assets/badges/stack/badge-react.svg" alt="React" />
-  <img src="assets/badges/stack/badge-typescript.svg" alt="TypeScript" />
-  <img src="assets/badges/stack/badge-python.svg" alt="Python" />
-</div>
+<a href="https://github.com/Rishi-Dev-pro/CallBuddy-AI"><code><b>[ VIEW REPOSITORY ]</b></code></a>
 
-<br />
+</td>
+<td width="55%" valign="top">
 
 <div align="center">
-
-<a href="https://github.com/Rishi-Dev-pro/CallBuddy-AI"><code><b>[ View Repository ]</b></code></a>
-
+<img src="assets/screenshots/callbuddy-ai-1.png" alt="CallBuddy AI Interface" width="100%" />
 <br /><br />
+<img src="assets/screenshots/callbuddy-ai-2.png" alt="CallBuddy AI Voice Rooms" width="100%" />
+</div>
 
-<img src="assets/ui-elements/dividers/section-divider-subtle.svg" alt="Subtle Divider" width="100%" />
+</td>
+</tr>
+</table>
 
+<div align="center">
+<img src="assets/README-decorative/timeline/timeline-spine.svg" alt="" width="4" />
 </div>
 
 <br />
 
-<!-- ====================================================
-     SHOWCASE MODULE 03: THE FOUR PILLARS
-     ==================================================== -->
+<!-- ────────────────────────────────────────────────────────────────
+     PROJECT 03 — THE FOUR PILLARS (Screenshot LEFT, Description RIGHT)
+     ──────────────────────────────────────────────────────────────── -->
+
 <div align="center">
+<img src="assets/README-decorative/timeline/timeline-node-03.svg" alt="03" width="60" />
+</div>
 
-<img src="assets/projects/four-pillars/card-preview.svg" alt="The Four Pillars Branding Preview" width="100%" />
+<table>
+<tr>
+<td width="55%" valign="top">
 
-<br /><br />
+<div align="center">
+<img src="assets/screenshots/the-four-pillars.png" alt="The Four Pillars Interface" width="100%" />
+</div>
 
-<img src="assets/screenshots/the-four-pillars.png" alt="The Four Pillars Interface Screenshot" width="100%" />
+</td>
+<td width="45%" valign="top">
 
-<br /><br />
+<br />
+
+`[ PROJECT 03 ]`
 
 ## **The Four Pillars**
-### *Modern Team Portfolio & High-Performance Creative Web Showcase*
+
+*High-Performance Creative Web Showcase*
+
+An immersive team portfolio platform demonstrating high-performance web animations, custom design token systems, and responsive frontend engineering.
 
 <br />
 
-<img src="assets/badges/status/status-live.svg" alt="Status Live" />
+• Custom Design Token Engine
+• 60fps Web Animations
+• Fluid Typography & Glassmorphism
+• Responsive Component Architecture
+
+<br />
+
+`React` `TypeScript`
+
+<br />
+
+<a href="https://github.com/Rishi-Dev-pro/The-Four-Pillars"><code><b>[ VIEW REPOSITORY ]</b></code></a>
+&nbsp;&nbsp;
+<a href="https://the-four-pillars.vercel.app/"><code><b>[ LIVE DEMO ]</b></code></a>
+
+</td>
+</tr>
+</table>
+
+<div align="center">
+<img src="assets/README-decorative/timeline/timeline-spine.svg" alt="" width="4" />
+</div>
+
+<br />
+
+<!-- ────────────────────────────────────────────────────────────────
+     PROJECT 04 — VN MEDIA (Description LEFT, Screenshot RIGHT)
+     ──────────────────────────────────────────────────────────────── -->
+
+<div align="center">
+<img src="assets/README-decorative/timeline/timeline-node-04.svg" alt="04" width="60" />
+</div>
+
+<table>
+<tr>
+<td width="45%" valign="top">
+
+<br />
+
+`[ PROJECT 04 ]`
+
+## **VN Media**
+
+*Social Media & Content Platform*
+
+A full-featured social media application built with modern JavaScript, enabling content sharing, user interaction, and media management.
+
+<br />
+
+• Content Sharing & Feeds
+• User Authentication & Profiles
+• Media Upload & Management
+• Interactive Social Features
+
+<br />
+
+`JavaScript` `Node.js` `MongoDB`
+
+<br />
+
+<a href="https://github.com/Rishi-Dev-pro/VN-media"><code><b>[ VIEW REPOSITORY ]</b></code></a>
+
+</td>
+<td width="55%" valign="top">
+
+<div align="center">
+<img src="assets/screenshots/vn-media-placeholder.svg" alt="VN Media Interface" width="100%" />
+</div>
+
+</td>
+</tr>
+</table>
+
+<div align="center">
+<img src="assets/README-decorative/timeline/timeline-spine.svg" alt="" width="4" />
+</div>
+
+<br />
+
+<!-- ────────────────────────────────────────────────────────────────
+     PROJECT 05 — S-PPT MAKER (Screenshot LEFT, Description RIGHT)
+     ──────────────────────────────────────────────────────────────── -->
+
+<div align="center">
+<img src="assets/README-decorative/timeline/timeline-node-05.svg" alt="05" width="60" />
+</div>
+
+<table>
+<tr>
+<td width="55%" valign="top">
+
+<div align="center">
+<img src="assets/screenshots/s-ppt-maker-placeholder.svg" alt="S-PPT Maker Interface" width="100%" />
+</div>
+
+</td>
+<td width="45%" valign="top">
+
+<br />
+
+`[ PROJECT 05 ]`
+
+## **S-PPT Maker**
+
+*AI-Powered Presentation Generator*
+
+A presentation creation tool that streamlines slide design and content generation with an intuitive editor interface.
+
+<br />
+
+• Slide Editor & Designer
+• Template-Based Generation
+• Rich Text & Media Support
+• Export & Sharing
+
+<br />
+
+`JavaScript` `React` `Node.js`
+
+<br />
+
+<a href="https://github.com/Rishi-Dev-pro/S-PPT-maker"><code><b>[ VIEW REPOSITORY ]</b></code></a>
+
+</td>
+</tr>
+</table>
+
+<div align="center">
+<img src="assets/README-decorative/timeline/timeline-spine.svg" alt="" width="4" />
+</div>
+
+<br />
+
+<!-- ────────────────────────────────────────────────────────────────
+     PROJECT 06 — RISHI COSMIC PORTFOLIO (Description LEFT, Screenshot RIGHT)
+     ──────────────────────────────────────────────────────────────── -->
+
+<div align="center">
+<img src="assets/README-decorative/timeline/timeline-node-06.svg" alt="06" width="60" />
+</div>
+
+<table>
+<tr>
+<td width="45%" valign="top">
+
+<br />
+
+`[ PROJECT 06 ]`
+
+## **Rishi Cosmic Portfolio**
+
+*Immersive Space-Themed Developer Portfolio*
+
+A visually striking personal portfolio with cosmic aesthetics, smooth animations, and modern frontend architecture.
+
+<br />
+
+• Space-Themed Visual Design
+• Smooth Scroll Animations
+• Responsive Layout System
+• Modern Component Architecture
+
+<br />
+
+`TypeScript` `React`
+
+<br />
+
+<a href="https://github.com/Rishi-Dev-pro/rishi-cosmic-portfolio"><code><b>[ VIEW REPOSITORY ]</b></code></a>
+
+</td>
+<td width="55%" valign="top">
+
+<div align="center">
+<img src="assets/screenshots/rishi-cosmic-placeholder.svg" alt="Rishi Cosmic Portfolio" width="100%" />
+</div>
+
+</td>
+</tr>
+</table>
+
+<div align="center">
+<img src="assets/README-decorative/timeline/timeline-spine.svg" alt="" width="4" />
+</div>
+
+<br />
+
+<!-- ────────────────────────────────────────────────────────────────
+     PROJECT 07 — MYCASTLE PORTFOLIO (Screenshot LEFT, Description RIGHT)
+     ──────────────────────────────────────────────────────────────── -->
+
+<div align="center">
+<img src="assets/README-decorative/timeline/timeline-node-07.svg" alt="07" width="60" />
+</div>
+
+<table>
+<tr>
+<td width="55%" valign="top">
+
+<div align="center">
+<img src="assets/screenshots/mycastle-placeholder.svg" alt="MyCastle Portfolio" width="100%" />
+</div>
+
+</td>
+<td width="45%" valign="top">
+
+<br />
+
+`[ PROJECT 07 ]`
+
+## **MyCastle Portfolio**
+
+*Personal Portfolio & Web Experience*
+
+A custom-built portfolio showcasing frontend development skills with clean design and interactive elements.
+
+<br />
+
+• Custom UI Components
+• Interactive Animations
+• Clean Responsive Design
+• Project Showcase System
+
+<br />
+
+`JavaScript` `HTML` `CSS`
+
+<br />
+
+<a href="https://github.com/Rishi-Dev-pro/myCastle"><code><b>[ VIEW REPOSITORY ]</b></code></a>
+
+</td>
+</tr>
+</table>
+
+<br />
+
+<div align="center">
+<img src="assets/README-decorative/timeline/timeline-terminator.svg" alt="" width="30" />
+</div>
+
+<br />
+
+<img src="assets/ui-elements/dividers/section-divider-primary.svg" alt="Section Divider" width="100%" />
+
+<br />
+
+<!-- ════════════════════════════════════════════════════════════════
+     ENGINEERING TELEMETRY
+     ════════════════════════════════════════════════════════════════ -->
+
+<div align="center">
+
+<img src="assets/README-decorative/timeline/section-title-telemetry.svg" alt="Engineering Telemetry" width="100%" />
 
 <br /><br />
-
-An immersive showcase platform built to demonstrate high-performance web animations, design token systems, and engineering collaboration.
-
-<br />
-
-</div>
-
-- **Modular Design Token Engine:** Custom HSL color spaces, glassmorphism panels, and fluid typography.
-- **60fps Interaction Rhythm:** Highly optimized responsive web animations tailored for desktop and mobile devices.
-- **Synergistic Frontend Architecture:** Clean component modularity with seamless viewport adaptation.
-
-<br />
-
-<div align="left">
-  <img src="assets/badges/stack/badge-react.svg" alt="React" />
-  <img src="assets/badges/stack/badge-typescript.svg" alt="TypeScript" />
-</div>
-
-<br />
-
-<div align="center">
-
-<a href="https://github.com/Rishi-Dev-pro/The-Four-Pillars"><code><b>[ View Repository ]</b></code></a>
-&nbsp;&nbsp;&nbsp;&nbsp;
-<a href="https://the-four-pillars.vercel.app/"><code><b>[ View Live Demo ]</b></code></a>
-
-</div>
-
-<br />
-
-<img src="assets/ui-elements/dividers/section-divider-primary.svg" alt="Section Divider" width="100%" />
-
-<br />
-
-<a id="evolution"></a>
-### `// 03. ENGINEERING EVOLUTION`
-
-```text
-SYSTEM LOG :: ENGINEERING PROGRESSION
-─────────────────────────────────────────────────────────────────────────────
-
-[01] CURIOSITY & FOUNDATIONS
- ├── Mastered Web Technologies, Full Stack Engineering & Software Architecture
- └── Built Campus Resolve (SaaS Problem Reporting Platform)
-
-[02] REAL-TIME VOICE INTELLIGENCE
- ├── Developed CallBuddy AI
- └── Engineered WebRTC Audio Streaming Channels & Multi-User Voice Rooms
-
-[03] SPATIAL BROWSER INTERFACES
- ├── Building AETHER OS
- └── Integrating In-Browser OpenCV & MediaPipe Computer Vision HUDs
-
-[04] HUMAN-CENTERED AI COMPANIONSHIP
- ├── Developing Mochi (AI Developer Pet & Companion)
- └── Combining Conversational AI Memory with Natural Peer Support
-
-[05] FUTURE SPATIAL VISION
- └── Architecting Fluid Systems Where Voice, Vision & Intelligence Unify
-```
-
-<br />
-
-<img src="assets/ui-elements/dividers/section-divider-subtle.svg" alt="Subtle Divider" width="100%" />
-
-<br />
-
-<a id="tech-stack"></a>
-### `// 04. TECHNICAL MATRIX & STACK`
-
-<br />
-
-#### **AI & Computer Vision**
-<div align="left">
-  <img src="assets/badges/stack/badge-python.svg" alt="Python" />
-  <img src="assets/badges/stack/badge-opencv.svg" alt="OpenCV" />
-  <img src="assets/badges/core/badge-computer-vision.svg" alt="Computer Vision" />
-  <img src="assets/badges/core/badge-ai-engine.svg" alt="AI Engine" />
-</div>
-
-<br />
-
-#### **Frontend & Spatial Interfaces**
-<div align="left">
-  <img src="assets/badges/stack/badge-react.svg" alt="React" />
-  <img src="assets/badges/stack/badge-typescript.svg" alt="TypeScript" />
-</div>
-
-<br />
-
-#### **Backend & Real-Time Infrastructure**
-<div align="left">
-  <code>Node.js</code> &nbsp;•&nbsp;
-  <code>Socket.IO</code> &nbsp;•&nbsp;
-  <code>WebRTC</code> &nbsp;•&nbsp;
-  <code>MongoDB</code> &nbsp;•&nbsp;
-  <code>Express</code>
-</div>
-
-<br />
-
-<img src="assets/ui-elements/dividers/section-divider-primary.svg" alt="Section Divider" width="100%" />
-
-<br />
-
-<a id="activity-metrics"></a>
-### `// 05. SYSTEM ACTIVITY & METRICS`
-
-<br />
-
-<div align="center">
 
 <img src="https://github-readme-stats-fast.vercel.app/api?username=Rishi-Dev-pro&show_icons=true&theme=cyberpunk&bg_color=080A0F&title_color=00F0FF&text_color=94A3B8&icon_color=00F0FF&border_color=00F0FF33&hide_border=false" alt="Rishi Shaw GitHub Statistics" width="49%" />
 &nbsp;
 <img src="https://github-readme-stats-fast.vercel.app/api/top-langs/?username=Rishi-Dev-pro&layout=compact&theme=cyberpunk&bg_color=080A0F&title_color=00F0FF&text_color=94A3B8&border_color=00F0FF33&hide_border=false" alt="Rishi Shaw Top Languages" width="47%" />
 
-</div>
-
-<br />
-
-### `// CONTRIBUTION VISUALIZATION`
-
-<br />
-
-<div align="center">
-
-<img src="https://raw.githubusercontent.com/Rishi-Dev-pro/Rishi-Dev-pro/output/github-contribution-grid-snake-dark.svg" alt="Contribution Snake Visualizer" width="100%" />
-
-</div>
-
-<br />
+<br /><br />
 
 <img src="assets/ui-elements/dividers/hud-line-accent.svg" alt="HUD Line Divider" width="100%" />
 
-<br />
+<br /><br />
 
-<a id="contact-dispatch"></a>
-### `// 06. TERMINAL DISPATCH & CONTACT`
+<img src="https://raw.githubusercontent.com/Rishi-Dev-pro/Rishi-Dev-pro/output/github-contribution-grid-snake-dark.svg" alt="Contribution Visualization" width="100%" />
 
-<div align="center">
+<br /><br />
 
-<img src="assets/README-decorative/footer-terminal.svg" alt="Terminal Dispatch Footer" width="100%" />
-
-<br />
-
-### *Let's build intelligent systems together.*
+<img src="assets/ui-elements/dividers/section-divider-subtle.svg" alt="Subtle Divider" width="100%" />
 
 <br />
 
-<a href="https://github.com/Rishi-Dev-pro"><code><b>[ GITHUB ]</b></code></a>
-&nbsp;&nbsp;&nbsp;&nbsp;
-<a href="https://www.linkedin.com/in/rishi-shaw-389800389/"><code><b>[ LINKEDIN ]</b></code></a>
-&nbsp;&nbsp;&nbsp;&nbsp;
-<a href="mailto:rishishaw23022006@gmail.com"><code><b>[ EMAIL DISPATCH ]</b></code></a>
+<sub><code>SYS.TERMINATE // RISHI SHAW — AI ENGINEER — ALL SYSTEMS NOMINAL</code></sub>
 
 </div>

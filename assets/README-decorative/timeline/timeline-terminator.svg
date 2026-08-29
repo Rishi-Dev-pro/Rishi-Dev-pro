@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="30" height="30" role="img" aria-label="Timeline End">
+  <title>Timeline Terminator</title>
+  <defs>
+    <filter id="te-glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  <circle cx="15" cy="15" r="6" fill="#0D111A" stroke="#00F0FF" stroke-width="2" stroke-opacity="0.5" />
+  <circle cx="15" cy="15" r="3" fill="#00F0FF" fill-opacity="0.6" filter="url(#te-glow)" />
+</svg>
