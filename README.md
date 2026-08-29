@@ -53,17 +53,12 @@
      PROJECT 01 — AETHER OS (Image LEFT, Node CENTER, Desc RIGHT)
      ──────────────────────────────────────────────────────────────── -->
 
-<div>
-  <a href="https://github.com/Rishi-Dev-pro/AETHER-OS">
-    <img align="left" src="assets/screenshots/aether-os.png" alt="AETHER OS Interface" width="46%" />
-  </a>
-  <img align="left" src="assets/README-decorative/timeline/timeline-node-01.svg" alt="01" width="8%" />
-  
+<div><a href="https://github.com/Rishi-Dev-pro/AETHER-OS"><img align="left" src="assets/screenshots/aether-os.png" alt="AETHER OS Interface" width="46%" vspace="18" /></a><img align="left" src="assets/README-decorative/timeline/timeline-node-01.svg" alt="01" width="8%" />
   <sub><code>// 01. SPATIAL AI OS</code></sub>
   <h3><a href="https://github.com/Rishi-Dev-pro/AETHER-OS">AETHER OS</a></h3>
   <em>Spatial Browser AI Operating System</em>
   <p>
-    Hands-free spatial glass HUD inside the web browser, unifying computer vision, hand gesture recognition, and voice automation into one cohesive AI operating system.
+    Hands-free spatial glass HUD inside the web browser, unifying computer vision, hand tracking, and voice automation into one cohesive AI operating system.
   </p>
   <code>React</code> <code>TypeScript</code> <code>Python</code> <code>OpenCV</code> <code>MediaPipe</code>
   <br /><br />
@@ -80,12 +75,7 @@
      PROJECT 02 — CALLBUDDY AI (Desc LEFT, Node CENTER, Image RIGHT)
      ──────────────────────────────────────────────────────────────── -->
 
-<div>
-  <a href="https://github.com/Rishi-Dev-pro/CallBuddy-AI">
-    <img align="right" src="assets/screenshots/callbuddy-ai-1.png" alt="CallBuddy AI Interface" width="46%" />
-  </a>
-  <img align="right" src="assets/README-decorative/timeline/timeline-node-02.svg" alt="02" width="8%" />
-  
+<div><a href="https://github.com/Rishi-Dev-pro/CallBuddy-AI"><img align="right" src="assets/screenshots/callbuddy-ai-1.png" alt="CallBuddy AI Interface" width="46%" vspace="18" /></a><img align="right" src="assets/README-decorative/timeline/timeline-node-02.svg" alt="02" width="8%" />
   <div align="right">
     <sub><code>// 02. REAL-TIME VOICE AI</code></sub>
     <h3><a href="https://github.com/Rishi-Dev-pro/CallBuddy-AI">CallBuddy AI</a></h3>
@@ -109,12 +99,7 @@
      PROJECT 03 — THE FOUR PILLARS (Image LEFT, Node CENTER, Desc RIGHT)
      ──────────────────────────────────────────────────────────────── -->
 
-<div>
-  <a href="https://github.com/Rishi-Dev-pro/The-Four-Pillars">
-    <img align="left" src="assets/screenshots/the-four-pillars.png" alt="The Four Pillars Interface" width="46%" />
-  </a>
-  <img align="left" src="assets/README-decorative/timeline/timeline-node-03.svg" alt="03" width="8%" />
-  
+<div><a href="https://github.com/Rishi-Dev-pro/The-Four-Pillars"><img align="left" src="assets/screenshots/the-four-pillars.png" alt="The Four Pillars Interface" width="46%" vspace="18" /></a><img align="left" src="assets/README-decorative/timeline/timeline-node-03.svg" alt="03" width="8%" />
   <sub><code>// 03. CREATIVE ENGINEERING</code></sub>
   <h3><a href="https://github.com/Rishi-Dev-pro/The-Four-Pillars">The Four Pillars</a></h3>
   <em>High-Performance Creative Web Showcase</em>
@@ -138,12 +123,7 @@
      PROJECT 04 — VN MEDIA (Desc LEFT, Node CENTER, Image RIGHT)
      ──────────────────────────────────────────────────────────────── -->
 
-<div>
-  <a href="https://github.com/Rishi-Dev-pro/VN-media">
-    <img align="right" src="assets/screenshots/vn-media-placeholder.svg" alt="VN Media Interface" width="46%" />
-  </a>
-  <img align="right" src="assets/README-decorative/timeline/timeline-node-04.svg" alt="04" width="8%" />
-  
+<div><a href="https://github.com/Rishi-Dev-pro/VN-media"><img align="right" src="assets/screenshots/vn-media-placeholder.svg" alt="VN Media Interface" width="46%" vspace="18" /></a><img align="right" src="assets/README-decorative/timeline/timeline-node-04.svg" alt="04" width="8%" />
   <div align="right">
     <sub><code>// 04. SOCIAL ARCHITECTURE</code></sub>
     <h3><a href="https://github.com/Rishi-Dev-pro/VN-media">VN Media</a></h3>
@@ -167,12 +147,7 @@
      PROJECT 05 — S-PPT MAKER (Image LEFT, Node CENTER, Desc RIGHT)
      ──────────────────────────────────────────────────────────────── -->
 
-<div>
-  <a href="https://github.com/Rishi-Dev-pro/S-PPT-maker">
-    <img align="left" src="assets/screenshots/s-ppt-maker-placeholder.svg" alt="S-PPT Maker Interface" width="46%" />
-  </a>
-  <img align="left" src="assets/README-decorative/timeline/timeline-node-05.svg" alt="05" width="8%" />
-  
+<div><a href="https://github.com/Rishi-Dev-pro/S-PPT-maker"><img align="left" src="assets/screenshots/s-ppt-maker-placeholder.svg" alt="S-PPT Maker Interface" width="46%" vspace="18" /></a><img align="left" src="assets/README-decorative/timeline/timeline-node-05.svg" alt="05" width="8%" />
   <sub><code>// 05. INTELLIGENT TOOLS</code></sub>
   <h3><a href="https://github.com/Rishi-Dev-pro/S-PPT-maker">S-PPT Maker</a></h3>
   <em>AI-Powered Presentation Generator</em>
@@ -194,12 +169,7 @@
      PROJECT 06 — RISHI COSMIC PORTFOLIO (Desc LEFT, Node CENTER, Image RIGHT)
      ──────────────────────────────────────────────────────────────── -->
 
-<div>
-  <a href="https://github.com/Rishi-Dev-pro/rishi-cosmic-portfolio">
-    <img align="right" src="assets/screenshots/rishi-cosmic-placeholder.svg" alt="Rishi Cosmic Portfolio" width="46%" />
-  </a>
-  <img align="right" src="assets/README-decorative/timeline/timeline-node-06.svg" alt="06" width="8%" />
-  
+<div><a href="https://github.com/Rishi-Dev-pro/rishi-cosmic-portfolio"><img align="right" src="assets/screenshots/rishi-cosmic-placeholder.svg" alt="Rishi Cosmic Portfolio" width="46%" vspace="18" /></a><img align="right" src="assets/README-decorative/timeline/timeline-node-06.svg" alt="06" width="8%" />
   <div align="right">
     <sub><code>// 06. IMMERSIVE EXPERIENCES</code></sub>
     <h3><a href="https://github.com/Rishi-Dev-pro/rishi-cosmic-portfolio">Rishi Cosmic Portfolio</a></h3>
@@ -223,12 +193,7 @@
      PROJECT 07 — MYCASTLE PORTFOLIO (Image LEFT, Node CENTER, Desc RIGHT)
      ──────────────────────────────────────────────────────────────── -->
 
-<div>
-  <a href="https://github.com/Rishi-Dev-pro/myCastle">
-    <img align="left" src="assets/screenshots/mycastle-placeholder.svg" alt="MyCastle Portfolio" width="46%" />
-  </a>
-  <img align="left" src="assets/README-decorative/timeline/timeline-node-07.svg" alt="07" width="8%" />
-  
+<div><a href="https://github.com/Rishi-Dev-pro/myCastle"><img align="left" src="assets/screenshots/mycastle-placeholder.svg" alt="MyCastle Portfolio" width="46%" vspace="18" /></a><img align="left" src="assets/README-decorative/timeline/timeline-node-07.svg" alt="07" width="8%" />
   <sub><code>// 07. INTERACTIVE WEB</code></sub>
   <h3><a href="https://github.com/Rishi-Dev-pro/myCastle">MyCastle Portfolio</a></h3>
   <em>Personal Portfolio &amp; Web Experience</em>
