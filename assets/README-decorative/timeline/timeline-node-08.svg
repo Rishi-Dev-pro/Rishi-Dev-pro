@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 220" width="60" height="220" role="img" aria-label="Timeline Node 08">
+  <title>Project 08 Node</title>
+  <defs>
+    <radialGradient id="tn8-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00F0FF" stop-opacity="0.35" />
+      <stop offset="100%" stop-color="#00F0FF" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+  <!-- Continuous vertical line running full height from top to bottom -->
+  <line x1="30" y1="0" x2="30" y2="220" stroke="#00F0FF" stroke-width="2" stroke-opacity="0.4" />
+  
+  <!-- Glow behind the node -->
+  <circle cx="30" cy="110" r="28" fill="url(#tn8-glow)" />
+  
+  <!-- Outer node ring -->
+  <circle cx="30" cy="110" r="22" fill="#0A0E17" stroke="#00F0FF" stroke-width="2" stroke-opacity="0.8" />
+  
+  <!-- Inner node ring -->
+  <circle cx="30" cy="110" r="17" fill="#0D111A" stroke="#00F0FF" stroke-width="1" stroke-opacity="0.3" />
+  
+  <!-- Node number -->
+  <text x="30" y="115" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="13" font-weight="700" fill="#00F0FF" text-anchor="middle">08</text>
+</svg>

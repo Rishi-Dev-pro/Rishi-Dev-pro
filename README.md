@@ -1,250 +1,380 @@
 <div align="center">
 
-<img src="assets/README-decorative/header-telemetry.svg" alt="AETHER OS Telemetry Header" width="100%" />
-
-<br />
-
-<img src="assets/banner/hero-banner.svg" alt="Rishi Shaw - AI Engineer, Full Stack Developer, Computer Vision Developer" width="100%" />
-
-<br />
-
-# **Rishi Shaw**
-### **AI Engineer &nbsp;•&nbsp; Full Stack Developer &nbsp;•&nbsp; Computer Vision Developer**
-
-*Engineering spatial AI operating systems where voice, vision, and human interaction unify.*
-
-<br />
-
-<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=15&duration=3000&pause=1000&color=00F0FF&center=true&vCenter=true&width=650&height=38&lines=AI+Engineer+%E2%80%A2+Full+Stack+%E2%80%A2+Computer+Vision;Building+AETHER+OS+%E2%80%A2+Browser+AI+Operating+System;Architecting+Real-Time+Voice+AI+%26+Gesture+HUDs" alt="Rishi Shaw Dynamic Telemetry" /></a>
-
-<br />
-
-<a href="https://github.com/Rishi-Dev-pro"><code><b>[ GITHUB ]</b></code></a>
-&nbsp;&nbsp;
-<a href="https://www.linkedin.com/in/rishi-shaw-389800389/"><code><b>[ LINKEDIN ]</b></code></a>
-&nbsp;&nbsp;
-<a href="mailto:rishishaw23022006@gmail.com"><code><b>[ EMAIL DISPATCH ]</b></code></a>
-
-</div>
-
-<br />
-
-<img src="assets/ui-elements/dividers/section-divider-primary.svg" alt="Section Divider" width="100%" />
+<!-- ════════════════════════════════════════════════════════════════
+     1. TOP NAVIGATION / TERMINAL BAR
+     ════════════════════════════════════════════════════════════════ -->
+<table border="0" width="100%" style="border-collapse: collapse;">
+  <tr>
+    <td align="left" width="30%">
+      <code><b><span style="color:#00F0FF;">Rishi@github:~$</span></b></code>
+    </td>
+    <td align="center" width="45%">
+      <code><b><a href="#about">[ About ]</a> &nbsp; <a href="#projects">[ Projects ]</a> &nbsp; <a href="#tech-stack">[ Tech Stack ]</a> &nbsp; <a href="#stats">[ Stats ]</a></b></code>
+    </td>
+    <td align="right" width="25%">
+      <a href="mailto:rishishaw23022006@gmail.com"><code><b>[ ✈ Let's Connect ]</b></code></a>
+    </td>
+  </tr>
+</table>
 
 <br />
 
 <!-- ════════════════════════════════════════════════════════════════
-     PROJECT SYSTEMS — CONTINUOUS VERTICAL TIMELINE
+     2. HERO SECTION
      ════════════════════════════════════════════════════════════════ -->
-
-<div align="center">
-
-<img src="assets/README-decorative/timeline/section-title-projects.svg" alt="Project Systems" width="100%" />
-
-<sub><code>SELECTED SYSTEMS • INTERFACES • EXPERIMENTS</code></sub>
-
-<br /><br />
-
-<img src="assets/README-decorative/timeline/timeline-spine.svg" alt="" width="4" height="40" />
-
-</div>
-
-<!-- ────────────────────────────────────────────────────────────────
-     PROJECT 01 — AETHER OS (Image LEFT, Node CENTER, Desc RIGHT)
-     ──────────────────────────────────────────────────────────────── -->
-
-<div><a href="https://github.com/Rishi-Dev-pro/AETHER-OS"><img align="left" src="assets/screenshots/aether-os.png" alt="AETHER OS Interface" width="46%" vspace="30" /></a><img align="left" src="assets/README-decorative/timeline/timeline-node-01.svg" alt="01" width="8%" />
-  <sub><code>// 01. SPATIAL AI OS</code></sub>
-  <h3><a href="https://github.com/Rishi-Dev-pro/AETHER-OS">AETHER OS</a></h3>
-  <em>Spatial Browser AI Operating System</em>
-  <p>
-    Hands-free spatial glass HUD inside the web browser, unifying computer vision, hand tracking, and voice automation into one cohesive AI operating system.
-  </p>
-  <code>React</code> <code>TypeScript</code> <code>Python</code> <code>OpenCV</code> <code>MediaPipe</code>
-  <br /><br />
-  <a href="https://github.com/Rishi-Dev-pro/AETHER-OS"><code><b>[ REPOSITORY ]</b></code></a>
-</div>
-
-<br clear="both" />
-
-<div align="center">
-  <img src="assets/README-decorative/timeline/timeline-spine.svg" alt="" width="4" height="40" />
-</div>
-
-<!-- ────────────────────────────────────────────────────────────────
-     PROJECT 02 — CALLBUDDY AI (Desc LEFT, Node CENTER, Image RIGHT)
-     ──────────────────────────────────────────────────────────────── -->
-
-<div><a href="https://github.com/Rishi-Dev-pro/CallBuddy-AI"><img align="right" src="assets/screenshots/callbuddy-ai-1.png" alt="CallBuddy AI Interface" width="46%" vspace="30" /></a><img align="right" src="assets/README-decorative/timeline/timeline-node-02.svg" alt="02" width="8%" />
-  <div align="right">
-    <sub><code>// 02. REAL-TIME VOICE AI</code></sub>
-    <h3><a href="https://github.com/Rishi-Dev-pro/CallBuddy-AI">CallBuddy AI</a></h3>
-    <em>Real-Time AI Voice Communication Platform</em>
-    <p>
-      Active AI participation in live multi-user voice rooms with real-time speech processing, WebRTC low-latency audio pipelines, and natural turn-taking.
-    </p>
-    <code>React</code> <code>TypeScript</code> <code>Python</code> <code>Socket.IO</code> <code>WebRTC</code>
-    <br /><br />
-    <a href="https://github.com/Rishi-Dev-pro/CallBuddy-AI"><code><b>[ REPOSITORY ]</b></code></a>
-  </div>
-</div>
-
-<br clear="both" />
-
-<div align="center">
-  <img src="assets/README-decorative/timeline/timeline-spine.svg" alt="" width="4" height="40" />
-</div>
-
-<!-- ────────────────────────────────────────────────────────────────
-     PROJECT 03 — THE FOUR PILLARS (Image LEFT, Node CENTER, Desc RIGHT)
-     ──────────────────────────────────────────────────────────────── -->
-
-<div><a href="https://github.com/Rishi-Dev-pro/The-Four-Pillars"><img align="left" src="assets/screenshots/the-four-pillars.png" alt="The Four Pillars Interface" width="46%" vspace="30" /></a><img align="left" src="assets/README-decorative/timeline/timeline-node-03.svg" alt="03" width="8%" />
-  <sub><code>// 03. CREATIVE ENGINEERING</code></sub>
-  <h3><a href="https://github.com/Rishi-Dev-pro/The-Four-Pillars">The Four Pillars</a></h3>
-  <em>High-Performance Creative Web Showcase</em>
-  <p>
-    Immersive showcase platform demonstrating 60fps web animations, custom design token architectures, fluid glassmorphism, and responsive frontend systems.
-  </p>
-  <code>React</code> <code>TypeScript</code> <code>Vite</code> <code>TailwindCSS</code>
-  <br /><br />
-  <a href="https://github.com/Rishi-Dev-pro/The-Four-Pillars"><code><b>[ REPOSITORY ]</b></code></a>
-  &nbsp;
-  <a href="https://the-four-pillars.vercel.app/"><code><b>[ LIVE DEMO ]</b></code></a>
-</div>
-
-<br clear="both" />
-
-<div align="center">
-  <img src="assets/README-decorative/timeline/timeline-spine.svg" alt="" width="4" height="40" />
-</div>
-
-<!-- ────────────────────────────────────────────────────────────────
-     PROJECT 04 — VN MEDIA (Desc LEFT, Node CENTER, Image RIGHT)
-     ──────────────────────────────────────────────────────────────── -->
-
-<div><a href="https://github.com/Rishi-Dev-pro/VN-media"><img align="right" src="assets/screenshots/vn-media-placeholder.svg" alt="VN Media Interface" width="46%" vspace="30" /></a><img align="right" src="assets/README-decorative/timeline/timeline-node-04.svg" alt="04" width="8%" />
-  <div align="right">
-    <sub><code>// 04. SOCIAL ARCHITECTURE</code></sub>
-    <h3><a href="https://github.com/Rishi-Dev-pro/VN-media">VN Media</a></h3>
-    <em>Social Media &amp; Content Platform</em>
-    <p>
-      Full-stack social media application enabling real-time content feeds, user interactions, authenticated profiles, and interactive media distribution.
-    </p>
-    <code>JavaScript</code> <code>Node.js</code> <code>Express</code> <code>MongoDB</code>
-    <br /><br />
-    <a href="https://github.com/Rishi-Dev-pro/VN-media"><code><b>[ REPOSITORY ]</b></code></a>
-  </div>
-</div>
-
-<br clear="both" />
-
-<div align="center">
-  <img src="assets/README-decorative/timeline/timeline-spine.svg" alt="" width="4" height="40" />
-</div>
-
-<!-- ────────────────────────────────────────────────────────────────
-     PROJECT 05 — S-PPT MAKER (Image LEFT, Node CENTER, Desc RIGHT)
-     ──────────────────────────────────────────────────────────────── -->
-
-<div><a href="https://github.com/Rishi-Dev-pro/S-PPT-maker"><img align="left" src="assets/screenshots/s-ppt-maker-placeholder.svg" alt="S-PPT Maker Interface" width="46%" vspace="30" /></a><img align="left" src="assets/README-decorative/timeline/timeline-node-05.svg" alt="05" width="8%" />
-  <sub><code>// 05. INTELLIGENT TOOLS</code></sub>
-  <h3><a href="https://github.com/Rishi-Dev-pro/S-PPT-maker">S-PPT Maker</a></h3>
-  <em>AI-Powered Presentation Generator</em>
-  <p>
-    Automated presentation creation system streamlining slide composition, structured content templates, and seamless web export workflows.
-  </p>
-  <code>JavaScript</code> <code>React</code> <code>Node.js</code> <code>HTML5</code>
-  <br /><br />
-  <a href="https://github.com/Rishi-Dev-pro/S-PPT-maker"><code><b>[ REPOSITORY ]</b></code></a>
-</div>
-
-<br clear="both" />
-
-<div align="center">
-  <img src="assets/README-decorative/timeline/timeline-spine.svg" alt="" width="4" height="40" />
-</div>
-
-<!-- ────────────────────────────────────────────────────────────────
-     PROJECT 06 — RISHI COSMIC PORTFOLIO (Desc LEFT, Node CENTER, Image RIGHT)
-     ──────────────────────────────────────────────────────────────── -->
-
-<div><a href="https://github.com/Rishi-Dev-pro/rishi-cosmic-portfolio"><img align="right" src="assets/screenshots/rishi-cosmic-placeholder.svg" alt="Rishi Cosmic Portfolio" width="46%" vspace="30" /></a><img align="right" src="assets/README-decorative/timeline/timeline-node-06.svg" alt="06" width="8%" />
-  <div align="right">
-    <sub><code>// 06. IMMERSIVE EXPERIENCES</code></sub>
-    <h3><a href="https://github.com/Rishi-Dev-pro/rishi-cosmic-portfolio">Rishi Cosmic Portfolio</a></h3>
-    <em>Immersive Space-Themed Developer Portfolio</em>
-    <p>
-      Space-themed personal showcase built with TypeScript, featuring smooth interactive transitions, responsive layouts, and modern frontend aesthetics.
-    </p>
-    <code>TypeScript</code> <code>React</code> <code>CSS3</code>
-    <br /><br />
-    <a href="https://github.com/Rishi-Dev-pro/rishi-cosmic-portfolio"><code><b>[ REPOSITORY ]</b></code></a>
-  </div>
-</div>
-
-<br clear="both" />
-
-<div align="center">
-  <img src="assets/README-decorative/timeline/timeline-spine.svg" alt="" width="4" height="40" />
-</div>
-
-<!-- ────────────────────────────────────────────────────────────────
-     PROJECT 07 — MYCASTLE PORTFOLIO (Image LEFT, Node CENTER, Desc RIGHT)
-     ──────────────────────────────────────────────────────────────── -->
-
-<div><a href="https://github.com/Rishi-Dev-pro/myCastle"><img align="left" src="assets/screenshots/mycastle-placeholder.svg" alt="MyCastle Portfolio" width="46%" vspace="30" /></a><img align="left" src="assets/README-decorative/timeline/timeline-node-07.svg" alt="07" width="8%" />
-  <sub><code>// 07. INTERACTIVE WEB</code></sub>
-  <h3><a href="https://github.com/Rishi-Dev-pro/myCastle">MyCastle Portfolio</a></h3>
-  <em>Personal Portfolio &amp; Web Experience</em>
-  <p>
-    Custom web experience highlighting responsive frontend engineering, interactive components, and clean architectural design.
-  </p>
-  <code>JavaScript</code> <code>HTML5</code> <code>CSS3</code>
-  <br /><br />
-  <a href="https://github.com/Rishi-Dev-pro/myCastle"><code><b>[ REPOSITORY ]</b></code></a>
-</div>
-
-<br clear="both" />
-
-<div align="center">
-  <img src="assets/README-decorative/timeline/timeline-terminator.svg" alt="" width="30" />
-</div>
-
-<br />
-
-<img src="assets/ui-elements/dividers/section-divider-primary.svg" alt="Section Divider" width="100%" />
+<table border="0" width="100%" style="border-collapse: collapse;">
+  <tr>
+    <td width="22%" align="center" valign="top">
+      <img src="assets/placeholders/avatar-placeholder.svg" alt="Rishi Shaw" width="140" style="border-radius: 50%;" />
+      <br />
+      <sub><code>🟢 Available for opportunities</code></sub>
+    </td>
+    <td width="48%" align="left" valign="middle">
+      <sub style="font-size: 15px;">Hi, I'm</sub>
+      <h1>Rishi <span style="color:#38BDF8;">Shaw</span></h1>
+      <p><b>AI Engineer &nbsp;•&nbsp; Full Stack Developer &nbsp;•&nbsp; Computer Vision Developer</b></p>
+      <p>
+        Building useful AI products, scalable web applications, and computer vision solutions. I enjoy turning ideas into real-world systems that create impact.
+      </p>
+      <p>
+        <a href="#projects"><code><b>[ View My Work ]</b></code></a>
+        &nbsp;&nbsp;
+        <a href="mailto:rishishaw23022006@gmail.com"><code><b>[ Contact Me ]</b></code></a>
+      </p>
+    </td>
+    <td width="30%" align="center" valign="middle">
+      <blockquote>
+        <p><i>“Engineering is not just about writing code, it's about solving real problems.”</i></p>
+        <p align="right"><b>— Rishi Shaw</b></p>
+      </blockquote>
+      <hr />
+      <table border="0" width="100%">
+        <tr>
+          <td align="center"><h2><code>8+</code></h2><sub>Projects</sub></td>
+          <td align="center"><h2><code>3+</code></h2><sub>Tech Domains</sub></td>
+          <td align="center"><h2><code>∞</code></h2><sub>Learning</sub></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
 
 <br />
 
 <!-- ════════════════════════════════════════════════════════════════
-     ENGINEERING TELEMETRY
+     3. ABOUT ME SECTION
      ════════════════════════════════════════════════════════════════ -->
+<div id="about"></div>
 
-<div align="center">
-
-<img src="assets/README-decorative/timeline/section-title-telemetry.svg" alt="Engineering Telemetry" width="100%" />
-
-<br /><br />
-
-<img src="https://github-readme-stats-fast.vercel.app/api?username=Rishi-Dev-pro&show_icons=true&theme=cyberpunk&bg_color=080A0F&title_color=00F0FF&text_color=94A3B8&icon_color=00F0FF&border_color=00F0FF33&hide_border=false" alt="Rishi Shaw GitHub Statistics" width="49%" />
-&nbsp;
-<img src="https://github-readme-stats-fast.vercel.app/api/top-langs/?username=Rishi-Dev-pro&layout=compact&theme=cyberpunk&bg_color=080A0F&title_color=00F0FF&text_color=94A3B8&border_color=00F0FF33&hide_border=false" alt="Rishi Shaw Top Languages" width="47%" />
-
-<br /><br />
-
-<img src="assets/ui-elements/dividers/hud-line-accent.svg" alt="HUD Line Divider" width="100%" />
-
-<br /><br />
-
-<img src="https://raw.githubusercontent.com/Rishi-Dev-pro/Rishi-Dev-pro/output/github-contribution-grid-snake-dark.svg" alt="Contribution Visualization" width="100%" />
-
-<br /><br />
-
-<img src="assets/ui-elements/dividers/section-divider-subtle.svg" alt="Subtle Divider" width="100%" />
+<table border="0" width="100%">
+  <tr>
+    <td align="left" width="70%" valign="middle">
+      <h3>👤 About Me</h3>
+      <p>
+        I am a Computer Science enthusiast passionate about Artificial Intelligence, Computer Vision, and Full Stack Development. I love exploring new technologies, building projects, and continuously learning. My goal is to create intelligent systems that are practical, scalable, and impactful.
+      </p>
+      <p>
+        <code>📍 India</code> &nbsp;&nbsp;
+        <code>🎓 B.Tech (CSE)</code> &nbsp;&nbsp;
+        <code>💻 Always learning</code> &nbsp;&nbsp;
+        <code>🤝 Open to collaboration</code>
+      </p>
+    </td>
+    <td align="center" width="30%" valign="middle">
+      <img src="assets/placeholders/signature.svg" alt="Rishi Shaw Signature" width="220" />
+    </td>
+  </tr>
+</table>
 
 <br />
 
-<sub><code>SYS.TERMINATE // RISHI SHAW — AI ENGINEER — ALL SYSTEMS NOMINAL</code></sub>
+<!-- ════════════════════════════════════════════════════════════════
+     4. TECH STACK SECTION
+     ════════════════════════════════════════════════════════════════ -->
+<div id="tech-stack"></div>
+
+<table border="0" width="100%">
+  <tr>
+    <td align="left">
+      <h3>⚡ Tech Stack</h3>
+    </td>
+    <td align="right">
+      <a href="https://github.com/Rishi-Dev-pro"><sub><b>View All Skills →</b></sub></a>
+    </td>
+  </tr>
+</table>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" />
+  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React" />
+  <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="Node.js" />
+  <img src="https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white" alt="Laravel" />
+  <br />
+  <img src="https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL" />
+  <img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white" alt="OpenCV" />
+  <img src="https://img.shields.io/badge/YOLO-00FFFF?style=for-the-badge&logo=yolo&logoColor=black" alt="YOLO" />
+  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git" />
+  <img src="https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white" alt="VS Code" />
+</p>
+
+<br />
+
+<!-- ════════════════════════════════════════════════════════════════
+     5. PROJECTS JOURNEY (CENTRAL ALTERNATING TIMELINE)
+     ════════════════════════════════════════════════════════════════ -->
+<div id="projects"></div>
+
+<p><code>// MY WORK</code></p>
+<h2>Projects <span style="color:#C084FC;">Journey</span></h2>
+<p><i>A collection of projects that reflect my learning, skills and passion.</i></p>
+
+<!-- ────────────────────────────────────────────────────────────
+     01 — Aether-OS (Screenshot LEFT | Node CENTER | Desc RIGHT)
+     ──────────────────────────────────────────────────────────── -->
+<table border="0" width="100%">
+  <tr>
+    <td width="46%" align="right" valign="middle">
+      <a href="https://github.com/Rishi-Dev-pro/AETHER-OS">
+        <img src="assets/placeholders/project-01.svg" alt="Aether-OS" width="100%" style="border-radius: 10px;" />
+      </a>
+    </td>
+    <td width="8%" align="center" valign="middle">
+      <img src="assets/README-decorative/timeline/timeline-node-01.svg" alt="01" width="50" />
+    </td>
+    <td width="46%" align="left" valign="middle">
+      <h3><a href="https://github.com/Rishi-Dev-pro/AETHER-OS">Aether-OS</a></h3>
+      <sub><b>AI-Powered Operating System</b></sub>
+      <p>Natural language interface for file management, app control, and automation. A futuristic OS that brings AI into everyday computing.</p>
+      <code>React</code> <code>TypeScript</code> <code>Python</code> <code>OpenCV</code>
+      <br /><br />
+      <a href="https://github.com/Rishi-Dev-pro/AETHER-OS"><code><b>[ Live Demo ↗ ]</b></code></a> &nbsp;
+      <a href="https://github.com/Rishi-Dev-pro/AETHER-OS"><code><b>[ GitHub ↗ ]</b></code></a>
+    </td>
+  </tr>
+</table>
+
+<!-- ────────────────────────────────────────────────────────────
+     02 — Callbuddy-AI (Desc LEFT | Node CENTER | Screenshot RIGHT)
+     ──────────────────────────────────────────────────────────── -->
+<table border="0" width="100%">
+  <tr>
+    <td width="46%" align="right" valign="middle">
+      <h3><a href="https://github.com/Rishi-Dev-pro/CallBuddy-AI">Callbuddy-AI</a></h3>
+      <sub><b>Real-Time AI Voice Assistant</b></sub>
+      <p>Live voice communication platform with real-time transcription, AI responses and natural conversation.</p>
+      <code>React</code> <code>Socket.IO</code> <code>WebRTC</code> <code>Python</code>
+      <br /><br />
+      <a href="https://github.com/Rishi-Dev-pro/CallBuddy-AI"><code><b>[ Live Demo ↗ ]</b></code></a> &nbsp;
+      <a href="https://github.com/Rishi-Dev-pro/CallBuddy-AI"><code><b>[ GitHub ↗ ]</b></code></a>
+    </td>
+    <td width="8%" align="center" valign="middle">
+      <img src="assets/README-decorative/timeline/timeline-node-02.svg" alt="02" width="50" />
+    </td>
+    <td width="46%" align="left" valign="middle">
+      <a href="https://github.com/Rishi-Dev-pro/CallBuddy-AI">
+        <img src="assets/placeholders/project-02.svg" alt="Callbuddy-AI" width="100%" style="border-radius: 10px;" />
+      </a>
+    </td>
+  </tr>
+</table>
+
+<!-- ────────────────────────────────────────────────────────────
+     03 — Mochi (Screenshot LEFT | Node CENTER | Desc RIGHT)
+     ──────────────────────────────────────────────────────────── -->
+<table border="0" width="100%">
+  <tr>
+    <td width="46%" align="right" valign="middle">
+      <a href="https://github.com/Rishi-Dev-pro">
+        <img src="assets/placeholders/project-03.svg" alt="Mochi" width="100%" style="border-radius: 10px;" />
+      </a>
+    </td>
+    <td width="8%" align="center" valign="middle">
+      <img src="assets/README-decorative/timeline/timeline-node-03.svg" alt="03" width="50" />
+    </td>
+    <td width="46%" align="left" valign="middle">
+      <h3><a href="https://github.com/Rishi-Dev-pro">Mochi</a></h3>
+      <sub><b>AI Companion & Smart Assistant</b></sub>
+      <p>Sleek futuristic AI robot companion featuring autonomous ambient interaction, contextual intelligence, and real-time voice and vision synthesis.</p>
+      <code>Python</code> <code>PyTorch</code> <code>React</code> <code>FastAPI</code>
+      <br /><br />
+      <a href="https://github.com/Rishi-Dev-pro"><code><b>[ Live Demo ↗ ]</b></code></a> &nbsp;
+      <a href="https://github.com/Rishi-Dev-pro"><code><b>[ GitHub ↗ ]</b></code></a>
+    </td>
+  </tr>
+</table>
+
+<!-- ────────────────────────────────────────────────────────────
+     04 — VN-media (Desc LEFT | Node CENTER | Screenshot RIGHT)
+     ──────────────────────────────────────────────────────────── -->
+<table border="0" width="100%">
+  <tr>
+    <td width="46%" align="right" valign="middle">
+      <h3><a href="https://github.com/Rishi-Dev-pro/VN-media">VN-media</a></h3>
+      <sub><b>Social Media & Content Platform</b></sub>
+      <p>A full-stack social media platform with real-time features, content feeds, user profiles and interactive media distribution.</p>
+      <code>JavaScript</code> <code>Node.js</code> <code>Express</code> <code>MongoDB</code>
+      <br /><br />
+      <a href="https://github.com/Rishi-Dev-pro/VN-media"><code><b>[ Live Demo ↗ ]</b></code></a> &nbsp;
+      <a href="https://github.com/Rishi-Dev-pro/VN-media"><code><b>[ GitHub ↗ ]</b></code></a>
+    </td>
+    <td width="8%" align="center" valign="middle">
+      <img src="assets/README-decorative/timeline/timeline-node-04.svg" alt="04" width="50" />
+    </td>
+    <td width="46%" align="left" valign="middle">
+      <a href="https://github.com/Rishi-Dev-pro/VN-media">
+        <img src="assets/placeholders/project-04.svg" alt="VN-media" width="100%" style="border-radius: 10px;" />
+      </a>
+    </td>
+  </tr>
+</table>
+
+<!-- ────────────────────────────────────────────────────────────
+     05 — S-PPT-maker (Screenshot LEFT | Node CENTER | Desc RIGHT)
+     ──────────────────────────────────────────────────────────── -->
+<table border="0" width="100%">
+  <tr>
+    <td width="46%" align="right" valign="middle">
+      <a href="https://github.com/Rishi-Dev-pro/S-PPT-maker">
+        <img src="assets/placeholders/project-05.svg" alt="S-PPT-maker" width="100%" style="border-radius: 10px;" />
+      </a>
+    </td>
+    <td width="8%" align="center" valign="middle">
+      <img src="assets/README-decorative/timeline/timeline-node-05.svg" alt="05" width="50" />
+    </td>
+    <td width="46%" align="left" valign="middle">
+      <h3><a href="https://github.com/Rishi-Dev-pro/S-PPT-maker">S-PPT-maker</a></h3>
+      <sub><b>AI-Powered Presentation Generator</b></sub>
+      <p>Automated presentation creation system streamlining slide composition, structured content templates, and seamless web export workflows.</p>
+      <code>JavaScript</code> <code>React</code> <code>Node.js</code> <code>HTML5</code>
+      <br /><br />
+      <a href="https://github.com/Rishi-Dev-pro/S-PPT-maker"><code><b>[ Live Demo ↗ ]</b></code></a> &nbsp;
+      <a href="https://github.com/Rishi-Dev-pro/S-PPT-maker"><code><b>[ GitHub ↗ ]</b></code></a>
+    </td>
+  </tr>
+</table>
+
+<!-- ────────────────────────────────────────────────────────────
+     06 — pirate-civ (Desc LEFT | Node CENTER | Screenshot RIGHT)
+     ──────────────────────────────────────────────────────────── -->
+<table border="0" width="100%">
+  <tr>
+    <td width="46%" align="right" valign="middle">
+      <h3><a href="https://github.com/Rishi-Dev-pro">pirate-civ</a></h3>
+      <sub><b>Procedural Strategy & Simulation Game</b></sub>
+      <p>Interactive civilization and naval strategy simulation game with procedural generation, resource economies, and immersive canvas rendering.</p>
+      <code>JavaScript</code> <code>Canvas API</code> <code>WebAudio</code> <code>Vite</code>
+      <br /><br />
+      <a href="https://github.com/Rishi-Dev-pro"><code><b>[ Live Demo ↗ ]</b></code></a> &nbsp;
+      <a href="https://github.com/Rishi-Dev-pro"><code><b>[ GitHub ↗ ]</b></code></a>
+    </td>
+    <td width="8%" align="center" valign="middle">
+      <img src="assets/README-decorative/timeline/timeline-node-06.svg" alt="06" width="50" />
+    </td>
+    <td width="46%" align="left" valign="middle">
+      <a href="https://github.com/Rishi-Dev-pro">
+        <img src="assets/placeholders/project-06.svg" alt="pirate-civ" width="100%" style="border-radius: 10px;" />
+      </a>
+    </td>
+  </tr>
+</table>
+
+<!-- ────────────────────────────────────────────────────────────
+     07 — Rishi-cosmic-protfolio (Screenshot LEFT | Node CENTER | Desc RIGHT)
+     ──────────────────────────────────────────────────────────── -->
+<table border="0" width="100%">
+  <tr>
+    <td width="46%" align="right" valign="middle">
+      <a href="https://github.com/Rishi-Dev-pro/rishi-cosmic-portfolio">
+        <img src="assets/placeholders/project-07.svg" alt="Rishi-cosmic-protfolio" width="100%" style="border-radius: 10px;" />
+      </a>
+    </td>
+    <td width="8%" align="center" valign="middle">
+      <img src="assets/README-decorative/timeline/timeline-node-07.svg" alt="07" width="50" />
+    </td>
+    <td width="46%" align="left" valign="middle">
+      <h3><a href="https://github.com/Rishi-Dev-pro/rishi-cosmic-portfolio">Rishi-cosmic-protfolio</a></h3>
+      <sub><b>Immersive 3D Space Portfolio</b></sub>
+      <p>Space-themed personal showcase built with interactive 3D particle shaders, smooth scroll choreography, and celestial visual effects.</p>
+      <code>TypeScript</code> <code>Three.js</code> <code>React</code> <code>GSAP</code>
+      <br /><br />
+      <a href="https://github.com/Rishi-Dev-pro/rishi-cosmic-portfolio"><code><b>[ Live Demo ↗ ]</b></code></a> &nbsp;
+      <a href="https://github.com/Rishi-Dev-pro/rishi-cosmic-portfolio"><code><b>[ GitHub ↗ ]</b></code></a>
+    </td>
+  </tr>
+</table>
+
+<!-- ────────────────────────────────────────────────────────────
+     08 — The-Four-Pillars (Desc LEFT | Node CENTER | Screenshot RIGHT)
+     ──────────────────────────────────────────────────────────── -->
+<table border="0" width="100%">
+  <tr>
+    <td width="46%" align="right" valign="middle">
+      <h3><a href="https://github.com/Rishi-Dev-pro/The-Four-Pillars">The-Four-Pillars</a></h3>
+      <sub><b>Interactive 3D Showcase</b></sub>
+      <p>High-performance creative web showcase with 3D animations, custom design tokens, fluid glassmorphism, and smooth responsive UI.</p>
+      <code>React</code> <code>Three.js</code> <code>Vite</code> <code>TailwindCSS</code>
+      <br /><br />
+      <a href="https://the-four-pillars.vercel.app/"><code><b>[ Live Demo ↗ ]</b></code></a> &nbsp;
+      <a href="https://github.com/Rishi-Dev-pro/The-Four-Pillars"><code><b>[ GitHub ↗ ]</b></code></a>
+    </td>
+    <td width="8%" align="center" valign="middle">
+      <img src="assets/README-decorative/timeline/timeline-node-08.svg" alt="08" width="50" />
+    </td>
+    <td width="46%" align="left" valign="middle">
+      <a href="https://github.com/Rishi-Dev-pro/The-Four-Pillars">
+        <img src="assets/placeholders/project-08.svg" alt="The-Four-Pillars" width="100%" style="border-radius: 10px;" />
+      </a>
+    </td>
+  </tr>
+</table>
+
+<br />
+
+<!-- ════════════════════════════════════════════════════════════════
+     6. GITHUB STATS SECTION
+     ════════════════════════════════════════════════════════════════ -->
+<div id="stats"></div>
+
+<table border="0" width="100%">
+  <tr>
+    <td width="25%" align="center">
+      <h3>📦 20+</h3>
+      <sub>Total Repositories</sub>
+    </td>
+    <td width="25%" align="center">
+      <h3>⭐ 50+</h3>
+      <sub>Total Stars</sub>
+    </td>
+    <td width="25%" align="center">
+      <h3>🔄 500+</h3>
+      <sub>Total Commits</sub>
+    </td>
+    <td width="25%" align="center">
+      <h3>🔥 30+ days</h3>
+      <sub>Current Streak</sub>
+    </td>
+  </tr>
+</table>
+
+<br />
+
+<!-- ════════════════════════════════════════════════════════════════
+     7. FOOTER
+     ════════════════════════════════════════════════════════════════ -->
+<div id="contact"></div>
+
+<table border="0" width="100%">
+  <tr>
+    <td align="left" width="70%">
+      <p><i>“A better tomorrow is built by what we do today.”</i> — <b>Rishi Shaw</b></p>
+    </td>
+    <td align="right" width="30%">
+      <a href="https://github.com/Rishi-Dev-pro"><code>[ GitHub ]</code></a> &nbsp;
+      <a href="https://www.linkedin.com/in/rishi-shaw-389800389/"><code>[ LinkedIn ]</code></a> &nbsp;
+      <a href="mailto:rishishaw23022006@gmail.com"><code>[ Email ]</code></a>
+    </td>
+  </tr>
+</table>
 
 </div>

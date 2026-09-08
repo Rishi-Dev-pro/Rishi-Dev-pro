@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rishi Shaw — AI Engineer • Full Stack Developer • Computer Vision</title>
+  <meta name="description" content="Personal portfolio and GitHub profile showcase for Rishi Shaw — AI Engineer, Full Stack Developer, Computer Vision Developer.">
+  
+  <!-- Google Fonts: Inter (UI), JetBrains Mono (Terminal/Code), Caveat (Handwritten Quote) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Ambient Glow Backgrounds -->
+  <div class="glow-orb orb-top-left"></div>
+  <div class="glow-orb orb-top-right"></div>
+  <div class="glow-orb orb-center-timeline"></div>
+  <div class="glow-orb orb-bottom"></div>
+
+  <!-- Background Canvas for Subtle Grid / Particles -->
+  <canvas id="ambient-canvas"></canvas>
+
+  <div class="page-wrapper">
+
+    <!-- ══════════════════════════════════════════════
+         TOP NAVIGATION BAR
+         ══════════════════════════════════════════════ -->
+    <header class="navbar-container" id="main-nav">
+      <div class="nav-terminal">
+        <span class="prompt-text">Rishi@github:~$</span>
+        <span class="cursor-blink"></span>
+      </div>
+
+      <nav class="nav-links">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#tech-stack" class="nav-link">Tech Stack</a>
+        <a href="#stats" class="nav-link">Stats</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <a href="mailto:rishishaw23022006@gmail.com" class="nav-connect-btn">
+        <svg class="icon-send" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="22" y1="2" x2="11" y2="13"></line>
+          <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+        </svg>
+        <span>Let's Connect</span>
+      </a>
+    </header>
+
+    <!-- ══════════════════════════════════════════════
+         HERO SECTION
+         ══════════════════════════════════════════════ -->
+    <section class="hero-section" id="home">
+      <div class="hero-left">
+        <div class="avatar-column">
+          <div class="avatar-ring-wrapper">
+            <!-- Replaceable Profile Avatar Placeholder -->
+            <img src="assets/placeholders/avatar-placeholder.svg" alt="Rishi Shaw Profile" class="avatar-img" id="PROFILE_AVATAR" />
+          </div>
+          <div class="status-pill">
+            <span class="status-dot"></span>
+            <span class="status-text">Available for opportunities</span>
+          </div>
+        </div>
+
+        <div class="hero-intro">
+          <div class="hero-greeting">Hi, I'm</div>
+          <h1 class="hero-name">Rishi <span class="name-gradient">Shaw</span></h1>
+          <div class="hero-role">AI Engineer &nbsp;•&nbsp; Full Stack Developer &nbsp;•&nbsp; Computer Vision Developer</div>
+          <p class="hero-bio">
+            Building useful AI products, scalable web applications, and computer vision solutions. I enjoy turning ideas into real-world systems that create impact.
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn-primary">
+              <svg class="btn-icon" viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+              </svg>
+              <span>View My Work</span>
+            </a>
+            <a href="mailto:rishishaw23022006@gmail.com" class="btn-secondary">
+              <svg class="btn-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+              </svg>
+              <span>Contact Me</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right-Side Quote & Metrics Card -->
+      <div class="hero-right">
+        <div class="quote-card">
+          <div class="quote-icon">“</div>
+          <blockquote class="quote-text">
+            Engineering is not just about writing code, it's about solving real problems.
+          </blockquote>
+          <div class="quote-author">— Rishi Shaw</div>
+
+          <div class="quote-divider"></div>
+
+          <div class="hero-stats-row">
+            <div class="hero-stat-item">
+              <div class="stat-number cyan-glow">8+</div>
+              <div class="stat-label">Projects</div>
+            </div>
+            <div class="hero-stat-item">
+              <div class="stat-number cyan-glow">3+</div>
+              <div class="stat-label">Tech Domains</div>
+            </div>
+            <div class="hero-stat-item">
+              <div class="stat-number purple-glow">∞</div>
+              <div class="stat-label">Learning</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════
+         ABOUT ME SECTION
+         ══════════════════════════════════════════════ -->
+    <section class="about-section" id="about">
+      <div class="glass-card about-card">
+        <div class="card-header">
+          <div class="card-icon-badge purple-badge">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+              <circle cx="12" cy="7" r="4"></circle>
+            </svg>
+          </div>
+          <h2 class="card-title">About Me</h2>
+        </div>
+
+        <div class="about-content-wrapper">
+          <div class="about-text-column">
+            <p class="about-paragraph">
+              I am a Computer Science enthusiast passionate about Artificial Intelligence, Computer Vision, and Full Stack Development. I love exploring new technologies, building projects, and continuously learning. My goal is to create intelligent systems that are practical, scalable, and impactful.
+            </p>
+
+            <div class="about-meta-row">
+              <div class="meta-pill">
+                <svg class="meta-icon cyan-icon" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                <span>India</span>
+              </div>
+              <div class="meta-pill">
+                <svg class="meta-icon blue-icon" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                  <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                </svg>
+                <span>B.Tech (CSE)</span>
+              </div>
+              <div class="meta-pill">
+                <svg class="meta-icon purple-icon" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+                <span>Always learning</span>
+              </div>
+              <div class="meta-pill">
+                <svg class="meta-icon red-icon" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                </svg>
+                <span>Open to collaboration</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Signature Column -->
+          <div class="about-signature-column">
+            <!-- Replaceable Signature SVG asset -->
+            <img src="assets/placeholders/signature.svg" alt="Rishi Shaw Signature" class="signature-img" id="RISHI_SIGNATURE" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════
+         TECH STACK SECTION
+         ══════════════════════════════════════════════ -->
+    <section class="tech-stack-section" id="tech-stack">
+      <div class="glass-card tech-card">
+        <div class="card-header header-with-action">
+          <div class="header-left">
+            <div class="card-icon-badge blue-badge">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                <polyline points="2 17 12 22 22 17"></polyline>
+                <polyline points="2 12 12 17 22 12"></polyline>
+              </svg>
+            </div>
+            <h2 class="card-title">Tech Stack</h2>
+          </div>
+          <a href="https://github.com/Rishi-Dev-pro" target="_blank" rel="noopener noreferrer" class="view-skills-link">
+            <span>View All Skills</span>
+            <span class="link-arrow">→</span>
+          </a>
+        </div>
+
+        <div class="tech-grid">
+          <!-- 1. Python -->
+          <div class="tech-item-card">
+            <div class="tech-icon-wrapper">
+              <svg viewBox="0 0 24 24" width="32" height="32">
+                <path fill="#3776AB" d="M11.9 2C8.3 2 8.5 3.6 8.5 3.6l.01 1.7h3.5v.5H4.8S2 5.5 2 9.1c0 3.6 2.4 3.5 2.4 3.5h1.5v-2.1s-.1-2.4 2.4-2.4h4.1s2.3.1 2.3-2.3V4.3S15 2 11.9 2zm-1.8 1.2c.4 0 .7.3.7.7 0 .4-.3.7-.7.7-.4 0-.7-.3-.7-.7.1-.4.4-.7.7-.7z"/>
+                <path fill="#FFD43B" d="M12.1 22c3.6 0 3.4-1.6 3.4-1.6l-.01-1.7h-3.5v-.5h7.2s2.8.3 2.8-3.3c0-3.6-2.4-3.5-2.4-3.5h-1.5v2.1s.1 2.4-2.4 2.4h-4.1s-2.3-.1-2.3 2.3v1.5s-.3 2.3 2.8 2.3zm1.8-1.2c-.4 0-.7-.3-.7-.7 0-.4.3-.7.7-.7.4 0 .7.3.7.7 0 .4-.3.7-.7.7z"/>
+              </svg>
+            </div>
+            <span class="tech-label">Python</span>
+          </div>
+
+          <!-- 2. JavaScript -->
+          <div class="tech-item-card">
+            <div class="tech-icon-wrapper">
+              <svg viewBox="0 0 24 24" width="32" height="32">
+                <rect width="24" height="24" rx="4" fill="#F7DF1E"/>
+                <path fill="#000000" d="M7.7 18.2c-.9 0-1.6-.3-2.1-.8-.5-.5-.7-1.3-.7-2.3h1.8c0 .6.1 1 .3 1.3.2.3.6.4 1 .4.4 0 .7-.1.9-.3.2-.2.3-.5.3-.9 0-.4-.1-.7-.4-.9-.2-.2-.6-.4-1.2-.6-1-.4-1.7-.8-2.1-1.2-.4-.4-.6-1-.6-1.7 0-.8.3-1.4.8-1.9.5-.5 1.3-.7 2.2-.7 1 0 1.7.3 2.2.8.5.5.7 1.3.7 2.3h-1.8c0-.6-.1-1-.3-1.3-.2-.3-.5-.4-.9-.4-.4 0-.7.1-.8.3-.2.2-.2.4-.2.7 0 .3.1.6.3.8.2.2.6.4 1.2.6 1 .4 1.7.8 2.1 1.2.4.4.6 1 .6 1.8 0 .8-.3 1.5-.9 1.9-.4.4-1.3.7-2.3.7zm8.3 0c-1 0-1.8-.3-2.3-.9-.6-.6-.8-1.5-.8-2.7h1.8c0 .8.1 1.4.3 1.7.2.3.6.5 1 .5.4 0 .8-.1 1-.4.2-.3.4-.8.4-1.5V9.4h1.8v6.7c0 1.3-.3 2.3-.9 3-.6.7-1.4 1.1-2.3 1.1z"/>
+              </svg>
+            </div>
+            <span class="tech-label">JavaScript</span>
+          </div>
+
+          <!-- 3. React -->
+          <div class="tech-item-card">
+            <div class="tech-icon-wrapper">
+              <svg viewBox="0 0 24 24" width="32" height="32">
+                <circle cx="12" cy="12" r="2.2" fill="#61DAFB"/>
+                <g fill="none" stroke="#61DAFB" stroke-width="1.2">
+                  <ellipse cx="12" cy="12" rx="10" ry="4"/>
+                  <ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(60 12 12)"/>
+                  <ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(120 12 12)"/>
+                </g>
+              </svg>
+            </div>
+            <span class="tech-label">React</span>
+          </div>
+
+          <!-- 4. Node.js -->
+          <div class="tech-item-card">
+            <div class="tech-icon-wrapper">
+              <svg viewBox="0 0 24 24" width="32" height="32" fill="#5FA04E">
+                <path d="M12 2.5 3.3 7.5v10L12 22.5l8.7-5v-10L12 2.5zm0 2.3 6.7 3.9v7.7L12 20.2l-6.7-3.8V8.7L12 4.8zm-1 3.5v7.4h2V8.3h-2z"/>
+              </svg>
+            </div>
+            <span class="tech-label">Node.js</span>
+          </div>
+
+          <!-- 5. Laravel -->
+          <div class="tech-item-card">
+            <div class="tech-icon-wrapper">
+              <svg viewBox="0 0 24 24" width="32" height="32" fill="#FF2D20">
+                <path d="m3.6 15.3 4.2-2.4v-4l-4.2 2.4v4zm5-2.9 4.2-2.4-4.2-2.4-4.2 2.4 4.2 2.4zm5.1-2.9 4.2-2.4v-4l-4.2 2.4v4zm5-2.9 4.2-2.4-4.2-2.4-4.2 2.4 4.2 2.4zm-4.3 12.1 4.2-2.4v-4l-4.2 2.4v4zm-5-2.8 4.2-2.4-4.2-2.4-4.2 2.4 4.2 2.4zm-5.8 4 4.2-2.4v-4l-4.2 2.4v4z"/>
+              </svg>
+            </div>
+            <span class="tech-label">Laravel</span>
+          </div>
+
+          <!-- 6. MySQL -->
+          <div class="tech-item-card">
+            <div class="tech-icon-wrapper">
+              <svg viewBox="0 0 24 24" width="32" height="32" fill="#00758F">
+                <path d="M19.8 11.5c-.3-1.6-1.5-2.9-3.2-3.4-.6-.2-1.3-.2-1.9-.1-1.2.2-2.3.9-3 1.9-.8 1.1-1.1 2.6-.9 4 .2 1.4 1 2.6 2.2 3.3 1.2.7 2.7.7 4 0 1.2-.7 2-1.9 2.3-3.3.2-.8.2-1.6.5-2.4z"/>
+                <path fill="#F29111" d="M8.2 16.5c-1.3-.2-2.4-.9-3.1-2-.7-1.1-.9-2.5-.5-3.8.4-1.3 1.4-2.3 2.7-2.7 1.3-.4 2.7-.1 3.8.7 1.1.8 1.8 2.1 1.9 3.5.1 1.4-.4 2.8-1.5 3.7-.9.8-2.1 1-3.3.6z"/>
+              </svg>
+            </div>
+            <span class="tech-label">MySQL</span>
+          </div>
+
+          <!-- 7. OpenCV -->
+          <div class="tech-item-card">
+            <div class="tech-icon-wrapper">
+              <svg viewBox="0 0 24 24" width="32" height="32">
+                <circle cx="12" cy="7" r="4" fill="none" stroke="#EA4335" stroke-width="2.5"/>
+                <circle cx="7" cy="16" r="4" fill="none" stroke="#34A853" stroke-width="2.5"/>
+                <circle cx="17" cy="16" r="4" fill="none" stroke="#4285F4" stroke-width="2.5"/>
+              </svg>
+            </div>
+            <span class="tech-label">OpenCV</span>
+          </div>
+
+          <!-- 8. YOLO -->
+          <div class="tech-item-card">
+            <div class="tech-icon-wrapper">
+              <svg viewBox="0 0 24 24" width="32" height="32">
+                <rect x="2" y="4" width="20" height="16" rx="4" fill="#0b1329" stroke="#00f0ff" stroke-width="1.2"/>
+                <text x="12" y="16" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="800" fill="#00f0ff" text-anchor="middle" letter-spacing="1">YOLO</text>
+              </svg>
+            </div>
+            <span class="tech-label">YOLO</span>
+          </div>
+
+          <!-- 9. Git -->
+          <div class="tech-item-card">
+            <div class="tech-icon-wrapper">
+              <svg viewBox="0 0 24 24" width="32" height="32" fill="#F05032">
+                <path d="M21.6 10.9 13.1 2.4a1.5 1.5 0 0 0-2.1 0L8.8 4.6l2.7 2.7a1.8 1.8 0 0 1 2.2.4 1.8 1.8 0 0 1 .4 2.2l2.6 2.6a1.8 1.8 0 0 1 1.7.5 1.8 1.8 0 0 1 0 2.5 1.8 1.8 0 0 1-2.5 0 1.8 1.8 0 0 1-.4-2l-2.4-2.4v5.3a1.8 1.8 0 0 1 .5 1.3 1.8 1.8 0 0 1-1.8 1.8 1.8 1.8 0 0 1-1.8-1.8c0-.5.2-1 .5-1.3v-5.4a1.8 1.8 0 0 1-.5-1.3c0-.6.2-1.1.6-1.5L8.1 7.2 2.4 12.9a1.5 1.5 0 0 0 0 2.1l8.5 8.5c.6.6 1.5.6 2.1 0l8.6-8.5a1.5 1.5 0 0 0 0-2.1z"/>
+              </svg>
+            </div>
+            <span class="tech-label">Git</span>
+          </div>
+
+          <!-- 10. VS Code -->
+          <div class="tech-item-card">
+            <div class="tech-icon-wrapper">
+              <svg viewBox="0 0 24 24" width="32" height="32" fill="#007ACC">
+                <path d="m17.5 2.1-9.7 9 9.7 9 4.5-2.2V4.3L17.5 2.1zm-3.8 9.9L5.3 5.4 2 7.1l6.1 4.9L2 16.9l3.3 1.7 8.4-6.6z"/>
+              </svg>
+            </div>
+            <span class="tech-label">VS Code</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════
+         PROJECTS JOURNEY (CENTRAL TIMELINE)
+         ══════════════════════════════════════════════ -->
+    <section class="projects-journey-section" id="projects">
+      <div class="section-title-wrapper">
+        <div class="section-pretitle">// MY WORK</div>
+        <h2 class="section-title">Projects <span class="journey-gradient">Journey</span></h2>
+        <p class="section-subtitle">A collection of projects that reflect my learning, skills and passion.</p>
+      </div>
+
+      <!-- The Central Alternating Timeline Container -->
+      <div class="timeline-container">
+        <!-- Vertical Spine Line -->
+        <div class="timeline-spine"></div>
+
+        <!-- ──────────────────────────────────────────
+             PROJECT 01: Aether-OS
+             SCREENSHOT LEFT | TIMELINE | DESCRIPTION RIGHT
+             ────────────────────────────────────────── -->
+        <div class="timeline-row row-screenshot-left" id="project-01">
+          <!-- Left: Screenshot Card -->
+          <div class="timeline-side side-media">
+            <a href="https://github.com/Rishi-Dev-pro/AETHER-OS" target="_blank" rel="noopener noreferrer" class="project-screenshot-card">
+              <img src="assets/placeholders/project-01.svg" alt="Aether-OS Screenshot" class="project-screenshot-img" id="PROJECT_SCREENSHOT_01" />
+              <div class="card-glow-overlay"></div>
+            </a>
+          </div>
+
+          <!-- Center: Numbered Node -->
+          <div class="timeline-node-container">
+            <div class="timeline-node">
+              <span>01</span>
+            </div>
+          </div>
+
+          <!-- Right: Description Card -->
+          <div class="timeline-side side-details">
+            <div class="project-details">
+              <h3 class="project-heading">
+                <a href="https://github.com/Rishi-Dev-pro/AETHER-OS" target="_blank" rel="noopener noreferrer">Aether-OS</a>
+              </h3>
+              <div class="project-category">AI-Powered Operating System</div>
+              <p class="project-description">
+                Natural language interface for file management, app control, and automation. A futuristic OS that brings AI into everyday computing.
+              </p>
+              <div class="project-badges">
+                <span class="badge">React</span>
+                <span class="badge">TypeScript</span>
+                <span class="badge">Python</span>
+                <span class="badge">OpenCV</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/Rishi-Dev-pro/AETHER-OS" target="_blank" rel="noopener noreferrer" class="project-link">
+                  <span>Live Demo</span>
+                  <span class="arrow-up-right">↗</span>
+                </a>
+                <span class="link-separator">|</span>
+                <a href="https://github.com/Rishi-Dev-pro/AETHER-OS" target="_blank" rel="noopener noreferrer" class="project-link">
+                  <span>GitHub</span>
+                  <span class="arrow-up-right">↗</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ──────────────────────────────────────────
+             PROJECT 02: Callbuddy-AI
+             DESCRIPTION LEFT | TIMELINE | SCREENSHOT RIGHT
+             ────────────────────────────────────────── -->
+        <div class="timeline-row row-screenshot-right" id="project-02">
+          <!-- Left: Description Card -->
+          <div class="timeline-side side-details align-right">
+            <div class="project-details">
+              <h3 class="project-heading">
+                <a href="https://github.com/Rishi-Dev-pro/CallBuddy-AI" target="_blank" rel="noopener noreferrer">Callbuddy-AI</a>
+              </h3>
+              <div class="project-category">Real-Time AI Voice Assistant</div>
+              <p class="project-description">
+                Live voice communication platform with real-time transcription, AI responses and natural conversation.
+              </p>
+              <div class="project-badges justify-end">
+                <span class="badge">React</span>
+                <span class="badge">Socket.IO</span>
+                <span class="badge">WebRTC</span>
+                <span class="badge">Python</span>
+              </div>
+              <div class="project-links justify-end">
+                <a href="https://github.com/Rishi-Dev-pro/CallBuddy-AI" target="_blank" rel="noopener noreferrer" class="project-link">
+                  <span>Live Demo</span>
+                  <span class="arrow-up-right">↗</span>
+                </a>
+                <span class="link-separator">|</span>
+                <a href="https://github.com/Rishi-Dev-pro/CallBuddy-AI" target="_blank" rel="noopener noreferrer" class="project-link">
+                  <span>GitHub</span>
+                  <span class="arrow-up-right">↗</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Center: Numbered Node -->
+          <div class="timeline-node-container">
+            <div class="timeline-node">
+              <span>02</span>
+            </div>
+          </div>
+
+          <!-- Right: Screenshot Card -->
+          <div class="timeline-side side-media">
+            <a href="https://github.com/Rishi-Dev-pro/CallBuddy-AI" target="_blank" rel="noopener noreferrer" class="project-screenshot-card">
+              <img src="assets/placeholders/project-02.svg" alt="Callbuddy-AI Screenshot" class="project-screenshot-img" id="PROJECT_SCREENSHOT_02" />
+              <div class="card-glow-overlay"></div>
+            </a>
+          </div>
+        </div>
+
+        <!-- ──────────────────────────────────────────
+             PROJECT 03: Mochi
+             SCREENSHOT LEFT | TIMELINE | DESCRIPTION RIGHT
+             ────────────────────────────────────────── -->
+        <div class="timeline-row row-screenshot-left" id="project-03">
+          <!-- Left: Screenshot Card -->
+          <div class="timeline-side side-media">
+            <a href="https://github.com/Rishi-Dev-pro" target="_blank" rel="noopener noreferrer" class="project-screenshot-card">
+              <img src="assets/placeholders/project-03.svg" alt="Mochi Screenshot" class="project-screenshot-img" id="PROJECT_SCREENSHOT_03" />
+              <div class="card-glow-overlay"></div>
+            </a>
+          </div>
+
+          <!-- Center: Numbered Node -->
+          <div class="timeline-node-container">
+            <div class="timeline-node">
+              <span>03</span>
+            </div>
+          </div>
+
+          <!-- Right: Description Card -->
+          <div class="timeline-side side-details">
+            <div class="project-details">
+              <h3 class="project-heading">
+                <a href="https://github.com/Rishi-Dev-pro" target="_blank" rel="noopener noreferrer">Mochi</a>
+              </h3>
+              <div class="project-category">AI Companion & Smart Assistant</div>
+              <p class="project-description">
+                Sleek futuristic AI robot companion featuring autonomous ambient interaction, contextual intelligence, and real-time voice and vision synthesis.
+              </p>
+              <div class="project-badges">
+                <span class="badge">Python</span>
+                <span class="badge">PyTorch</span>
+                <span class="badge">React</span>
+                <span class="badge">FastAPI</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/Rishi-Dev-pro" target="_blank" rel="noopener noreferrer" class="project-link">
+                  <span>Live Demo</span>
+                  <span class="arrow-up-right">↗</span>
+                </a>
+                <span class="link-separator">|</span>
+                <a href="https://github.com/Rishi-Dev-pro" target="_blank" rel="noopener noreferrer" class="project-link">
+                  <span>GitHub</span>
+                  <span class="arrow-up-right">↗</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ──────────────────────────────────────────
+             PROJECT 04: VN-media
+             DESCRIPTION LEFT | TIMELINE | SCREENSHOT RIGHT
+             ────────────────────────────────────────── -->
+        <div class="timeline-row row-screenshot-right" id="project-04">
+          <!-- Left: Description Card -->
+          <div class="timeline-side side-details align-right">
+            <div class="project-details">
+              <h3 class="project-heading">
+                <a href="https://github.com/Rishi-Dev-pro/VN-media" target="_blank" rel="noopener noreferrer">VN-media</a>
+              </h3>
+              <div class="project-category">Social Media & Content Platform</div>
+              <p class="project-description">
+                A full-stack social media platform with real-time features, content feeds, user profiles and interactive media distribution.
+              </p>
+              <div class="project-badges justify-end">
+                <span class="badge">JavaScript</span>
+                <span class="badge">Node.js</span>
+                <span class="badge">Express</span>
+                <span class="badge">MongoDB</span>
+              </div>
+              <div class="project-links justify-end">
+                <a href="https://github.com/Rishi-Dev-pro/VN-media" target="_blank" rel="noopener noreferrer" class="project-link">
+                  <span>Live Demo</span>
+                  <span class="arrow-up-right">↗</span>
+                </a>
+                <span class="link-separator">|</span>
+                <a href="https://github.com/Rishi-Dev-pro/VN-media" target="_blank" rel="noopener noreferrer" class="project-link">
+                  <span>GitHub</span>
+                  <span class="arrow-up-right">↗</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Center: Numbered Node -->
+          <div class="timeline-node-container">
+            <div class="timeline-node">
+              <span>04</span>
+            </div>
+          </div>
+
+          <!-- Right: Screenshot Card -->
+          <div class="timeline-side side-media">
+            <a href="https://github.com/Rishi-Dev-pro/VN-media" target="_blank" rel="noopener noreferrer" class="project-screenshot-card">
+              <img src="assets/placeholders/project-04.svg" alt="VN-media Screenshot" class="project-screenshot-img" id="PROJECT_SCREENSHOT_04" />
+              <div class="card-glow-overlay"></div>
+            </a>
+          </div>
+        </div>
+
+        <!-- ──────────────────────────────────────────
+             PROJECT 05: S-PPT-maker
+             SCREENSHOT LEFT | TIMELINE | DESCRIPTION RIGHT
+             ────────────────────────────────────────── -->
+        <div class="timeline-row row-screenshot-left" id="project-05">
+          <!-- Left: Screenshot Card -->
+          <div class="timeline-side side-media">
+            <a href="https://github.com/Rishi-Dev-pro/S-PPT-maker" target="_blank" rel="noopener noreferrer" class="project-screenshot-card">
+              <img src="assets/placeholders/project-05.svg" alt="S-PPT-maker Screenshot" class="project-screenshot-img" id="PROJECT_SCREENSHOT_05" />
+              <div class="card-glow-overlay"></div>
+            </a>
+          </div>
+
+          <!-- Center: Numbered Node -->
+          <div class="timeline-node-container">
+            <div class="timeline-node">
+              <span>05</span>
+            </div>
+          </div>
+
+          <!-- Right: Description Card -->
+          <div class="timeline-side side-details">
+            <div class="project-details">
+              <h3 class="project-heading">
+                <a href="https://github.com/Rishi-Dev-pro/S-PPT-maker" target="_blank" rel="noopener noreferrer">S-PPT-maker</a>
+              </h3>
+              <div class="project-category">AI-Powered Presentation Generator</div>
+              <p class="project-description">
+                Automated presentation creation system streamlining slide composition, structured content templates, and seamless web export workflows.
+              </p>
+              <div class="project-badges">
+                <span class="badge">JavaScript</span>
+                <span class="badge">React</span>
+                <span class="badge">Node.js</span>
+                <span class="badge">HTML5</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/Rishi-Dev-pro/S-PPT-maker" target="_blank" rel="noopener noreferrer" class="project-link">
+                  <span>Live Demo</span>
+                  <span class="arrow-up-right">↗</span>
+                </a>
+                <span class="link-separator">|</span>
+                <a href="https://github.com/Rishi-Dev-pro/S-PPT-maker" target="_blank" rel="noopener noreferrer" class="project-link">
+                  <span>GitHub</span>
+                  <span class="arrow-up-right">↗</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ──────────────────────────────────────────
+             PROJECT 06: pirate-civ
+             DESCRIPTION LEFT | TIMELINE | SCREENSHOT RIGHT
+             ────────────────────────────────────────── -->
+        <div class="timeline-row row-screenshot-right" id="project-06">
+          <!-- Left: Description Card -->
+          <div class="timeline-side side-details align-right">
+            <div class="project-details">
+              <h3 class="project-heading">
+                <a href="https://github.com/Rishi-Dev-pro" target="_blank" rel="noopener noreferrer">pirate-civ</a>
+              </h3>
+              <div class="project-category">Procedural Strategy & Simulation Game</div>
+              <p class="project-description">
+                Interactive civilization and naval strategy simulation game with procedural generation, resource economies, and immersive canvas rendering.
+              </p>
+              <div class="project-badges justify-end">
+                <span class="badge">JavaScript</span>
+                <span class="badge">Canvas API</span>
+                <span class="badge">WebAudio</span>
+                <span class="badge">Vite</span>
+              </div>
+              <div class="project-links justify-end">
+                <a href="https://github.com/Rishi-Dev-pro" target="_blank" rel="noopener noreferrer" class="project-link">
+                  <span>Live Demo</span>
+                  <span class="arrow-up-right">↗</span>
+                </a>
+                <span class="link-separator">|</span>
+                <a href="https://github.com/Rishi-Dev-pro" target="_blank" rel="noopener noreferrer" class="project-link">
+                  <span>GitHub</span>
+                  <span class="arrow-up-right">↗</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Center: Numbered Node -->
+          <div class="timeline-node-container">
+            <div class="timeline-node">
+              <span>06</span>
+            </div>
+          </div>
+
+          <!-- Right: Screenshot Card -->
+          <div class="timeline-side side-media">
+            <a href="https://github.com/Rishi-Dev-pro" target="_blank" rel="noopener noreferrer" class="project-screenshot-card">
+              <img src="assets/placeholders/project-06.svg" alt="pirate-civ Screenshot" class="project-screenshot-img" id="PROJECT_SCREENSHOT_06" />
+              <div class="card-glow-overlay"></div>
+            </a>
+          </div>
+        </div>
+
+        <!-- ──────────────────────────────────────────
+             PROJECT 07: Rishi-cosmic-protfolio
+             SCREENSHOT LEFT | TIMELINE | DESCRIPTION RIGHT
+             ────────────────────────────────────────── -->
+        <div class="timeline-row row-screenshot-left" id="project-07">
+          <!-- Left: Screenshot Card -->
+          <div class="timeline-side side-media">
+            <a href="https://github.com/Rishi-Dev-pro/rishi-cosmic-portfolio" target="_blank" rel="noopener noreferrer" class="project-screenshot-card">
+              <img src="assets/placeholders/project-07.svg" alt="Rishi-cosmic-protfolio Screenshot" class="project-screenshot-img" id="PROJECT_SCREENSHOT_07" />
+              <div class="card-glow-overlay"></div>
+            </a>
+          </div>
+
+          <!-- Center: Numbered Node -->
+          <div class="timeline-node-container">
+            <div class="timeline-node">
+              <span>07</span>
+            </div>
+          </div>
+
+          <!-- Right: Description Card -->
+          <div class="timeline-side side-details">
+            <div class="project-details">
+              <h3 class="project-heading">
+                <a href="https://github.com/Rishi-Dev-pro/rishi-cosmic-portfolio" target="_blank" rel="noopener noreferrer">Rishi-cosmic-protfolio</a>
+              </h3>
+              <div class="project-category">Immersive 3D Space Portfolio</div>
+              <p class="project-description">
+                Space-themed personal showcase built with interactive 3D particle shaders, smooth scroll choreography, and celestial visual effects.
+              </p>
+              <div class="project-badges">
+                <span class="badge">TypeScript</span>
+                <span class="badge">Three.js</span>
+                <span class="badge">React</span>
+                <span class="badge">GSAP</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/Rishi-Dev-pro/rishi-cosmic-portfolio" target="_blank" rel="noopener noreferrer" class="project-link">
+                  <span>Live Demo</span>
+                  <span class="arrow-up-right">↗</span>
+                </a>
+                <span class="link-separator">|</span>
+                <a href="https://github.com/Rishi-Dev-pro/rishi-cosmic-portfolio" target="_blank" rel="noopener noreferrer" class="project-link">
+                  <span>GitHub</span>
+                  <span class="arrow-up-right">↗</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ──────────────────────────────────────────
+             PROJECT 08: The-Four-Pillars
+             DESCRIPTION LEFT | TIMELINE | SCREENSHOT RIGHT
+             ────────────────────────────────────────── -->
+        <div class="timeline-row row-screenshot-right" id="project-08">
+          <!-- Left: Description Card -->
+          <div class="timeline-side side-details align-right">
+            <div class="project-details">
+              <h3 class="project-heading">
+                <a href="https://github.com/Rishi-Dev-pro/The-Four-Pillars" target="_blank" rel="noopener noreferrer">The-Four-Pillars</a>
+              </h3>
+              <div class="project-category">Interactive 3D Showcase</div>
+              <p class="project-description">
+                High-performance creative web showcase with 3D animations, custom design tokens, fluid glassmorphism, and smooth responsive UI.
+              </p>
+              <div class="project-badges justify-end">
+                <span class="badge">React</span>
+                <span class="badge">Three.js</span>
+                <span class="badge">Vite</span>
+                <span class="badge">TailwindCSS</span>
+              </div>
+              <div class="project-links justify-end">
+                <a href="https://the-four-pillars.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-link">
+                  <span>Live Demo</span>
+                  <span class="arrow-up-right">↗</span>
+                </a>
+                <span class="link-separator">|</span>
+                <a href="https://github.com/Rishi-Dev-pro/The-Four-Pillars" target="_blank" rel="noopener noreferrer" class="project-link">
+                  <span>GitHub</span>
+                  <span class="arrow-up-right">↗</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Center: Numbered Node -->
+          <div class="timeline-node-container">
+            <div class="timeline-node">
+              <span>08</span>
+            </div>
+          </div>
+
+          <!-- Right: Screenshot Card -->
+          <div class="timeline-side side-media">
+            <a href="https://github.com/Rishi-Dev-pro/The-Four-Pillars" target="_blank" rel="noopener noreferrer" class="project-screenshot-card">
+              <img src="assets/placeholders/project-08.svg" alt="The-Four-Pillars Screenshot" class="project-screenshot-img" id="PROJECT_SCREENSHOT_08" />
+              <div class="card-glow-overlay"></div>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════
+         GITHUB STATS SECTION
+         ══════════════════════════════════════════════ -->
+    <section class="stats-section" id="stats">
+      <div class="stats-grid">
+        <!-- 1. Total Repositories -->
+        <div class="stat-card">
+          <div class="stat-card-icon icon-repo">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="4" y="2" width="16" height="20" rx="2"></rect>
+              <line x1="8" y1="6" x2="16" y2="6"></line>
+              <line x1="8" y1="10" x2="16" y2="10"></line>
+              <line x1="8" y1="14" x2="12" y2="14"></line>
+            </svg>
+          </div>
+          <div class="stat-card-info">
+            <div class="stat-card-label">Total Repositories</div>
+            <div class="stat-card-value">20+</div>
+          </div>
+        </div>
+
+        <!-- 2. Total Stars -->
+        <div class="stat-card">
+          <div class="stat-card-icon icon-star">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+            </svg>
+          </div>
+          <div class="stat-card-info">
+            <div class="stat-card-label">Total Stars</div>
+            <div class="stat-card-value">50+</div>
+          </div>
+        </div>
+
+        <!-- 3. Total Commits -->
+        <div class="stat-card">
+          <div class="stat-card-icon icon-commit">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="18" cy="18" r="3"></circle>
+              <circle cx="6" cy="6" r="3"></circle>
+              <path d="M13 6h3a2 2 0 0 1 2 2v7"></path>
+              <line x1="6" y1="9" x2="6" y2="21"></line>
+            </svg>
+          </div>
+          <div class="stat-card-info">
+            <div class="stat-card-label">Total Commits</div>
+            <div class="stat-card-value">500+</div>
+          </div>
+        </div>
+
+        <!-- 4. Current Streak -->
+        <div class="stat-card">
+          <div class="stat-card-icon icon-streak">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"></path>
+            </svg>
+          </div>
+          <div class="stat-card-info">
+            <div class="stat-card-label">Current Streak</div>
+            <div class="stat-card-value">30+ days</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════
+         FOOTER SECTION
+         ══════════════════════════════════════════════ -->
+    <footer class="footer-section" id="contact">
+      <div class="footer-card">
+        <div class="footer-quote-side">
+          <span class="footer-quote">“A better tomorrow is built by what we do today.”</span>
+          <span class="footer-author">— Rishi Shaw</span>
+        </div>
+
+        <div class="footer-social-side">
+          <a href="https://github.com/Rishi-Dev-pro" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+              <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+            </svg>
+          </a>
+          <a href="https://www.linkedin.com/in/rishi-shaw-389800389/" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+              <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+            </svg>
+          </a>
+          <a href="mailto:rishishaw23022006@gmail.com" class="social-btn" aria-label="Email">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+              <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+            </svg>
+          </a>
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

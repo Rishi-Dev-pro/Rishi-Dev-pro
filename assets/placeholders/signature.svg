@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 120" width="100%" height="100%">
+  <defs>
+    <!-- Signature Glow Filter -->
+    <filter id="sig-glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="3" result="blur1" />
+      <feGaussianBlur stdDeviation="7" result="blur2" />
+      <feMerge>
+        <feMergeNode in="blur2" />
+        <feMergeNode in="blur1" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <linearGradient id="sig-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c084fc" />
+      <stop offset="50%" stop-color="#a855f7" />
+      <stop offset="100%" stop-color="#ec4899" />
+    </linearGradient>
+  </defs>
+
+  <g transform="translate(10, 10)">
+    <!-- Elegant Handwritten Cursive Signature for "Rishi Shaw" -->
+    <!-- R -->
+    <path d="M 28 65 C 28 35, 32 15, 35 12 C 40 8, 56 6, 60 20 C 63 32, 50 42, 34 44 C 42 46, 54 58, 62 68" 
+          fill="none" stroke="url(#sig-grad)" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" filter="url(#sig-glow)" />
+    
+    <!-- ishi -->
+    <path d="M 64 52 C 67 44, 70 42, 73 53 C 75 58, 77 44, 82 43 C 86 42, 85 54, 88 53 C 92 48, 95 30, 96 22 C 96 22, 95 54, 98 52 C 102 44, 106 42, 109 52" 
+          fill="none" stroke="url(#sig-grad)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" filter="url(#sig-glow)" />
+    <circle cx="73" cy="34" r="1.5" fill="#e879f9" filter="url(#sig-glow)" />
+    <circle cx="108" cy="34" r="1.5" fill="#e879f9" filter="url(#sig-glow)" />
+
+    <!-- S (Shaw) -->
+    <path d="M 125 58 C 122 55, 126 30, 138 20 C 146 12, 154 18, 146 32 C 138 46, 126 50, 138 56 C 145 60, 156 54, 160 48" 
+          fill="none" stroke="url(#sig-grad)" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" filter="url(#sig-glow)" />
+    
+    <!-- haw + dynamic flourishing underline loop -->
+    <path d="M 162 48 C 164 36, 166 22, 167 18 C 167 18, 166 48, 172 46 C 176 40, 180 39, 183 48 C 185 50, 188 42, 194 43 C 198 44, 201 48, 205 42 C 210 44, 214 43, 220 50 C 228 42, 240 38, 252 46 C 265 55, 230 76, 175 75 C 105 73, 50 68, 20 74 C -5 79, 35 78, 120 76 C 200 74, 260 72, 280 70" 
+          fill="none" stroke="url(#sig-grad)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" filter="url(#sig-glow)" />
+  </g>
+
+  <!-- Tagline: BUILD • LEARN • IMPACT -->
+  <text x="160" y="104" font-family="'JetBrains Mono', -apple-system, BlinkMacSystemFont, 'Segoe UI', monospace" font-size="9" font-weight="600" fill="#94a3b8" letter-spacing="4" text-anchor="middle">
+    BUILD <tspan fill="#38bdf8">•</tspan> LEARN <tspan fill="#a855f7">•</tspan> IMPACT
+  </text>
+</svg>
