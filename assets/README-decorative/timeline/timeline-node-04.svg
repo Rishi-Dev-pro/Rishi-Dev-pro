@@ -1,14 +1,42 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 220" width="60" height="220" role="img" aria-label="Timeline Node 04">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 260" width="80" height="260" role="img" aria-label="Timeline Node 04">
   <title>Project 04 Node</title>
   <defs>
-    <radialGradient id="tn4-glow" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#00F0FF" stop-opacity="0.35" />
+    <radialGradient id="tn-glow-04" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#8B5CF6" stop-opacity="0.6" />
+      <stop offset="50%" stop-color="#00F0FF" stop-opacity="0.3" />
       <stop offset="100%" stop-color="#00F0FF" stop-opacity="0" />
     </radialGradient>
+    <linearGradient id="tn-line-04" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#00F0FF" stop-opacity="0.8" />
+      <stop offset="50%" stop-color="#8B5CF6" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#EC4899" stop-opacity="0.8" />
+    </linearGradient>
+    <linearGradient id="tn-border-04" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00F0FF" />
+      <stop offset="100%" stop-color="#8B5CF6" />
+    </linearGradient>
+    <filter id="glow-filter-04" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
   </defs>
-  <line x1="30" y1="0" x2="30" y2="220" stroke="#00F0FF" stroke-width="2" stroke-opacity="0.4" />
-  <circle cx="30" cy="110" r="28" fill="url(#tn4-glow)" />
-  <circle cx="30" cy="110" r="22" fill="#0A0E17" stroke="#00F0FF" stroke-width="2" stroke-opacity="0.8" />
-  <circle cx="30" cy="110" r="17" fill="#0D111A" stroke="#00F0FF" stroke-width="1" stroke-opacity="0.3" />
-  <text x="30" y="115" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="13" font-weight="700" fill="#00F0FF" text-anchor="middle">04</text>
+
+  <!-- Continuous vertical glowing line -->
+  <line x1="40" y1="0" x2="40" y2="260" stroke="url(#tn-line-04)" stroke-width="4" filter="url(#glow-filter-04)" />
+  <line x1="40" y1="0" x2="40" y2="260" stroke="#FFFFFF" stroke-width="1" stroke-opacity="0.7" />
+
+  <!-- Outer Luminous Aura (diameter ~64px) -->
+  <circle cx="40" cy="130" r="38" fill="url(#tn-glow-04)" />
+
+  <!-- Outer Border Ring (60px diameter) -->
+  <circle cx="40" cy="130" r="30" fill="#070B16" stroke="url(#tn-border-04)" stroke-width="2.5" filter="url(#glow-filter-04)" />
+
+  <!-- Inner Subtle Ring -->
+  <circle cx="40" cy="130" r="24" fill="#0A0F1D" stroke="#00F0FF" stroke-width="1" stroke-opacity="0.35" />
+
+  <!-- Bold Number Display -->
+  <text x="40" y="136" font-family="'JetBrains Mono', monospace" font-size="16" font-weight="800" fill="#FFFFFF" text-anchor="middle" letter-spacing="0.5">04</text>
 </svg>
