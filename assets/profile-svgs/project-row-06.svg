@@ -1,13 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 340" width="100%" height="340">
   <defs>
-    <!-- Continuous Vertical Glowing Spine -->
     <linearGradient id="spine-grad-06" x1="0%" y1="0%" x2="0%" y2="100%">
       <stop offset="0%" stop-color="#00F0FF" />
       <stop offset="50%" stop-color="#8B5CF6" />
       <stop offset="100%" stop-color="#EC4899" />
     </linearGradient>
 
-    <!-- Glowing Node Filter -->
     <filter id="node-glow-06" x="-40%" y="-40%" width="180%" height="180%">
       <feGaussianBlur stdDeviation="8" result="blur" />
       <feMerge>
@@ -16,112 +14,100 @@
       </feMerge>
     </filter>
 
-    <!-- Screenshot Border Gradient -->
     <linearGradient id="ss-border-06" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#10B981" stop-opacity="0.7" />
-      <stop offset="50%" stop-color="#00F0FF" stop-opacity="0.3" />
-      <stop offset="100%" stop-color="#10B981" stop-opacity="0.6" />
+      <stop offset="0%" stop-color="#00F0FF" stop-opacity="0.8" />
+      <stop offset="50%" stop-color="#8B5CF6" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#00F0FF" stop-opacity="0.7" />
     </linearGradient>
 
     <filter id="card-shadow-06" x="-20%" y="-20%" width="140%" height="140%">
       <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#000000" flood-opacity="0.8" />
-      <feDropShadow dx="0" dy="0" stdDeviation="15" flood-color="#10B981" flood-opacity="0.15" />
+      <feDropShadow dx="0" dy="0" stdDeviation="15" flood-color="#00F0FF" flood-opacity="0.18" />
     </filter>
   </defs>
 
-  <!-- ── 1. Central Vertical Spine (Continuous through 340px) ── -->
+  <!-- Central Vertical Spine (Continuous through 340px) -->
   <line x1="600" y1="0" x2="600" y2="340" stroke="url(#spine-grad-06)" stroke-width="4" filter="url(#node-glow-06)" />
   <line x1="600" y1="0" x2="600" y2="340" stroke="#FFFFFF" stroke-width="1.2" stroke-opacity="0.6" />
 
-  <!-- ── 2. Center Numbered Glowing Node (60px diameter) ── -->
+  <!-- Center Numbered Glowing Node (60px diameter) -->
   <g transform="translate(600, 170)">
-    <!-- Outer Glow Halo -->
-    <circle cx="0" cy="0" r="38" fill="#00F0FF" fill-opacity="0.45" filter="url(#node-glow-06)" />
-    <!-- Outer Ring -->
-    <circle cx="0" cy="0" r="30" fill="#070B16" stroke="#10B981" stroke-width="2.5" />
-    <!-- Inner Ring -->
-    <circle cx="0" cy="0" r="24" fill="#0A0F1D" stroke="#00F0FF" stroke-width="1" stroke-opacity="0.5" />
-    <!-- Bold Number -->
+    <circle cx="0" cy="0" r="38" fill="#8B5CF6" fill-opacity="0.45" filter="url(#node-glow-06)" />
+    <circle cx="0" cy="0" r="30" fill="#070B16" stroke="#00F0FF" stroke-width="2.5" />
+    <circle cx="0" cy="0" r="24" fill="#0A0F1D" stroke="#8B5CF6" stroke-width="1" stroke-opacity="0.5" />
     <text x="0" y="6" font-family="'JetBrains Mono', monospace" font-size="16" font-weight="800" fill="#FFFFFF" text-anchor="middle">06</text>
   </g>
 
-  <!-- ── 3. Big Screenshot Card (480px x 270px, 16:9 ratio) ── -->
+  <!-- Big Screenshot Card (480px x 270px) -->
   <g transform="translate(680, 35)" filter="url(#card-shadow-06)">
-    <!-- Card Frame -->
     <rect width="480" height="270" rx="16" fill="#0A0F1E" stroke="url(#ss-border-06)" stroke-width="1.8" />
     
-    <!-- Window Bar -->
-    <rect width="480" height="32" rx="16" fill="#0F172A" fill-opacity="0.7" />
-    <circle cx="20" cy="16" r="4.5" fill="#EF4444" opacity="0.8" />
-    <circle cx="34" cy="16" r="4.5" fill="#F59E0B" opacity="0.8" />
-    <circle cx="48" cy="16" r="4.5" fill="#10B981" opacity="0.8" />
-    <text x="68" y="20" font-family="'JetBrains Mono', monospace" font-size="10.5" fill="#64748B">pirate-civ.system</text>
-
-    <!-- Preview HUD Artwork -->
-    <g transform="translate(250, 60)">
-      <rect width="200" height="180" rx="10" fill="#070C18" stroke="#00F0FF" stroke-opacity="0.3" stroke-width="1" />
-      <circle cx="100" cy="90" r="50" fill="none" stroke="#10B981" stroke-width="1" stroke-dasharray="4 6" opacity="0.5" />
-      <circle cx="100" cy="90" r="24" fill="#10B981" fill-opacity="0.2" stroke="#10B981" stroke-width="1.5" />
-      <circle cx="100" cy="90" r="8" fill="#10B981" />
-    </g>
-
-    <!-- Left Project Typography & Replacement Badge -->
-    <g transform="translate(32, 70)">
-      <text x="0" y="24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="24" font-weight="800" fill="#F8FAFC">Pirate Civ</text>
-      <text x="0" y="48" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="600" fill="#10B981">Procedural Strategy & Simulation Game</text>
-      
-      <!-- Replacement Indicator Pill -->
-      <g transform="translate(0, 85)">
-        <rect width="200" height="36" rx="8" fill="#060A14" stroke="#10B981" stroke-width="1.2" />
-        <text x="100" y="23" font-family="'JetBrains Mono', monospace" font-size="11.5" font-weight="700" fill="#10B981" text-anchor="middle" letter-spacing="1">PROJECT_SCREENSHOT_06</text>
-      </g>
-    </g>
+        <rect width="480" height="270" rx="14" fill="#0A0E1A" />
+        <rect width="480" height="28" fill="#0F172A" />
+        <text x="20" y="18" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700" fill="#00F0FF">FreqSFA-Net // YOLOv8 Inference</text>
+        <!-- Left Panel: Low Light -->
+        <g transform="translate(18, 45)">
+          <rect width="215" height="200" rx="8" fill="#05070D" stroke="#1E293B" stroke-width="1" />
+          <text x="107" y="24" font-family="'JetBrains Mono', monospace" font-size="10" fill="#64748B" text-anchor="middle">Low-Light Image</text>
+          <!-- Dark road with faint headlamps -->
+          <ellipse cx="107" cy="140" rx="40" ry="15" fill="#0B1322" />
+          <circle cx="85" cy="135" r="4" fill="#FACC15" fill-opacity="0.5" />
+          <circle cx="129" cy="135" r="4" fill="#FACC15" fill-opacity="0.5" />
+        </g>
+        <!-- Right Panel: Enhanced Output -->
+        <g transform="translate(247, 45)">
+          <rect width="215" height="200" rx="8" fill="#0F1E36" stroke="#00F0FF" stroke-opacity="0.4" stroke-width="1" />
+          <text x="107" y="24" font-family="'JetBrains Mono', monospace" font-size="10" fill="#00F0FF" font-weight="600" text-anchor="middle">Enhanced Output</text>
+          <!-- Vivid road with bright headlamps and bounding boxes -->
+          <ellipse cx="107" cy="140" rx="60" ry="25" fill="#1E3A5F" />
+          <circle cx="85" cy="135" r="7" fill="#FDE047" />
+          <circle cx="129" cy="135" r="7" fill="#FDE047" />
+          <!-- Green YOLO Bounding Box -->
+          <rect x="70" y="115" width="75" height="50" fill="none" stroke="#22C55E" stroke-width="1.8" />
+          <rect x="70" y="103" width="55" height="12" fill="#22C55E" />
+          <text x="73" y="112" font-family="'JetBrains Mono', monospace" font-size="8" font-weight="700" fill="#000000">car 0.94</text>
+        </g>
+        
   </g>
 
-  <!-- ── 4. Project Description Card ── -->
+  <!-- Project Description Card -->
   <g transform="translate(50, 50)">
-    <!-- Title -->
-    <text x="0" y="32" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="24" font-weight="800" fill="#10B981">Pirate Civ</text>
+    <text x="0" y="32" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="24" font-weight="800" fill="#00F0FF">FreqSFA-Net</text>
+    <text x="0" y="60" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14.5" font-weight="600" fill="#94A3B8">Low-Light Enhancement &amp; Object Detection</text>
     
-    <!-- Category -->
-    <text x="0" y="60" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14.5" font-weight="600" fill="#94A3B8">Procedural Strategy & Simulation Game</text>
-    
-    <!-- Description Paragraph -->
-    <text x="0" y="92" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14.5" fill="#CBD5E1" line-height="1.6">
-      <tspan x="0" dy="0">Interactive civilization and naval strategy simulation game with</tspan>
-      <tspan x="0" dy="24">procedural generation, resource economies, and immersive canvas rendering.</tspan>
+    <text x="0" y="92" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14.5" fill="#CBD5E1">
+      <tspan x="0" dy="0">Research project on low-light image enhancement</tspan>
+      <tspan x="0" dy="24">and object detection using YOLOv8.</tspan>
     </text>
 
-    <!-- Technology Badges -->
+    <!-- Badges -->
     <g transform="translate(0, 155)">
       
         <g transform="translate(0, 0)">
-          <rect width="110" height="26" rx="13" fill="#0B1325" stroke="#1E293B" stroke-width="1" />
-          <text x="55" y="17" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="500" fill="#94A3B8" text-anchor="middle">JavaScript</text>
+          <rect width="76" height="26" rx="13" fill="#0B1325" stroke="#1E293B" stroke-width="1" />
+          <text x="38" y="17" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="500" fill="#94A3B8" text-anchor="middle">Python</text>
         </g>
         
-        <g transform="translate(118, 0)">
-          <rect width="110" height="26" rx="13" fill="#0B1325" stroke="#1E293B" stroke-width="1" />
-          <text x="55" y="17" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="500" fill="#94A3B8" text-anchor="middle">Canvas API</text>
+        <g transform="translate(84, 0)">
+          <rect width="85" height="26" rx="13" fill="#0B1325" stroke="#1E293B" stroke-width="1" />
+          <text x="42" y="17" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="500" fill="#94A3B8" text-anchor="middle">PyTorch</text>
         </g>
         
-        <g transform="translate(236, 0)">
-          <rect width="92" height="26" rx="13" fill="#0B1325" stroke="#1E293B" stroke-width="1" />
-          <text x="46" y="17" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="500" fill="#94A3B8" text-anchor="middle">WebAudio</text>
+        <g transform="translate(177, 0)">
+          <rect width="76" height="26" rx="13" fill="#0B1325" stroke="#1E293B" stroke-width="1" />
+          <text x="38" y="17" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="500" fill="#94A3B8" text-anchor="middle">YOLOv8</text>
         </g>
         
-        <g transform="translate(336, 0)">
-          <rect width="56" height="26" rx="13" fill="#0B1325" stroke="#1E293B" stroke-width="1" />
-          <text x="28" y="17" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="500" fill="#94A3B8" text-anchor="middle">Vite</text>
+        <g transform="translate(261, 0)">
+          <rect width="76" height="26" rx="13" fill="#0B1325" stroke="#1E293B" stroke-width="1" />
+          <text x="38" y="17" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="500" fill="#94A3B8" text-anchor="middle">OpenCV</text>
         </g>
         
     </g>
 
     <!-- Action Links -->
     <g transform="translate(0, 215)">
-      <text x="0" y="0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="600" fill="#38BDF8">
-        Live Demo ↗ &nbsp;&nbsp;<tspan fill="#64748B">|</tspan>&nbsp;&nbsp; GitHub ↗
-      </text>
+      <text x="0" y="0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="600" fill="#38BDF8">Documentation ↗   |   GitHub ↗</text>
     </g>
   </g>
 </svg>
