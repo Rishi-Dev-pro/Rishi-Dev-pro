@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" width="100%" height="120">
+  <defs>
+    <linearGradient id="stat-border" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3B82F6" stop-opacity="0.35" />
+      <stop offset="100%" stop-color="#8B5CF6" stop-opacity="0.35" />
+    </linearGradient>
+  </defs>
+
+  <g transform="translate(36, 10)">
+    <!-- 1. Total Repositories -->
+    <g transform="translate(0, 0)">
+      <rect width="265" height="96" rx="16" fill="#0A0F1E" fill-opacity="0.85" stroke="url(#stat-border)" stroke-width="1.3" />
+      <!-- Icon -->
+      <rect x="20" y="24" width="48" height="48" rx="12" fill="#8B5CF6" fill-opacity="0.18" stroke="#A855F7" stroke-width="1.2" />
+      <rect x="34" y="36" width="20" height="24" rx="2" fill="none" stroke="#C084FC" stroke-width="2" />
+      <line x1="38" y1="42" x2="50" y2="42" stroke="#C084FC" stroke-width="1.8" />
+      <line x1="38" y1="48" x2="46" y2="48" stroke="#C084FC" stroke-width="1.8" />
+      <!-- Text -->
+      <text x="82" y="44" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="500" fill="#94A3B8">Total Repositories</text>
+      <text x="82" y="70" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="24" font-weight="800" fill="#FFFFFF">20+</text>
+    </g>
+
+    <!-- 2. Total Stars -->
+    <g transform="translate(288, 0)">
+      <rect width="265" height="96" rx="16" fill="#0A0F1E" fill-opacity="0.85" stroke="url(#stat-border)" stroke-width="1.3" />
+      <rect x="20" y="24" width="48" height="48" rx="12" fill="#FACC15" fill-opacity="0.18" stroke="#FACC15" stroke-width="1.2" />
+      <polygon points="44 34 47 43 56 44 49 50 51 59 44 54 37 59 39 50 32 44 41 43 44 34" fill="#FACC15" />
+      <text x="82" y="44" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="500" fill="#94A3B8">Total Stars</text>
+      <text x="82" y="70" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="24" font-weight="800" fill="#FFFFFF">50+</text>
+    </g>
+
+    <!-- 3. Total Commits -->
+    <g transform="translate(576, 0)">
+      <rect width="265" height="96" rx="16" fill="#0A0F1E" fill-opacity="0.85" stroke="url(#stat-border)" stroke-width="1.3" />
+      <rect x="20" y="24" width="48" height="48" rx="12" fill="#38BDF8" fill-opacity="0.18" stroke="#38BDF8" stroke-width="1.2" />
+      <circle cx="50" cy="44" r="3.5" fill="none" stroke="#38BDF8" stroke-width="2" />
+      <circle cx="38" cy="54" r="3.5" fill="none" stroke="#38BDF8" stroke-width="2" />
+      <line x1="38" y1="36" x2="38" y2="50" stroke="#38BDF8" stroke-width="2" />
+      <text x="82" y="44" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="500" fill="#94A3B8">Total Commits</text>
+      <text x="82" y="70" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="24" font-weight="800" fill="#FFFFFF">500+</text>
+    </g>
+
+    <!-- 4. Current Streak -->
+    <g transform="translate(864, 0)">
+      <rect width="265" height="96" rx="16" fill="#0A0F1E" fill-opacity="0.85" stroke="url(#stat-border)" stroke-width="1.3" />
+      <rect x="20" y="24" width="48" height="48" rx="12" fill="#FB923C" fill-opacity="0.18" stroke="#FB923C" stroke-width="1.2" />
+      <path d="M 44 34 C 44 38 41 40 41 43 C 41 46 44 47 44 50 C 44 54 41 56 38 56 C 35 56 32 53 32 50 C 32 44 38 38 44 34 Z" fill="#FB923C" />
+      <path d="M 46 42 C 48 45 48 47 47 49 C 48 51 49 53 48 55 C 47 57 45 58 43 58 C 45 56 46 54 45 52 C 44 50 44 48 45 46 C 45 44 46 43 46 42 Z" fill="#F87171" />
+      <text x="82" y="44" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="500" fill="#94A3B8">Current Streak</text>
+      <text x="82" y="70" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="24" font-weight="800" fill="#FFFFFF">30+ days</text>
+    </g>
+  </g>
+</svg>

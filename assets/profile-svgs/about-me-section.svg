@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 230" width="100%" height="230">
+  <defs>
+    <linearGradient id="about-border" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3B82F6" stop-opacity="0.35" />
+      <stop offset="50%" stop-color="#8B5CF6" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="#3B82F6" stop-opacity="0.3" />
+    </linearGradient>
+    <linearGradient id="sig-glow-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#C084FC" />
+      <stop offset="100%" stop-color="#EC4899" />
+    </linearGradient>
+    <filter id="sig-glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Large Glass Card Container -->
+  <rect x="2" y="2" width="1196" height="226" rx="20" fill="#0A0F1E" fill-opacity="0.85" stroke="url(#about-border)" stroke-width="1.5" />
+
+  <!-- Header: Purple Icon + Title -->
+  <g transform="translate(36, 26)">
+    <rect x="0" y="0" width="34" height="34" rx="8" fill="#8B5CF6" fill-opacity="0.2" stroke="#A855F7" stroke-width="1.2" />
+    <!-- User Icon -->
+    <path d="M 17 10 C 14.5 10 12.5 12 12.5 14.5 C 12.5 17 14.5 19 17 19 C 19.5 19 21.5 17 21.5 14.5 C 21.5 12 19.5 10 17 10 Z M 10 25 C 10 21.5 13 20 17 20 C 21 20 24 21.5 24 25 Z" fill="#C084FC" />
+    <text x="46" y="24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="22" font-weight="700" fill="#FFFFFF">About Me</text>
+  </g>
+
+  <!-- Left: Bio Text -->
+  <g transform="translate(36, 75)">
+    <text font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14.5" fill="#94A3B8" line-height="1.7">
+      <tspan x="0" dy="0">I am a Computer Science enthusiast passionate about Artificial Intelligence,</tspan>
+      <tspan x="0" dy="24">Computer Vision, and Full Stack Development. I love exploring new technologies,</tspan>
+      <tspan x="0" dy="24">building projects, and continuously learning. My goal is to create intelligent systems</tspan>
+      <tspan x="0" dy="24">that are practical, scalable, and impactful.</tspan>
+    </text>
+
+    <!-- Bottom Metadata Pills -->
+    <g transform="translate(0, 105)">
+      <!-- India -->
+      <g>
+        <path d="M 8 0 C 4.5 0 2 2.5 2 6 C 2 10.5 8 15 8 15 C 8 15 14 10.5 14 6 C 14 2.5 11.5 0 8 0 Z" fill="none" stroke="#38BDF8" stroke-width="1.3" />
+        <circle cx="8" cy="6" r="1.5" fill="#38BDF8" />
+        <text x="20" y="11" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" fill="#CBD5E1">India</text>
+      </g>
+
+      <!-- B.Tech (CSE) -->
+      <g transform="translate(90, 0)">
+        <polygon points="12 2 2 7 12 12 22 7 12 2" fill="none" stroke="#818CF8" stroke-width="1.3" />
+        <path d="M 6 9.5 L 6 15 C 6 17 12 19 12 19 C 12 19 18 17 18 15 L 18 9.5" fill="none" stroke="#818CF8" stroke-width="1.3" />
+        <text x="28" y="11" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" fill="#CBD5E1">B.Tech (CSE)</text>
+      </g>
+
+      <!-- Always learning -->
+      <g transform="translate(230, 0)">
+        <polyline points="5 4 1 8 5 12" fill="none" stroke="#C084FC" stroke-width="1.3" />
+        <polyline points="11 4 15 8 11 12" fill="none" stroke="#C084FC" stroke-width="1.3" />
+        <text x="22" y="11" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" fill="#CBD5E1">Always learning</text>
+      </g>
+
+      <!-- Open to collaboration -->
+      <g transform="translate(370, 0)">
+        <path d="M 8 13 L 2 7 C 0 5 0 2 3 1 C 5 0 7 2 8 3 C 9 2 11 0 13 1 C 16 2 16 5 14 7 Z" fill="none" stroke="#F43F5E" stroke-width="1.3" />
+        <text x="20" y="11" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" fill="#CBD5E1">Open to collaboration</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Right: Rishi Shaw Neon Signature -->
+  <g transform="translate(860, 60)">
+    <!-- Signature Script -->
+    <path d="M 28 65 C 28 35, 32 15, 35 12 C 40 8, 56 6, 60 20 C 63 32, 50 42, 34 44 C 42 46, 54 58, 62 68 M 64 52 C 67 44, 70 42, 73 53 C 75 58, 77 44, 82 43 C 86 42, 85 54, 88 53 C 92 48, 95 30, 96 22 C 96 22, 95 54, 98 52 C 102 44, 106 42, 109 52 M 125 58 C 122 55, 126 30, 138 20 C 146 12, 154 18, 146 32 C 138 46, 126 50, 138 56 C 145 60, 156 54, 160 48 M 162 48 C 164 36, 166 22, 167 18 C 167 18, 166 48, 172 46 C 176 40, 180 39, 183 48 C 185 50, 188 42, 194 43 C 198 44, 201 48, 205 42 C 210 44, 214 43, 220 50 C 228 42, 240 38, 252 46 C 265 55, 230 76, 175 75 C 105 73, 50 68, 20 74 C -5 79, 35 78, 120 76 C 200 74, 260 72, 280 70" 
+          fill="none" stroke="url(#sig-glow-grad)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" filter="url(#sig-glow)" />
+    <circle cx="83" cy="44" r="1.5" fill="#E879F9" filter="url(#sig-glow)" />
+    <circle cx="118" cy="44" r="1.5" fill="#E879F9" filter="url(#sig-glow)" />
+    
+    <!-- BUILD • LEARN • IMPACT -->
+    <text x="140" y="105" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="600" fill="#94A3B8" letter-spacing="4" text-anchor="middle">
+      BUILD <tspan fill="#38BDF8">•</tspan> LEARN <tspan fill="#A855F7">•</tspan> IMPACT
+    </text>
+  </g>
+</svg>
