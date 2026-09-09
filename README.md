@@ -55,24 +55,24 @@
   <img src="assets/profile-svgs/project-row-04.svg" width="100%" alt="04 VN Media" />
 </a>
 
-<!-- Project 05: Hospital Management System -->
-<a href="https://github.com/Rishi-Dev-pro">
-  <img src="assets/profile-svgs/project-row-05.svg" width="100%" alt="05 Hospital Management System" />
+<!-- Project 05: pirate-civ -->
+<a href="https://github.com/Rishi-Dev-pro/pirate-civ">
+  <img src="assets/profile-svgs/project-row-05.svg" width="100%" alt="05 pirate-civ" />
 </a>
 
-<!-- Project 06: FreqSFA-Net -->
-<a href="https://github.com/Rishi-Dev-pro">
-  <img src="assets/profile-svgs/project-row-06.svg" width="100%" alt="06 FreqSFA-Net" />
+<!-- Project 06: S-PPT-maker -->
+<a href="https://github.com/Rishi-Dev-pro/S-PPT-maker">
+  <img src="assets/profile-svgs/project-row-06.svg" width="100%" alt="06 S-PPT-maker" />
 </a>
 
-<!-- Project 07: Portfolio Website -->
+<!-- Project 07: Rishi-cosmic-protfolio -->
 <a href="https://github.com/Rishi-Dev-pro/rishi-cosmic-portfolio">
-  <img src="assets/profile-svgs/project-row-07.svg" width="100%" alt="07 Portfolio Website" />
+  <img src="assets/profile-svgs/project-row-07.svg" width="100%" alt="07 Rishi-cosmic-protfolio" />
 </a>
 
-<!-- Project 08: C Programming Lab -->
-<a href="https://github.com/Rishi-Dev-pro">
-  <img src="assets/profile-svgs/project-row-08.svg" width="100%" alt="08 C Programming Lab" />
+<!-- Project 08: Mochu -->
+<a href="https://github.com/Rishi-Dev-pro/Mochu">
+  <img src="assets/profile-svgs/project-row-08.svg" width="100%" alt="08 Mochu" />
 </a>
 
 <br /><br />

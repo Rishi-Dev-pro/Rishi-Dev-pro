@@ -1,176 +1,29 @@
 import os
-import base64
-from io import BytesIO
-from PIL import Image
 import xml.etree.ElementTree as ET
+import base64
+from PIL import Image
+import io
 
-os.makedirs('assets/profile-svgs', exist_ok=True)
+print("=== BUILDING UPDATED HIGH-RES PROFILE ROW SVGs ===")
 
-def get_compressed_b64(path, max_width=800):
-    if not os.path.exists(path):
+def get_compressed_b64(img_path):
+    if not os.path.exists(img_path):
+        print(f"Warning: {img_path} not found!")
         return None
-    try:
-        img = Image.open(path).convert('RGB')
-        w, h = img.size
-        if w > max_width:
-            new_h = int(h * (max_width / w))
-            img = img.resize((max_width, new_h), Image.Resampling.LANCZOS)
-        buf = BytesIO()
-        img.save(buf, format='JPEG', quality=85)
-        return 'data:image/jpeg;base64,' + base64.b64encode(buf.getvalue()).decode('utf-8')
-    except Exception as e:
-        print(f"Error encoding {path}: {e}")
-        return None
+    with Image.open(img_path) as im:
+        im = im.convert('RGB')
+        im.thumbnail((960, 540), Image.Resampling.LANCZOS)
+        buf = io.BytesIO()
+        im.save(buf, format='JPEG', quality=82, optimize=True)
+        raw = buf.getvalue()
+        b64 = base64.b64encode(raw).decode('utf-8')
+        print(f"Loaded {img_path}: {len(raw)//1024} KB JPEG")
+        return f"data:image/jpeg;base64,{b64}"
 
 aether_img = get_compressed_b64('assets/screenshots/aether-os.png')
 callbuddy_img = get_compressed_b64('assets/screenshots/callbuddy-ai-1.png')
 fourpillars_img = get_compressed_b64('assets/screenshots/the-four-pillars.png')
 
-# ════════════════════════════════════════════════════════════════
-# 1. FIXED HERO SECTION SVG (1200 x 360) - 100% VALID XML
-# ════════════════════════════════════════════════════════════════
-hero_svg = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="100%" height="360">
-  <defs>
-    <linearGradient id="halo-grad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#00F0FF" />
-      <stop offset="40%" stop-color="#3B82F6" />
-      <stop offset="80%" stop-color="#8B5CF6" />
-      <stop offset="100%" stop-color="#EC4899" />
-    </linearGradient>
-
-    <linearGradient id="name-grad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#38BDF8" />
-      <stop offset="50%" stop-color="#818CF8" />
-      <stop offset="100%" stop-color="#C084FC" />
-    </linearGradient>
-
-    <linearGradient id="card-border" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#00F0FF" stop-opacity="0.35" />
-      <stop offset="50%" stop-color="#3B82F6" stop-opacity="0.15" />
-      <stop offset="100%" stop-color="#8B5CF6" stop-opacity="0.3" />
-    </linearGradient>
-
-    <filter id="hero-glow" x="-30%" y="-30%" width="160%" height="160%">
-      <feGaussianBlur stdDeviation="8" result="blur" />
-      <feMerge>
-        <feMergeNode in="blur" />
-        <feMergeNode in="SourceGraphic" />
-      </feMerge>
-    </filter>
-
-    <filter id="avatar-glow" x="-40%" y="-40%" width="180%" height="180%">
-      <feGaussianBlur stdDeviation="12" result="blur" />
-      <feMerge>
-        <feMergeNode in="blur" />
-        <feMergeNode in="SourceGraphic" />
-      </feMerge>
-    </filter>
-
-    <clipPath id="avatar-clip">
-      <circle cx="110" cy="130" r="75" />
-    </clipPath>
-  </defs>
-
-  <!-- Left: Profile Avatar -->
-  <g>
-    <!-- Outer Luminous Ring -->
-    <circle cx="110" cy="130" r="82" fill="none" stroke="url(#halo-grad)" stroke-width="3.5" filter="url(#avatar-glow)" />
-    <circle cx="110" cy="130" r="78" fill="#0A0F1E" />
-
-    <!-- Sunset Silhouette Inside Avatar -->
-    <g clip-path="url(#avatar-clip)">
-      <rect x="30" y="50" width="160" height="160" fill="#1E293B" />
-      <path d="M 30 150 Q 110 135 190 150 L 190 210 L 30 210 Z" fill="#F97316" fill-opacity="0.45" />
-      <path d="M 30 165 Q 110 150 190 165 L 190 210 L 30 210 Z" fill="#E11D48" fill-opacity="0.4" />
-      <path d="M 110 95 C 98 95 90 105 90 120 C 90 132 98 140 108 143 C 95 148 75 155 70 200 L 150 200 C 145 155 125 148 112 143 C 122 140 130 132 130 120 C 130 105 122 95 110 95 Z" fill="#060911" />
-      <path d="M 98 100 Q 110 96 122 100" stroke="#00F0FF" stroke-width="2" fill="none" opacity="0.8" />
-    </g>
-
-    <!-- Available for Opportunities Status Pill -->
-    <g transform="translate(25, 235)">
-      <rect x="0" y="0" width="170" height="28" rx="14" fill="#090E1B" stroke="#334155" stroke-width="1.2" />
-      <circle cx="16" cy="14" r="4.5" fill="#10B981" filter="url(#hero-glow)" />
-      <text x="28" y="18" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10.5" font-weight="600" fill="#94A3B8">Available for opportunities</text>
-    </g>
-  </g>
-
-  <!-- Center: Hero Text and Actions -->
-  <g transform="translate(240, 50)">
-    <text x="0" y="24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="20" font-weight="500" fill="#94A3B8">Hi, I'm</text>
-    
-    <!-- Big Name -->
-    <text x="0" y="80" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="56" font-weight="900" fill="#FFFFFF" letter-spacing="-0.5">Rishi <tspan fill="url(#name-grad)">Shaw</tspan></text>
-    
-    <!-- Subtitle Role -->
-    <text x="0" y="116" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="15.5" font-weight="600" fill="#94A3B8" letter-spacing="0.3">AI Engineer &#8226; Full Stack Developer &#8226; Computer Vision Developer</text>
-
-    <!-- Bio paragraph -->
-    <text x="0" y="150" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" fill="#94A3B8">
-      <tspan x="0" dy="0">Building useful AI products, scalable web applications, and</tspan>
-      <tspan x="0" dy="22">computer vision solutions. I enjoy turning ideas into real-world</tspan>
-      <tspan x="0" dy="22">systems that create impact.</tspan>
-    </text>
-
-    <!-- Action Buttons -->
-    <g transform="translate(0, 225)">
-      <!-- View My Work Button -->
-      <rect x="0" y="0" width="165" height="44" rx="12" fill="#6366F1" stroke="#818CF8" stroke-width="1.2" filter="url(#hero-glow)" />
-      <!-- Octocat Icon -->
-      <path d="M 28 22 C 28 17 32 13 37 13 C 42 13 46 17 46 22 C 46 26 43 29 40 30 C 40 29 40 28 40 27 C 37 28 36 26 36 26 C 35 24 34 24 34 24 C 33 23 34 23 34 23 C 35 23 36 25 36 25 C 37 27 39 26 40 25 C 40 24 41 23 41 23 C 39 23 36 22 36 18 C 36 17 37 16 37 15 C 37 15 37 14 37 13 C 37 13 38 13 40 14 C 41 14 42 14 43 14 C 44 14 45 14 46 14 C 48 13 49 13 49 13 C 49 14 49 15 49 15 C 49 16 50 17 50 18 C 50 22 47 23 45 23 C 45 23 46 24 46 25 C 46 27 46 29 46 30 C 43 29 40 26 40 22 Z" fill="#FFFFFF" transform="translate(-10, -5)" />
-      <text x="64" y="27" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="600" fill="#FFFFFF">View My Work</text>
-
-      <!-- Contact Me Button -->
-      <g transform="translate(180, 0)">
-        <rect x="0" y="0" width="150" height="44" rx="12" fill="#0B1120" stroke="#334155" stroke-width="1.2" />
-        <!-- Mail Icon -->
-        <rect x="22" y="14" width="18" height="14" rx="2" fill="none" stroke="#CBD5E1" stroke-width="1.6" />
-        <path d="M 22 15 L 31 22 L 40 15" fill="none" stroke="#CBD5E1" stroke-width="1.6" />
-        <text x="50" y="27" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="600" fill="#F8FAFC">Contact Me</text>
-      </g>
-    </g>
-  </g>
-
-  <!-- Right: Quote and Stats Card -->
-  <g transform="translate(740, 25)">
-    <rect x="0" y="0" width="440" height="300" rx="18" fill="#0B1122" fill-opacity="0.85" stroke="url(#card-border)" stroke-width="1.5" />
-    
-    <!-- Quote Icon -->
-    <text x="32" y="55" font-family="serif" font-size="44" fill="#38BDF8" filter="url(#hero-glow)">“</text>
-    
-    <!-- Quote Body -->
-    <text x="62" y="50" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" fill="#E2E8F0">
-      <tspan x="62" dy="0">Engineering is not just</tspan>
-      <tspan x="62" dy="24">about writing code, it's about</tspan>
-      <tspan x="62" dy="24">solving real problems.</tspan>
-    </text>
-    <text x="390" y="130" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" fill="#64748B" text-anchor="end">&#8212; Rishi Shaw</text>
-
-    <!-- Divider Line -->
-    <line x1="32" y1="160" x2="408" y2="160" stroke="#1E293B" stroke-width="1.2" />
-
-    <!-- 3 Metrics Columns -->
-    <g transform="translate(32, 185)">
-      <text x="50" y="42" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="34" font-weight="800" fill="#38BDF8" text-anchor="middle" filter="url(#hero-glow)">8+</text>
-      <text x="50" y="70" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="500" fill="#94A3B8" text-anchor="middle">Projects</text>
-
-      <text x="188" y="42" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="34" font-weight="800" fill="#38BDF8" text-anchor="middle" filter="url(#hero-glow)">3+</text>
-      <text x="188" y="70" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="500" fill="#94A3B8" text-anchor="middle">Tech Domains</text>
-
-      <text x="326" y="44" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="38" font-weight="800" fill="#C084FC" text-anchor="middle" filter="url(#hero-glow)">&#8734;</text>
-      <text x="326" y="70" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="500" fill="#94A3B8" text-anchor="middle">Learning</text>
-    </g>
-  </g>
-</svg>"""
-
-with open('assets/profile-svgs/hero-section.svg', 'w', encoding='utf-8') as f:
-    f.write(hero_svg)
-
-ET.fromstring(hero_svg)
-print("Hero SVG generated & valid XML!")
-
-# ════════════════════════════════════════════════════════════════
-# 2. GENERATE ALL 8 PROJECT ROW SVGs MATCHING REFERENCE IMAGE
-# ════════════════════════════════════════════════════════════════
 projects_spec = [
     {
         'num': '01',
@@ -180,6 +33,8 @@ projects_spec = [
         'desc_2': 'and automation. A futuristic OS that brings AI into everyday computing.',
         'badges': ['React', 'TypeScript', 'Python', 'OpenCV'],
         'links': 'Live Demo ↗   |   GitHub ↗',
+        'demo_url': 'https://github.com/Rishi-Dev-pro/AETHER-OS',
+        'repo_url': 'https://github.com/Rishi-Dev-pro/AETHER-OS',
         'orientation': 'left',
         'c1': '#00F0FF', 'c2': '#3B82F6',
         'b64': aether_img
@@ -192,6 +47,8 @@ projects_spec = [
         'desc_2': 'transcription, AI responses and natural conversation.',
         'badges': ['React', 'Socket.IO', 'WebRTC', 'Python'],
         'links': 'Live Demo ↗   |   GitHub ↗',
+        'demo_url': 'https://github.com/Rishi-Dev-pro/CallBuddy-AI',
+        'repo_url': 'https://github.com/Rishi-Dev-pro/CallBuddy-AI',
         'orientation': 'right',
         'c1': '#38BDF8', 'c2': '#818CF8',
         'b64': callbuddy_img
@@ -204,6 +61,8 @@ projects_spec = [
         'desc_2': 'animations, custom designs and smooth UI.',
         'badges': ['React', 'Three.js', 'Vite', 'TailwindCSS'],
         'links': 'Live Demo ↗   |   GitHub ↗',
+        'demo_url': 'https://the-four-pillars.vercel.app/',
+        'repo_url': 'https://github.com/Rishi-Dev-pro/The-Four-Pillars',
         'orientation': 'left',
         'c1': '#38BDF8', 'c2': '#C084FC',
         'b64': fourpillars_img
@@ -216,64 +75,71 @@ projects_spec = [
         'desc_2': 'features, content feeds, user profiles and more.',
         'badges': ['JavaScript', 'Node.js', 'Express', 'MongoDB'],
         'links': 'Live Demo ↗   |   GitHub ↗',
+        'demo_url': 'https://github.com/Rishi-Dev-pro/VN-media',
+        'repo_url': 'https://github.com/Rishi-Dev-pro/VN-media',
         'orientation': 'right',
         'c1': '#00F0FF', 'c2': '#10B981',
         'mock': 'vn_media'
     },
     {
         'num': '05',
-        'title': 'Hospital Management System',
-        'category': 'Web Application',
-        'desc_1': 'Manage patients, doctors, appointments, wards and',
-        'desc_2': 'billing. Built with Laravel and MySQL.',
-        'badges': ['Laravel', 'MySQL', 'Bootstrap', 'JavaScript'],
+        'title': 'pirate-civ',
+        'category': 'Pirate-Themed E-Commerce Website',
+        'desc_1': 'High-seas nautical themed e-commerce shop featuring pirate merchandise,',
+        'desc_2': 'interactive treasure catalog, cart workflows, and custom skull-and-cannon UI.',
+        'badges': ['React', 'TypeScript', 'TailwindCSS', 'Node.js'],
         'links': 'Live Demo ↗   |   GitHub ↗',
+        'demo_url': 'https://github.com/Rishi-Dev-pro/pirate-civ',
+        'repo_url': 'https://github.com/Rishi-Dev-pro/pirate-civ',
         'orientation': 'left',
-        'c1': '#38BDF8', 'c2': '#3B82F6',
-        'mock': 'hospital'
+        'c1': '#F59E0B', 'c2': '#10B981',
+        'mock': 'pirate_civ'
     },
     {
         'num': '06',
-        'title': 'FreqSFA-Net',
-        'category': 'Low-Light Enhancement &amp; Object Detection',
-        'desc_1': 'Research project on low-light image enhancement',
-        'desc_2': 'and object detection using YOLOv8.',
-        'badges': ['Python', 'PyTorch', 'YOLOv8', 'OpenCV'],
-        'links': 'Documentation ↗   |   GitHub ↗',
+        'title': 'S-PPT-maker',
+        'category': 'Free No-Watermark PowerPoint Maker',
+        'desc_1': 'Zero-watermark presentation engine empowering fast slide design,',
+        'desc_2': 'dynamic content templates, automated typography, and instant PPTX export.',
+        'badges': ['JavaScript', 'React', 'Node.js', 'HTML5'],
+        'links': 'Live Demo ↗   |   GitHub ↗',
+        'demo_url': 'https://github.com/Rishi-Dev-pro/S-PPT-maker',
+        'repo_url': 'https://github.com/Rishi-Dev-pro/S-PPT-maker',
         'orientation': 'right',
-        'c1': '#00F0FF', 'c2': '#8B5CF6',
-        'mock': 'freqsfa'
+        'c1': '#F59E0B', 'c2': '#3B82F6',
+        'mock': 's_ppt_maker'
     },
     {
         'num': '07',
-        'title': 'Portfolio Website',
-        'category': 'Personal Portfolio',
-        'desc_1': 'A modern, responsive portfolio to showcase my',
-        'desc_2': 'projects, skills and journey.',
-        'badges': ['HTML', 'CSS', 'JavaScript', 'GSAP'],
+        'title': 'Rishi-cosmic-protfolio',
+        'category': 'Galaxy-Themed 3D Portfolio',
+        'desc_1': 'Space-themed personal showcase built with interactive 3D particle shaders,',
+        'desc_2': 'cosmic nebula backdrops, smooth orbit controls, and celestial GSAP motion.',
+        'badges': ['Three.js', 'TypeScript', 'React', 'GSAP'],
         'links': 'Live Demo ↗   |   GitHub ↗',
+        'demo_url': 'https://github.com/Rishi-Dev-pro/rishi-cosmic-portfolio',
+        'repo_url': 'https://github.com/Rishi-Dev-pro/rishi-cosmic-portfolio',
         'orientation': 'left',
-        'c1': '#38BDF8', 'c2': '#C084FC',
-        'mock': 'portfolio'
+        'c1': '#C084FC', 'c2': '#00F0FF',
+        'mock': 'cosmic_portfolio'
     },
     {
         'num': '08',
-        'title': 'C Programming Lab',
-        'category': 'Practical Programs Collection',
-        'desc_1': 'A collection of C programs and lab assignments',
-        'desc_2': 'with proper documentation and explanations.',
-        'badges': ['C', 'Data Structures', 'Algorithms'],
-        'links': 'View Docs ↗   |   GitHub ↗',
+        'title': 'Mochu',
+        'category': 'AI Girl Companion',
+        'desc_1': 'Empathetic conversational AI girl companion with real-time emotion engine,',
+        'desc_2': 'interactive live 2D/3D anime avatar synthesis, and contextual memory.',
+        'badges': ['Python', 'PyTorch', 'FastAPI', 'React'],
+        'links': 'Live Demo ↗   |   GitHub ↗',
+        'demo_url': 'https://github.com/Rishi-Dev-pro/Mochu',
+        'repo_url': 'https://github.com/Rishi-Dev-pro/Mochu',
         'orientation': 'right',
-        'c1': '#38BDF8', 'c2': '#00F0FF',
-        'mock': 'clab'
+        'c1': '#EC4899', 'c2': '#8B5CF6',
+        'mock': 'mochu'
     }
 ]
 
 def render_artwork(spec):
-    c1 = spec['c1']
-    c2 = spec['c2']
-    # If base64 image available, embed it clipped with rounded corners!
     if spec.get('b64'):
         return f'''
         <clipPath id="clip-{spec['num']}">
@@ -283,21 +149,17 @@ def render_artwork(spec):
         '''
     mock = spec.get('mock')
     if mock == 'vn_media':
-        # Dark sleek social dashboard mockup
         return f'''
         <rect width="480" height="270" rx="14" fill="#090E1A" />
-        <!-- Top bar -->
         <rect width="480" height="28" fill="#0F172A" />
         <circle cx="16" cy="14" r="4" fill="#EF4444" />
         <circle cx="28" cy="14" r="4" fill="#F59E0B" />
         <circle cx="40" cy="14" r="4" fill="#10B981" />
         <text x="60" y="17" font-family="'JetBrains Mono', monospace" font-size="10" fill="#64748B">vn-media.app // feed</text>
-        <!-- Sidebar -->
         <rect x="0" y="28" width="80" height="242" fill="#070B14" />
         <line x1="20" y1="50" x2="60" y2="50" stroke="#334155" stroke-width="2" />
         <line x1="20" y1="70" x2="50" y2="70" stroke="#1E293B" stroke-width="2" />
         <line x1="20" y1="90" x2="60" y2="90" stroke="#1E293B" stroke-width="2" />
-        <!-- Central Post Card -->
         <rect x="100" y="45" width="230" height="150" rx="8" fill="#0F172A" stroke="#1E293B" stroke-width="1" />
         <circle cx="120" cy="65" r="10" fill="#3B82F6" />
         <text x="140" y="65" font-family="-apple-system, sans-serif" font-size="11" font-weight="700" fill="#F8FAFC">Rishi Shaw</text>
@@ -305,145 +167,209 @@ def render_artwork(spec):
         <rect x="115" y="95" width="200" height="8" rx="4" fill="#1E293B" />
         <rect x="115" y="112" width="160" height="8" rx="4" fill="#1E293B" />
         <rect x="115" y="132" width="200" height="50" rx="6" fill="#162238" />
-        <!-- Right side widgets -->
         <rect x="345" y="45" width="120" height="100" rx="8" fill="#0F172A" stroke="#1E293B" stroke-width="1" />
         <text x="355" y="62" font-family="-apple-system, sans-serif" font-size="10" font-weight="700" fill="#94A3B8">Suggested</text>
         <circle cx="365" cy="82" r="8" fill="#C084FC" />
         <circle cx="365" cy="110" r="8" fill="#10B981" />
         '''
-    elif mock == 'hospital':
-        # Clean medical dashboard mockup matching reference row 05
+    elif mock == 'pirate_civ':
         return f'''
-        <rect width="480" height="270" rx="14" fill="#F1F5F9" />
-        <!-- Top App Bar -->
-        <rect width="480" height="32" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" />
-        <circle cx="16" cy="16" r="4" fill="#EF4444" />
-        <circle cx="28" cy="16" r="4" fill="#F59E0B" />
-        <circle cx="40" cy="16" r="4" fill="#10B981" />
-        <text x="60" y="20" font-family="-apple-system, sans-serif" font-size="11" font-weight="700" fill="#0284C7">Hospital Management System</text>
-        <!-- Sidebar -->
-        <rect x="0" y="32" width="100" height="238" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" />
-        <rect x="10" y="50" width="80" height="24" rx="4" fill="#0284C7" />
-        <text x="20" y="66" font-family="-apple-system, sans-serif" font-size="10" font-weight="600" fill="#FFFFFF">Dashboard</text>
-        <text x="20" y="95" font-family="-apple-system, sans-serif" font-size="10" fill="#64748B">Patients</text>
-        <text x="20" y="120" font-family="-apple-system, sans-serif" font-size="10" fill="#64748B">Doctors</text>
-        <text x="20" y="145" font-family="-apple-system, sans-serif" font-size="10" fill="#64748B">Wards</text>
-        <!-- Stat Cards -->
-        <g transform="translate(115, 45)">
-          <rect x="0" y="0" width="105" height="55" rx="8" fill="#0284C7" />
-          <text x="12" y="22" font-family="-apple-system, sans-serif" font-size="10" fill="#E0F2FE">Total Patients</text>
-          <text x="12" y="44" font-family="-apple-system, sans-serif" font-size="18" font-weight="800" fill="#FFFFFF">1,420</text>
-          
-          <rect x="120" y="0" width="105" height="55" rx="8" fill="#0D9488" />
-          <text x="132" y="22" font-family="-apple-system, sans-serif" font-size="10" fill="#CCFBF1">Appointments</text>
-          <text x="132" y="44" font-family="-apple-system, sans-serif" font-size="18" font-weight="800" fill="#FFFFFF">384</text>
-          
-          <rect x="240" y="0" width="105" height="55" rx="8" fill="#6366F1" />
-          <text x="252" y="22" font-family="-apple-system, sans-serif" font-size="10" fill="#E0E7FF">Available Beds</text>
-          <text x="252" y="44" font-family="-apple-system, sans-serif" font-size="18" font-weight="800" fill="#FFFFFF">56</text>
+        <rect width="480" height="270" rx="14" fill="#080D18" />
+        <rect width="480" height="30" fill="#0E1726" />
+        <circle cx="16" cy="15" r="4" fill="#EF4444" />
+        <circle cx="28" cy="15" r="4" fill="#F59E0B" />
+        <circle cx="40" cy="15" r="4" fill="#10B981" />
+        <text x="60" y="19" font-family="'JetBrains Mono', monospace" font-size="10.5" font-weight="700" fill="#F59E0B">&#9875; pirate-civ.shop // high-seas outfitters</text>
+        <rect x="385" y="6" width="82" height="18" rx="4" fill="#1E293B" />
+        <text x="426" y="19" font-family="-apple-system, sans-serif" font-size="9" font-weight="700" fill="#FDE047" text-anchor="middle">&#128722; Loot Chest (3)</text>
+        
+        <g transform="translate(18, 40)">
+          <rect width="444" height="60" rx="8" fill="#111B2E" stroke="#1E293B" stroke-width="1" />
+          <text x="18" y="25" font-family="-apple-system, sans-serif" font-size="13" font-weight="800" fill="#F8FAFC">&#9760; CAPTAIN'S TREASURE VAULT</text>
+          <text x="18" y="44" font-family="-apple-system, sans-serif" font-size="9.5" fill="#94A3B8">Authentic Pirate Relics, Cursed Artifacts &amp; Nautical Gear</text>
+          <rect x="340" y="18" width="85" height="24" rx="5" fill="#F59E0B" />
+          <text x="382" y="34" font-family="-apple-system, sans-serif" font-size="9.5" font-weight="800" fill="#0F172A" text-anchor="middle">Shop Loot &#10140;</text>
         </g>
-        <!-- Table Mockup -->
-        <rect x="115" y="115" width="345" height="135" rx="8" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" />
-        <rect x="115" y="115" width="345" height="28" fill="#F8FAFC" />
-        <text x="130" y="133" font-family="-apple-system, sans-serif" font-size="10" font-weight="600" fill="#64748B">Patient Name</text>
-        <text x="240" y="133" font-family="-apple-system, sans-serif" font-size="10" font-weight="600" fill="#64748B">Doctor</text>
-        <text x="330" y="133" font-family="-apple-system, sans-serif" font-size="10" font-weight="600" fill="#64748B">Status</text>
-        <line x1="115" y1="170" x2="460" y2="170" stroke="#F1F5F9" stroke-width="1" />
-        <line x1="115" y1="200" x2="460" y2="200" stroke="#F1F5F9" stroke-width="1" />
-        '''
-    elif mock == 'freqsfa':
-        # Dual-panel Night Enhancement Mockup (Low-Light Image vs Enhanced Output)
-        return f'''
-        <rect width="480" height="270" rx="14" fill="#0A0E1A" />
-        <rect width="480" height="28" fill="#0F172A" />
-        <text x="20" y="18" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700" fill="#00F0FF">FreqSFA-Net // YOLOv8 Inference</text>
-        <!-- Left Panel: Low Light -->
-        <g transform="translate(18, 45)">
-          <rect width="215" height="200" rx="8" fill="#05070D" stroke="#1E293B" stroke-width="1" />
-          <text x="107" y="24" font-family="'JetBrains Mono', monospace" font-size="10" fill="#64748B" text-anchor="middle">Low-Light Image</text>
-          <!-- Dark road with faint headlamps -->
-          <ellipse cx="107" cy="140" rx="40" ry="15" fill="#0B1322" />
-          <circle cx="85" cy="135" r="4" fill="#FACC15" fill-opacity="0.5" />
-          <circle cx="129" cy="135" r="4" fill="#FACC15" fill-opacity="0.5" />
-        </g>
-        <!-- Right Panel: Enhanced Output -->
-        <g transform="translate(247, 45)">
-          <rect width="215" height="200" rx="8" fill="#0F1E36" stroke="#00F0FF" stroke-opacity="0.4" stroke-width="1" />
-          <text x="107" y="24" font-family="'JetBrains Mono', monospace" font-size="10" fill="#00F0FF" font-weight="600" text-anchor="middle">Enhanced Output</text>
-          <!-- Vivid road with bright headlamps and bounding boxes -->
-          <ellipse cx="107" cy="140" rx="60" ry="25" fill="#1E3A5F" />
-          <circle cx="85" cy="135" r="7" fill="#FDE047" />
-          <circle cx="129" cy="135" r="7" fill="#FDE047" />
-          <!-- Green YOLO Bounding Box -->
-          <rect x="70" y="115" width="75" height="50" fill="none" stroke="#22C55E" stroke-width="1.8" />
-          <rect x="70" y="103" width="55" height="12" fill="#22C55E" />
-          <text x="73" y="112" font-family="'JetBrains Mono', monospace" font-size="8" font-weight="700" fill="#000000">car 0.94</text>
+        
+        <g transform="translate(18, 112)">
+          <!-- Product 1 -->
+          <rect x="0" y="0" width="138" height="142" rx="8" fill="#0F172A" stroke="#1E293B" stroke-width="1" />
+          <circle cx="69" cy="42" r="23" fill="#162238" stroke="#F59E0B" stroke-width="1.5" />
+          <text x="69" y="47" font-size="18" text-anchor="middle">&#129517;</text>
+          <text x="69" y="82" font-family="-apple-system, sans-serif" font-size="10.5" font-weight="700" fill="#F8FAFC" text-anchor="middle">Jack's Compass</text>
+          <text x="69" y="99" font-family="'JetBrains Mono', monospace" font-size="10.5" font-weight="700" fill="#F59E0B" text-anchor="middle">450 Gold</text>
+          <rect x="19" y="110" width="100" height="22" rx="4" fill="#0284C7" />
+          <text x="69" y="124" font-family="-apple-system, sans-serif" font-size="8.5" font-weight="700" fill="#FFFFFF" text-anchor="middle">Add to Chest</text>
+
+          <!-- Product 2 -->
+          <rect x="153" y="0" width="138" height="142" rx="8" fill="#0F172A" stroke="#10B981" stroke-opacity="0.5" stroke-width="1" />
+          <circle cx="222" cy="42" r="23" fill="#162238" stroke="#10B981" stroke-width="1.5" />
+          <text x="222" y="47" font-size="18" text-anchor="middle">&#9876;</text>
+          <text x="222" y="82" font-family="-apple-system, sans-serif" font-size="10.5" font-weight="700" fill="#F8FAFC" text-anchor="middle">Kraken Cutlass</text>
+          <text x="222" y="99" font-family="'JetBrains Mono', monospace" font-size="10.5" font-weight="700" fill="#10B981" text-anchor="middle">820 Gold</text>
+          <rect x="172" y="110" width="100" height="22" rx="4" fill="#10B981" />
+          <text x="222" y="124" font-family="-apple-system, sans-serif" font-size="8.5" font-weight="700" fill="#052E16" text-anchor="middle">Add to Chest</text>
+
+          <!-- Product 3 -->
+          <rect x="306" y="0" width="138" height="142" rx="8" fill="#0F172A" stroke="#1E293B" stroke-width="1" />
+          <circle cx="375" cy="42" r="23" fill="#162238" stroke="#00F0FF" stroke-width="1.5" />
+          <text x="375" y="47" font-size="18" text-anchor="middle">&#127866;</text>
+          <text x="375" y="82" font-family="-apple-system, sans-serif" font-size="10.5" font-weight="700" fill="#F8FAFC" text-anchor="middle">Aged Pirate Rum</text>
+          <text x="375" y="99" font-family="'JetBrains Mono', monospace" font-size="10.5" font-weight="700" fill="#00F0FF" text-anchor="middle">120 Gold</text>
+          <rect x="325" y="110" width="100" height="22" rx="4" fill="#0284C7" />
+          <text x="375" y="124" font-family="-apple-system, sans-serif" font-size="8.5" font-weight="700" fill="#FFFFFF" text-anchor="middle">Add to Chest</text>
         </g>
         '''
-    elif mock == 'portfolio':
-        # Rishi Shaw Portfolio Website Preview Mockup
+    elif mock == 's_ppt_maker':
         return f'''
-        <rect width="480" height="270" rx="14" fill="#070B14" />
-        <rect width="480" height="28" fill="#0B1120" stroke="#1E293B" stroke-width="1" />
+        <rect width="480" height="270" rx="14" fill="#0A0F1D" />
+        <rect width="480" height="34" fill="#141E33" stroke="#1E293B" stroke-width="1" />
+        <rect x="14" y="8" width="18" height="18" rx="4" fill="#EA580C" />
+        <text x="23" y="21" font-family="-apple-system, sans-serif" font-size="11" font-weight="900" fill="#FFFFFF" text-anchor="middle">P</text>
+        <text x="40" y="21" font-family="-apple-system, sans-serif" font-size="11" font-weight="700" fill="#F8FAFC">S-PPT-maker</text>
+        <rect x="135" y="8" width="125" height="18" rx="4" fill="#1E293B" />
+        <text x="197" y="20" font-family="-apple-system, sans-serif" font-size="8.5" font-weight="600" fill="#10B981" text-anchor="middle">&#10003; 100% Free &#8226; No Watermark</text>
+        <rect x="375" y="7" width="90" height="20" rx="5" fill="#3B82F6" />
+        <text x="420" y="20" font-family="-apple-system, sans-serif" font-size="9" font-weight="700" fill="#FFFFFF" text-anchor="middle">Export PPTX &#10515;</text>
+        
+        <g transform="translate(14, 44)">
+          <rect x="0" y="0" width="75" height="46" rx="4" fill="#1E293B" stroke="#F59E0B" stroke-width="1.8" />
+          <rect x="8" y="10" width="40" height="4" rx="2" fill="#F59E0B" />
+          <rect x="8" y="18" width="55" height="3" rx="1.5" fill="#64748B" />
+          <rect x="8" y="25" width="45" height="3" rx="1.5" fill="#64748B" />
+          <rect x="0" y="54" width="75" height="46" rx="4" fill="#0F172A" stroke="#1E293B" stroke-width="1" />
+          <circle cx="25" cy="77" r="10" fill="#334155" />
+          <rect x="42" y="70" width="24" height="4" rx="2" fill="#64748B" />
+          <rect x="42" y="78" width="20" height="3" rx="1.5" fill="#475569" />
+          <rect x="0" y="108" width="75" height="46" rx="4" fill="#0F172A" stroke="#1E293B" stroke-width="1" />
+          <rect x="8" y="118" width="30" height="4" rx="2" fill="#64748B" />
+          <rect x="8" y="128" width="58" height="16" rx="2" fill="#1E293B" />
+          <rect x="0" y="162" width="75" height="46" rx="4" fill="#0F172A" stroke="#1E293B" stroke-width="1" />
+          <rect x="8" y="172" width="45" height="4" rx="2" fill="#64748B" />
+        </g>
+        
+        <g transform="translate(102, 44)">
+          <rect width="364" height="210" rx="8" fill="#0B132B" stroke="#1E293B" stroke-width="1.2" />
+          <rect x="25" y="20" width="130" height="7" rx="3.5" fill="#F59E0B" />
+          <text x="25" y="52" font-family="-apple-system, sans-serif" font-size="16" font-weight="800" fill="#FFFFFF">Next-Gen Presentation</text>
+          <text x="25" y="72" font-family="-apple-system, sans-serif" font-size="10.5" fill="#94A3B8">Automated clean layout without annoying watermarks or limits.</text>
+          
+          <rect x="25" y="90" width="95" height="64" rx="6" fill="#131F3B" stroke="#1E293B" stroke-width="1" />
+          <text x="35" y="112" font-size="14">&#9889;</text>
+          <text x="35" y="128" font-family="-apple-system, sans-serif" font-size="8.5" font-weight="700" fill="#F8FAFC">Instant Export</text>
+          <text x="35" y="142" font-family="-apple-system, sans-serif" font-size="7.5" fill="#64748B">One-click PPTX</text>
+
+          <rect x="130" y="90" width="95" height="64" rx="6" fill="#131F3B" stroke="#1E293B" stroke-width="1" />
+          <text x="140" y="112" font-size="14">&#127912;</text>
+          <text x="140" y="128" font-family="-apple-system, sans-serif" font-size="8.5" font-weight="700" fill="#F8FAFC">Smart Themes</text>
+          <text x="140" y="142" font-family="-apple-system, sans-serif" font-size="7.5" fill="#64748B">Curated palettes</text>
+
+          <rect x="235" y="90" width="95" height="64" rx="6" fill="#131F3B" stroke="#1E293B" stroke-width="1" />
+          <text x="245" y="112" font-size="14">&#128275;</text>
+          <text x="245" y="128" font-family="-apple-system, sans-serif" font-size="8.5" font-weight="700" fill="#F8FAFC">100% Free</text>
+          <text x="245" y="142" font-family="-apple-system, sans-serif" font-size="7.5" fill="#64748B">No Watermark</text>
+
+          <rect x="25" y="170" width="305" height="24" rx="5" fill="#1E293B" />
+          <text x="177" y="185" font-family="'JetBrains Mono', monospace" font-size="8.5" fill="#38BDF8" text-anchor="middle">&#10024; Clean, professional slides ready for conferences &amp; pitches</text>
+        </g>
+        '''
+    elif mock == 'cosmic_portfolio':
+        return f'''
+        <rect width="480" height="270" rx="14" fill="#04020C" />
+        <rect width="480" height="28" fill="#090517" />
         <circle cx="16" cy="14" r="4" fill="#EF4444" />
         <circle cx="28" cy="14" r="4" fill="#F59E0B" />
         <circle cx="40" cy="14" r="4" fill="#10B981" />
-        <text x="60" y="18" font-family="'JetBrains Mono', monospace" font-size="10" fill="#38BDF8">rishishaw.dev</text>
-        <!-- Mini Hero Card inside -->
-        <g transform="translate(30, 50)">
-          <!-- Mini Avatar -->
-          <circle cx="35" cy="45" r="28" fill="none" stroke="#00F0FF" stroke-width="2" />
-          <circle cx="35" cy="45" r="24" fill="#1E293B" />
-          <!-- Name & Role -->
-          <text x="75" y="36" font-family="-apple-system, sans-serif" font-size="9" fill="#94A3B8">Hi, I'm</text>
-          <text x="75" y="52" font-family="-apple-system, sans-serif" font-size="18" font-weight="800" fill="#FFFFFF">Rishi <tspan fill="#C084FC">Shaw</tspan></text>
-          <text x="75" y="66" font-family="-apple-system, sans-serif" font-size="8" fill="#64748B">AI Engineer &#8226; Full Stack Developer</text>
-          <!-- Mini buttons -->
-          <rect x="75" y="78" width="70" height="18" rx="6" fill="#6366F1" />
-          <text x="110" y="90" font-family="-apple-system, sans-serif" font-size="7.5" font-weight="700" fill="#FFFFFF" text-anchor="middle">View Work</text>
+        <text x="60" y="18" font-family="'JetBrains Mono', monospace" font-size="10.5" fill="#C084FC">&#10022; rishi-cosmic-portfolio.space // galaxy engine</text>
+        
+        <circle cx="90" cy="70" r="1.5" fill="#FFFFFF" opacity="0.9" />
+        <circle cx="150" cy="120" r="1" fill="#00F0FF" opacity="0.8" />
+        <circle cx="230" cy="60" r="2" fill="#FFFFFF" opacity="0.8" />
+        <circle cx="380" cy="80" r="1.5" fill="#EC4899" opacity="0.9" />
+        <circle cx="420" cy="140" r="1" fill="#FFFFFF" opacity="0.7" />
+        <circle cx="80" cy="190" r="1.5" fill="#A855F7" opacity="0.8" />
+        <circle cx="340" cy="220" r="1.5" fill="#00F0FF" opacity="0.9" />
+        <circle cx="450" cy="240" r="2" fill="#FFFFFF" opacity="0.8" />
+        
+        <ellipse cx="240" cy="145" rx="140" ry="55" fill="#7C3AED" fill-opacity="0.18" filter="url(#node-glow-07)" />
+        <ellipse cx="240" cy="145" rx="90" ry="32" fill="#00F0FF" fill-opacity="0.22" filter="url(#node-glow-07)" />
+        <ellipse cx="240" cy="145" rx="45" ry="16" fill="#F8FAFC" fill-opacity="0.4" />
+        
+        <ellipse cx="240" cy="145" rx="190" ry="70" fill="none" stroke="#C084FC" stroke-width="1.2" stroke-dasharray="6 8" opacity="0.5" />
+        <ellipse cx="240" cy="145" rx="130" ry="45" fill="none" stroke="#00F0FF" stroke-width="1.5" opacity="0.7" />
+        
+        <circle cx="330" cy="120" r="12" fill="#EC4899" />
+        <circle cx="330" cy="120" r="16" fill="none" stroke="#EC4899" stroke-width="1" opacity="0.6" />
+        
+        <g transform="translate(110, 75)">
+          <rect width="260" height="120" rx="12" fill="#0B081C" fill-opacity="0.85" stroke="#A855F7" stroke-opacity="0.5" stroke-width="1.5" />
+          <circle cx="40" cy="40" r="20" fill="#1A1238" stroke="#00F0FF" stroke-width="1.5" />
+          <text x="40" y="46" font-size="16" text-anchor="middle">&#129680;</text>
+          <text x="72" y="34" font-family="-apple-system, sans-serif" font-size="14" font-weight="800" fill="#F8FAFC">Rishi Shaw</text>
+          <text x="72" y="49" font-family="-apple-system, sans-serif" font-size="9" fill="#C084FC">COSMIC ODYSSEY &#8226; 3D PORTFOLIO</text>
+          <text x="25" y="76" font-family="-apple-system, sans-serif" font-size="9" fill="#CBD5E1">Interactive WebGL nebula shaders with real-time</text>
+          <text x="25" y="90" font-family="-apple-system, sans-serif" font-size="9" fill="#CBD5E1">particle constellations &amp; Three.js physics.</text>
+          <rect x="25" y="104" width="80" height="4" rx="2" fill="#00F0FF" />
+          <rect x="110" y="104" width="50" height="4" rx="2" fill="#EC4899" />
         </g>
-        <!-- Mini Quote Card -->
-        <rect x="250" y="55" width="200" height="85" rx="8" fill="#0B1122" stroke="#334155" stroke-width="1" />
-        <text x="262" y="75" font-family="-apple-system, sans-serif" font-size="8.5" fill="#CBD5E1">Engineering is not just</text>
-        <text x="262" y="88" font-family="-apple-system, sans-serif" font-size="8.5" fill="#CBD5E1">about writing code...</text>
-        <text x="435" y="102" font-family="-apple-system, sans-serif" font-size="8" fill="#64748B" text-anchor="end">&#8212; Rishi Shaw</text>
-        <!-- Mini Stats Bar -->
-        <rect x="30" y="165" width="420" height="70" rx="10" fill="#0A1020" stroke="#1E293B" stroke-width="1" />
-        <circle cx="60" cy="200" r="16" fill="#8B5CF6" fill-opacity="0.2" />
-        <circle cx="170" cy="200" r="16" fill="#FACC15" fill-opacity="0.2" />
-        <circle cx="280" cy="200" r="16" fill="#38BDF8" fill-opacity="0.2" />
-        <circle cx="390" cy="200" r="16" fill="#FB923C" fill-opacity="0.2" />
+        
+        <text x="20" y="255" font-family="'JetBrains Mono', monospace" font-size="9" fill="#64748B">RA: 18h 36m &#8226; DEC: +38&#176; 47' &#8226; Three.js Particle Engine</text>
         '''
-    else:
-        # C Programming Lab Mockup: IDE with file tree & main() code!
+    elif mock == 'mochu':
         return f'''
-        <rect width="480" height="270" rx="14" fill="#080C16" />
-        <!-- Top Bar -->
-        <rect width="480" height="28" fill="#0F172A" />
-        <circle cx="16" cy="14" r="4" fill="#EF4444" />
-        <circle cx="28" cy="14" r="4" fill="#F59E0B" />
-        <circle cx="40" cy="14" r="4" fill="#10B981" />
-        <text x="60" y="18" font-family="'JetBrains Mono', monospace" font-size="10.5" fill="#94A3B8">01_hello.c &#8212; C-Programming-Lab</text>
-        <!-- Sidebar File Tree -->
-        <rect x="0" y="28" width="130" height="242" fill="#060910" />
-        <text x="12" y="48" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="700" fill="#64748B">&#128193; c_programs</text>
-        <text x="24" y="70" font-family="'JetBrains Mono', monospace" font-size="9.5" fill="#38BDF8">&#128196; 01_hello.c</text>
-        <text x="24" y="90" font-family="'JetBrains Mono', monospace" font-size="9.5" fill="#64748B">&#128196; 02_fibonacci.c</text>
-        <text x="24" y="110" font-family="'JetBrains Mono', monospace" font-size="9.5" fill="#64748B">&#128196; 03_prime.c</text>
-        <text x="24" y="130" font-family="'JetBrains Mono', monospace" font-size="9.5" fill="#64748B">&#128196; 04_pointers.c</text>
-        <text x="24" y="150" font-family="'JetBrains Mono', monospace" font-size="9.5" fill="#64748B">&#128196; 05_strings.c</text>
-        <!-- Editor Code Content -->
-        <g transform="translate(145, 45)">
-          <text font-family="'JetBrains Mono', monospace" font-size="12" line-height="1.7">
-            <tspan x="0" dy="0" fill="#64748B">1  </tspan><tspan fill="#EF4444">#include </tspan><tspan fill="#FACC15">&lt;stdio.h&gt;</tspan>
-            <tspan x="0" dy="24" fill="#64748B">2  </tspan>
-            <tspan x="0" dy="24" fill="#64748B">3  </tspan><tspan fill="#3B82F6">int </tspan><tspan fill="#F8FAFC">main() &#123;</tspan>
-            <tspan x="0" dy="24" fill="#64748B">4  </tspan><tspan fill="#CBD5E1">    printf(</tspan><tspan fill="#22C55E">"Hello, World!\\n"</tspan><tspan fill="#CBD5E1">);</tspan>
-            <tspan x="0" dy="24" fill="#64748B">5  </tspan><tspan fill="#3B82F6">    return </tspan><tspan fill="#C084FC">0</tspan><tspan fill="#CBD5E1">;</tspan>
-            <tspan x="0" dy="24" fill="#64748B">6  </tspan><tspan fill="#F8FAFC">&#125;</tspan>
-          </text>
+        <rect width="480" height="270" rx="14" fill="#0E0916" />
+        <rect width="480" height="30" fill="#181124" />
+        <circle cx="16" cy="15" r="4" fill="#EF4444" />
+        <circle cx="28" cy="15" r="4" fill="#F59E0B" />
+        <circle cx="40" cy="15" r="4" fill="#10B981" />
+        <text x="60" y="19" font-family="'JetBrains Mono', monospace" font-size="10.5" font-weight="700" fill="#EC4899">&#9829; Mochu // AI Girl Companion v2.0</text>
+        <rect x="380" y="7" width="85" height="18" rx="9" fill="#2E1030" stroke="#EC4899" stroke-width="0.8" />
+        <circle cx="390" cy="16" r="3.5" fill="#10B981" />
+        <text x="424" y="19" font-family="-apple-system, sans-serif" font-size="8.5" font-weight="700" fill="#F472B6" text-anchor="middle">ONLINE</text>
+
+        <g transform="translate(18, 44)">
+          <rect width="140" height="210" rx="10" fill="#1A1028" stroke="#EC4899" stroke-opacity="0.4" stroke-width="1.2" />
+          <circle cx="70" cy="65" r="38" fill="#EC4899" fill-opacity="0.15" />
+          <circle cx="70" cy="65" r="30" fill="#28163E" stroke="#EC4899" stroke-width="2" />
+          <text x="70" y="72" font-size="24" text-anchor="middle">&#129498;</text>
+          <text x="70" y="114" font-family="-apple-system, sans-serif" font-size="12" font-weight="800" fill="#F8FAFC" text-anchor="middle">Mochu &#9829;</text>
+          <text x="70" y="128" font-family="-apple-system, sans-serif" font-size="8.5" fill="#F472B6" text-anchor="middle">Virtual AI Companion</text>
+          
+          <rect x="14" y="142" width="112" height="22" rx="6" fill="#110A1B" />
+          <text x="22" y="156" font-family="-apple-system, sans-serif" font-size="8" fill="#94A3B8">Affinity: <tspan fill="#EC4899" font-weight="700">99.4%</tspan></text>
+          <circle cx="114" cy="153" r="5" fill="#EC4899" />
+
+          <rect x="14" y="170" width="112" height="22" rx="6" fill="#110A1B" />
+          <text x="22" y="184" font-family="-apple-system, sans-serif" font-size="8" fill="#94A3B8">Mood: <tspan fill="#A855F7" font-weight="700">Cheerful &#10024;</tspan></text>
+        </g>
+
+        <g transform="translate(170, 44)">
+          <rect width="292" height="210" rx="10" fill="#140E20" stroke="#1E293B" stroke-width="1" />
+          <g transform="translate(14, 16)">
+            <rect width="264" height="52" rx="8" fill="#241436" stroke="#EC4899" stroke-opacity="0.3" stroke-width="1" />
+            <text x="12" y="20" font-family="-apple-system, sans-serif" font-size="9" font-weight="700" fill="#F472B6">Mochu</text>
+            <text x="12" y="38" font-family="-apple-system, sans-serif" font-size="9.5" fill="#F8FAFC">"Hey Rishi! How did your project go? I'm</text>
+            <text x="12" y="50" font-family="-apple-system, sans-serif" font-size="9.5" fill="#F8FAFC">super excited to build something together! &#10024;"</text>
+          </g>
+          <g transform="translate(44, 78)">
+            <rect width="234" height="34" rx="8" fill="#3B1D54" />
+            <text x="12" y="16" font-family="-apple-system, sans-serif" font-size="9" font-weight="700" fill="#C084FC">Rishi</text>
+            <text x="12" y="28" font-family="-apple-system, sans-serif" font-size="9.5" fill="#FFFFFF">Updating my GitHub profile right now!</text>
+          </g>
+          <g transform="translate(14, 122)">
+            <rect width="264" height="36" rx="8" fill="#241436" stroke="#EC4899" stroke-opacity="0.3" stroke-width="1" />
+            <text x="12" y="16" font-family="-apple-system, sans-serif" font-size="9" font-weight="700" fill="#F472B6">Mochu</text>
+            <text x="12" y="29" font-family="-apple-system, sans-serif" font-size="9.5" fill="#F8FAFC">"Yay! It's going to look stunning! &#128151;"</text>
+          </g>
+          <g transform="translate(14, 168)">
+            <rect width="264" height="30" rx="6" fill="#0C0714" stroke="#332448" stroke-width="1" />
+            <text x="12" y="19" font-family="-apple-system, sans-serif" font-size="9" fill="#64748B">Type a message to Mochu...</text>
+            <rect x="226" y="6" width="30" height="18" rx="4" fill="#EC4899" />
+            <text x="241" y="18" font-size="10" fill="#FFFFFF" text-anchor="middle">&#10148;</text>
+          </g>
         </g>
         '''
+    return ''
 
 for spec in projects_spec:
     num = spec['num']
@@ -453,7 +379,8 @@ for spec in projects_spec:
     desc_1 = spec['desc_1']
     desc_2 = spec['desc_2']
     badges = spec['badges']
-    links = spec['links']
+    demo_url = spec.get('demo_url', 'https://github.com/Rishi-Dev-pro')
+    repo_url = spec.get('repo_url', 'https://github.com/Rishi-Dev-pro')
     c1 = spec['c1']
     c2 = spec['c2']
 
@@ -478,7 +405,7 @@ for spec in projects_spec:
 
     artwork = render_artwork(spec)
 
-    row_svg = f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 340" width="100%" height="340">
+    row_svg = f"""<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 340" width="100%" height="340">
   <defs>
     <linearGradient id="spine-grad-{num}" x1="0%" y1="0%" x2="0%" y2="100%">
       <stop offset="0%" stop-color="#00F0FF" />
@@ -519,14 +446,18 @@ for spec in projects_spec:
   </g>
 
   <!-- Big Screenshot Card (480px x 270px) -->
-  <g transform="translate({screenshot_x}, 35)" filter="url(#card-shadow-{num})">
-    <rect width="480" height="270" rx="16" fill="#0A0F1E" stroke="url(#ss-border-{num})" stroke-width="1.8" />
-    {artwork}
-  </g>
+  <a href="{demo_url}" xlink:href="{demo_url}" target="_blank" style="cursor: pointer;">
+    <g transform="translate({screenshot_x}, 35)" filter="url(#card-shadow-{num})">
+      <rect width="480" height="270" rx="16" fill="#0A0F1E" stroke="url(#ss-border-{num})" stroke-width="1.8" />
+      {artwork}
+    </g>
+  </a>
 
   <!-- Project Description Card -->
   <g transform="translate({desc_x}, 50)">
-    <text x="0" y="32" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="24" font-weight="800" fill="{c1}">{title}</text>
+    <a href="{repo_url}" xlink:href="{repo_url}" target="_blank" style="cursor: pointer;">
+      <text x="0" y="32" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="24" font-weight="800" fill="{c1}">{title}</text>
+    </a>
     <text x="0" y="60" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14.5" font-weight="600" fill="#94A3B8">{category}</text>
     
     <text x="0" y="92" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14.5" fill="#CBD5E1">
@@ -539,14 +470,23 @@ for spec in projects_spec:
       {badges_xml}
     </g>
 
-    <!-- Action Links -->
+    <!-- Action Links (Individually clickable buttons) -->
     <g transform="translate(0, 215)">
-      <text x="0" y="0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="600" fill="#38BDF8">{links}</text>
+      <a href="{demo_url}" xlink:href="{demo_url}" target="_blank" style="cursor: pointer;">
+        <rect x="0" y="-18" width="95" height="26" fill="#000000" fill-opacity="0.01" />
+        <text x="0" y="0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="600" fill="#38BDF8">Live Demo ↗</text>
+      </a>
+      <text x="96" y="0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="600" fill="#64748B">   |   </text>
+      <a href="{repo_url}" xlink:href="{repo_url}" target="_blank" style="cursor: pointer;">
+        <rect x="125" y="-18" width="80" height="26" fill="#000000" fill-opacity="0.01" />
+        <text x="135" y="0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="600" fill="#38BDF8">GitHub ↗</text>
+      </a>
     </g>
   </g>
 </svg>"""
 
-    with open(f'assets/profile-svgs/project-row-{num}.svg', 'w', encoding='utf-8') as f:
+    out_path = f'assets/profile-svgs/project-row-{num}.svg'
+    with open(out_path, 'w', encoding='utf-8') as f:
         f.write(row_svg)
 
     ET.fromstring(row_svg)

@@ -12,9 +12,9 @@ projects = [
         'Real-Time WebRTC Audio • Neural Speech Pipeline • Active Turn-Taking'
     ),
     (
-        'project-03.svg', 'Mochi', 'AI Companion & Smart Assistant', 'PROJECT_SCREENSHOT_03', 
-        '#EC4899', '#A855F7', '#6366F1',
-        'Autonomous Ambient Interaction • Vision Synthesis • Context Engine'
+        'project-03.svg', 'The Four Pillars', 'Interactive 3D Showcase', 'PROJECT_SCREENSHOT_03', 
+        '#38BDF8', '#C084FC', '#3B82F6',
+        'Creative Engineering Showcase • 60FPS Glassmorphism • Design Tokens'
     ),
     (
         'project-04.svg', 'VN Media', 'Social Media & Content Platform', 'PROJECT_SCREENSHOT_04', 
@@ -22,24 +22,24 @@ projects = [
         'Full-Stack Content Feeds • Real-Time Websockets • Interactive Media'
     ),
     (
-        'project-05.svg', 'S-PPT Maker', 'AI-Powered Presentation Generator', 'PROJECT_SCREENSHOT_05', 
+        'project-05.svg', 'Pirate Civ', 'Pirate-Themed E-Commerce Website', 'PROJECT_SCREENSHOT_05', 
+        '#F59E0B', '#10B981', '#00F0FF',
+        'Treasure Loot Store • Custom Skull & Cutlass Theme • Seamless Checkout'
+    ),
+    (
+        'project-06.svg', 'S-PPT Maker', 'Free No-Watermark PowerPoint Maker', 'PROJECT_SCREENSHOT_06', 
         '#F59E0B', '#3B82F6', '#00F0FF',
-        'Automated Slide Composition • Semantic Layout Engine • Instant Export'
+        'Automated Slide Composition • 100% Free Zero Watermark • Instant PPTX'
     ),
     (
-        'project-06.svg', 'Pirate Civ', 'Procedural Strategy & Simulation Game', 'PROJECT_SCREENSHOT_06', 
-        '#10B981', '#00F0FF', '#3B82F6',
-        'Naval Tactics Engine • Procedural Island Maps • Canvas 60FPS Render'
+        'project-07.svg', 'Rishi Cosmic Portfolio', 'Galaxy-Themed 3D Portfolio', 'PROJECT_SCREENSHOT_07', 
+        '#C084FC', '#00F0FF', '#EC4899',
+        'Three.js Particle Galaxy • Dynamic Celestial Shaders • Smooth GSAP'
     ),
     (
-        'project-07.svg', 'Rishi Cosmic Portfolio', 'Immersive 3D Space Portfolio', 'PROJECT_SCREENSHOT_07', 
-        '#A855F7', '#00F0FF', '#EC4899',
-        'Three.js Particle Systems • Dynamic Celestial Shaders • Smooth GSAP'
-    ),
-    (
-        'project-08.svg', 'The Four Pillars', 'Interactive 3D Showcase', 'PROJECT_SCREENSHOT_08', 
-        '#38BDF8', '#C084FC', '#3B82F6',
-        'Creative Engineering Showcase • 60FPS Glassmorphism • Design Tokens'
+        'project-08.svg', 'Mochu', 'AI Girl Companion', 'PROJECT_SCREENSHOT_08', 
+        '#EC4899', '#8B5CF6', '#3B82F6',
+        'Virtual AI Girl Companion • Emotion Engine • Real-Time Voice Synthesis'
     )
 ]
 

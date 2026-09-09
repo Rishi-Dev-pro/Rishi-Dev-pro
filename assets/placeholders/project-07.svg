@@ -9,16 +9,16 @@
 
     <!-- Neon Rim Border Gradient -->
     <linearGradient id="border-PROJECT_SCREENSHOT_07" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#A855F7" stop-opacity="0.8" />
+      <stop offset="0%" stop-color="#C084FC" stop-opacity="0.8" />
       <stop offset="40%" stop-color="#00F0FF" stop-opacity="0.3" />
       <stop offset="100%" stop-color="#EC4899" stop-opacity="0.7" />
     </linearGradient>
 
     <!-- Radial Luminous Glow -->
     <radialGradient id="glow-PROJECT_SCREENSHOT_07" cx="70%" cy="40%" r="55%">
-      <stop offset="0%" stop-color="#A855F7" stop-opacity="0.28" />
+      <stop offset="0%" stop-color="#C084FC" stop-opacity="0.28" />
       <stop offset="50%" stop-color="#00F0FF" stop-opacity="0.1" />
-      <stop offset="100%" stop-color="#A855F7" stop-opacity="0" />
+      <stop offset="100%" stop-color="#C084FC" stop-opacity="0" />
     </radialGradient>
 
     <!-- Cyber Grid Pattern -->
@@ -55,19 +55,19 @@
     <rect x="0" y="0" width="360" height="350" rx="14" fill="#080E1C" fill-opacity="0.85" stroke="#00F0FF" stroke-opacity="0.4" stroke-width="1.2" />
     
     <!-- Reticle Circles & Telemetry -->
-    <circle cx="180" cy="160" r="100" fill="none" stroke="#A855F7" stroke-width="1" stroke-dasharray="6 8" opacity="0.4" />
+    <circle cx="180" cy="160" r="100" fill="none" stroke="#C084FC" stroke-width="1" stroke-dasharray="6 8" opacity="0.4" />
     <circle cx="180" cy="160" r="70" fill="none" stroke="#00F0FF" stroke-width="1.5" stroke-dasharray="14 10" opacity="0.6" />
-    <circle cx="180" cy="160" r="40" fill="#A855F7" fill-opacity="0.12" stroke="#A855F7" stroke-width="2" filter="url(#neon-glow-PROJECT_SCREENSHOT_07)" />
-    <circle cx="180" cy="160" r="12" fill="#A855F7" opacity="0.85" />
+    <circle cx="180" cy="160" r="40" fill="#C084FC" fill-opacity="0.12" stroke="#C084FC" stroke-width="2" filter="url(#neon-glow-PROJECT_SCREENSHOT_07)" />
+    <circle cx="180" cy="160" r="12" fill="#C084FC" opacity="0.85" />
 
     <!-- Waveform / HUD metrics -->
-    <path d="M 40 290 Q 90 260 140 290 T 240 290 T 320 290" fill="none" stroke="#A855F7" stroke-width="2" opacity="0.8" />
-    <circle cx="140" cy="290" r="3.5" fill="#A855F7" />
+    <path d="M 40 290 Q 90 260 140 290 T 240 290 T 320 290" fill="none" stroke="#C084FC" stroke-width="2" opacity="0.8" />
+    <circle cx="140" cy="290" r="3.5" fill="#C084FC" />
     <circle cx="240" cy="290" r="3.5" fill="#EC4899" />
     
     <!-- Diagnostic Bars -->
     <rect x="40" y="40" width="120" height="6" rx="3" fill="#1E293B" />
-    <rect x="40" y="40" width="85" height="6" rx="3" fill="#A855F7" opacity="0.8" />
+    <rect x="40" y="40" width="85" height="6" rx="3" fill="#C084FC" opacity="0.8" />
     <rect x="40" y="55" width="180" height="6" rx="3" fill="#1E293B" />
     <rect x="40" y="55" width="130" height="6" rx="3" fill="#00F0FF" opacity="0.8" />
   </g>
@@ -75,20 +75,20 @@
   <!-- Left Side: Large Project Typography & Placeholder Indicator -->
   <g transform="translate(60, 160)">
     <!-- Subtitle category tag -->
-    <rect x="0" y="0" width="auto" height="26" rx="6" fill="#A855F7" fill-opacity="0.12" />
-    <text x="12" y="17" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="700" fill="#A855F7" letter-spacing="1">IMMERSIVE 3D SPACE PORTFOLIO</text>
+    <rect x="0" y="0" width="auto" height="26" rx="6" fill="#C084FC" fill-opacity="0.12" />
+    <text x="12" y="17" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="700" fill="#C084FC" letter-spacing="1">GALAXY-THEMED 3D PORTFOLIO</text>
 
     <!-- Main Project Name -->
     <text x="0" y="65" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="36" font-weight="800" fill="#F8FAFC" letter-spacing="-0.5">Rishi Cosmic Portfolio</text>
     
     <!-- Secondary Features Subtext -->
-    <text x="0" y="105" font-family="'JetBrains Mono', monospace" font-size="13" fill="#94A3B8">Three.js Particle Systems • Dynamic Celestial Shaders • Smooth GSAP</text>
+    <text x="0" y="105" font-family="'JetBrains Mono', monospace" font-size="13" fill="#94A3B8">Three.js Particle Galaxy • Dynamic Celestial Shaders • Smooth GSAP</text>
 
     <!-- Identifiable Replaceable Badge Pill -->
     <g transform="translate(0, 160)">
-      <rect x="0" y="0" width="340" height="46" rx="10" fill="#060A14" fill-opacity="0.95" stroke="#A855F7" stroke-width="1.5" filter="url(#neon-glow-PROJECT_SCREENSHOT_07)" />
-      <circle cx="24" cy="23" r="5" fill="#A855F7" />
-      <text x="42" y="28" font-family="'JetBrains Mono', monospace" font-size="14" font-weight="700" fill="#A855F7" letter-spacing="1.5">PROJECT_SCREENSHOT_07</text>
+      <rect x="0" y="0" width="340" height="46" rx="10" fill="#060A14" fill-opacity="0.95" stroke="#C084FC" stroke-width="1.5" filter="url(#neon-glow-PROJECT_SCREENSHOT_07)" />
+      <circle cx="24" cy="23" r="5" fill="#C084FC" />
+      <text x="42" y="28" font-family="'JetBrains Mono', monospace" font-size="14" font-weight="700" fill="#C084FC" letter-spacing="1.5">PROJECT_SCREENSHOT_07</text>
     </g>
   </g>
 
