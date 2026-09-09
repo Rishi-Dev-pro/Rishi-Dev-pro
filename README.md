@@ -37,42 +37,42 @@
 
 <!-- Project 01: AETHER OS -->
 <a href="https://github.com/Rishi-Dev-pro/AETHER-OS">
-  <img src="assets/profile-svgs/project-row-01.svg" width="100%" alt="01 AETHER OS" />
+  <img src="assets/profile-svgs/project-row-01.svg?v=2" width="100%" alt="01 AETHER OS" />
 </a>
 
 <!-- Project 02: CallBuddy AI -->
 <a href="https://github.com/Rishi-Dev-pro/CallBuddy-AI">
-  <img src="assets/profile-svgs/project-row-02.svg" width="100%" alt="02 CallBuddy AI" />
+  <img src="assets/profile-svgs/project-row-02.svg?v=2" width="100%" alt="02 CallBuddy AI" />
 </a>
 
 <!-- Project 03: The Four Pillars -->
 <a href="https://github.com/Rishi-Dev-pro/The-Four-Pillars">
-  <img src="assets/profile-svgs/project-row-03.svg" width="100%" alt="03 The Four Pillars" />
+  <img src="assets/profile-svgs/project-row-03.svg?v=2" width="100%" alt="03 The Four Pillars" />
 </a>
 
 <!-- Project 04: VN Media -->
 <a href="https://github.com/Rishi-Dev-pro/VN-media">
-  <img src="assets/profile-svgs/project-row-04.svg" width="100%" alt="04 VN Media" />
+  <img src="assets/profile-svgs/project-row-04.svg?v=2" width="100%" alt="04 VN Media" />
 </a>
 
 <!-- Project 05: pirate-civ -->
 <a href="https://github.com/Rishi-Dev-pro/pirate-civ">
-  <img src="assets/profile-svgs/project-row-05.svg" width="100%" alt="05 pirate-civ" />
+  <img src="assets/profile-svgs/project-row-05.svg?v=2" width="100%" alt="05 pirate-civ" />
 </a>
 
 <!-- Project 06: S-PPT-maker -->
 <a href="https://github.com/Rishi-Dev-pro/S-PPT-maker">
-  <img src="assets/profile-svgs/project-row-06.svg" width="100%" alt="06 S-PPT-maker" />
+  <img src="assets/profile-svgs/project-row-06.svg?v=2" width="100%" alt="06 S-PPT-maker" />
 </a>
 
 <!-- Project 07: Rishi-cosmic-protfolio -->
 <a href="https://github.com/Rishi-Dev-pro/rishi-cosmic-portfolio">
-  <img src="assets/profile-svgs/project-row-07.svg" width="100%" alt="07 Rishi-cosmic-protfolio" />
+  <img src="assets/profile-svgs/project-row-07.svg?v=2" width="100%" alt="07 Rishi-cosmic-protfolio" />
 </a>
 
 <!-- Project 08: Mochu -->
 <a href="https://github.com/Rishi-Dev-pro/Mochu">
-  <img src="assets/profile-svgs/project-row-08.svg" width="100%" alt="08 Mochu" />
+  <img src="assets/profile-svgs/project-row-08.svg?v=2" width="100%" alt="08 Mochu" />
 </a>
 
 <br /><br />
